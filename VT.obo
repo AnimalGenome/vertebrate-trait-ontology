@@ -1,9 +1,9 @@
 format-version: 1.2
-date: 22:02:2017 08:56
+data-version: 9.2
+date: 18:09:2019 09:23
 saved-by: caripark
-auto-generated-by: OBO-Edit 2.1
+auto-generated-by: OBO-Edit 2.3.1
 default-namespace: Trait.ontology
-RGDformat-version: 1.2
 
 [Term]
 id: VT:0000000
@@ -14,8 +14,8 @@ creation_date: 2011-06-22T04:12:42Z
 
 [Term]
 id: VT:0000001
-name: Trait
-def: "Any measurable or observable characteristic of an organism." [VTO:CP]
+name: vertebrate trait
+def: "Any measurable or observable characteristic of a vertebrate organism." [VTO:CP]
 
 [Term]
 id: VT:0000002
@@ -139,7 +139,7 @@ is_a: VT:0002177 ! outer ear morphology trait
 
 [Term]
 id: VT:0000018
-name: ventricle membranous septum morphology trait
+name: heart ventricle membranous septum morphology trait
 def: "Any measurable or observable characteristic related to the shape, structure, color, or pattern of the membranous portion of the wall between the lower chambers of the heart." [MP:0008823]
 synonym: "interventricular septum membranous part morphology trait" EXACT []
 is_a: VT:0007082 ! heart ventricle septum morphology trait
@@ -1031,7 +1031,7 @@ is_a: VT:0015078 ! blood homeostasis trait
 
 [Term]
 id: VT:0000189
-name: blood vessel distensibilty trait
+name: blood vessel distensibility trait
 def: "Any measurable or observable characteristic related to the ability of the blood vessels (tubular channels through which the blood circulates) to stretch." [ISBN:978-0440237013, RGD:dhm]
 is_a: VT:0000170 ! blood vessel physiology trait
 
@@ -5089,7 +5089,7 @@ is_a: VT:0001504 ! posture trait
 id: VT:0001516
 name: motor coordination/balance trait
 def: "Any measurable or observable characteristic related to the ability of an animal to maintain skillful and effective interaction of movements or maintenance of equilibrium." [MP:0001516]
-is_a: VT:0002067 ! sensation behavior trait
+is_a: VT:0010444 ! kinesthetic behavior trait
 
 [Term]
 id: VT:0001525
@@ -6015,7 +6015,7 @@ is_a: VT:0010450 ! cognitive behavior trait
 id: VT:0002067
 name: sensation behavior trait
 def: "Any measurable or observable characteristic related to actions or reactions of an organism in response to a sensory stimulus; a sensory stimulus is any change in the external environment that is perceived and processed by any of the faculties by which outside stimuli are perceived." [MGI:smb]
-is_a: VT:0010450 ! cognitive behavior trait
+is_a: VT:0010442 ! behavior trait
 
 [Term]
 id: VT:0002068
@@ -10401,6 +10401,7 @@ is_a: VT:0000056 ! urine trait
 id: VT:0003620
 name: urine output
 def: "The amount of urine excreted." [NCBI:matt]
+is_a: VT:0001756 ! urine production trait
 is_a: VT:0001784 ! fluid regulation trait
 
 [Term]
@@ -14905,9 +14906,9 @@ is_a: VT:0002264 ! bronchus morphology trait
 
 [Term]
 id: VT:0005490
-name: Clara cell quantity
+name: club cell quantity
 def: "The proportion or number of the rounded, club-shaped, nonciliated cells found between ciliated cells in bronchiolar epithelium." [ISBN:0-683-40008-8]
-synonym: "Clara cell number" EXACT []
+synonym: "Clara cell quantity" EXACT []
 is_a: VT:0002264 ! bronchus morphology trait
 
 [Term]
@@ -16000,7 +16001,7 @@ is_a: VT:0000005 ! heart right atrium size trait
 [Term]
 id: VT:0007028
 name: heart mass
-def: "The amount of matter in the viscous of cardiac muscle that maintains the circulation of the blood." [Dorland:Dorlands Illustrated Medical Dictionary 31st Ed]
+def: "The amount of matter in the cardiac muscle that maintains the circulation of the blood." [Dorland:Dorlands Illustrated Medical Dictionary 31st Ed]
 synonym: "cardiac weight" RELATED []
 is_a: VT:0005406 ! heart size trait
 
@@ -16091,6 +16092,7 @@ is_a: VT:0006113 ! heart septum morphology trait
 id: VT:0007082
 name: heart ventricle septum morphology trait
 def: "Any measurable or observable characteristic related to the shape, structure, color or pattern of the wall between the lower chambers of the heart." [MGI:smb]
+synonym: "heart interventricular wall morphology trait" EXACT []
 synonym: "ventricle septal morphology trait" RELATED []
 synonym: "ventricular septal morphology trait" RELATED []
 synonym: "ventricular septum morphology trait" RELATED []
@@ -16099,7 +16101,7 @@ is_a: VT:0006113 ! heart septum morphology trait
 
 [Term]
 id: VT:0007084
-name: ventricle septum configuration trait
+name: heart ventricle septum configuration trait
 def: "Any measurable or observable characteristic related to the arrangement of the wall separating the lower chambers of the heart." [MP:0000281]
 synonym: "interventricular septal configuration" RELATED []
 synonym: "interventricular septum configuration trait" EXACT []
@@ -16108,8 +16110,9 @@ is_a: VT:0007082 ! heart ventricle septum morphology trait
 
 [Term]
 id: VT:0007086
-name: ventricle septum thickness
+name: heart ventricle septum thickness
 def: "The distance between the surfaces of the wall between the two lower chambers of the heart." [RGD:MS]
+synonym: "heart interventricular wall thickness" EXACT []
 synonym: "interventricular septal thickness" RELATED []
 synonym: "ventricular septal thickness" RELATED []
 is_a: VT:0007082 ! heart ventricle septum morphology trait
@@ -19289,6 +19292,7 @@ synonym: "cardiac muscle physiology trait" EXACT []
 synonym: "myocardial physiology trait" EXACT []
 synonym: "myocardium physiology trait" EXACT []
 is_a: VT:0002106 ! muscular system physiology trait
+is_a: VT:0010301 ! heart physiology trait
 created_by: caripark
 creation_date: 2010-04-06T03:06:06Z
 
@@ -22787,7 +22791,7 @@ creation_date: 2010-07-07T12:44:13Z
 [Term]
 id: VT:0010454
 name: organism trait
-is_a: VT:0000001 ! Trait
+is_a: VT:0000001 ! vertebrate trait
 created_by: caripark
 creation_date: 2011-03-17T01:43:14Z
 
@@ -22845,6 +22849,7 @@ creation_date: 2012-10-24T10:41:08Z
 [Term]
 id: VT:0010461
 name: excretion behavior trait
+def: "Any measurable or observable characteristic related to actions or reactions of an organism with regard to the elimination of waste products that arise as a result of metabolic activity." [GO:0007588]
 is_a: VT:0010447 ! emission behavior trait
 created_by: caripark
 creation_date: 2012-10-24T10:43:21Z
@@ -22852,6 +22857,7 @@ creation_date: 2012-10-24T10:43:21Z
 [Term]
 id: VT:0010462
 name: defecation behavior trait
+def: "Any measurable or observable characteristic related to actions or reactions of an organism with regard to the expulsion of feces from the body." [GO:0030421]
 is_a: VT:0010461 ! excretion behavior trait
 created_by: caripark
 creation_date: 2012-10-24T10:43:31Z
@@ -23397,17 +23403,19 @@ creation_date: 2013-04-08T12:14:44Z
 
 [Term]
 id: VT:0010529
-name: contextual conditioning behavior trait
+name: contextual fear conditioning behavior trait
 def: "Any measurable or observable characteristic related to the actions or reactions of an organism pertaining to the ability to learn and remember an association between an aversive experience (the unconditioned stimulus (US), usually a shock) and the neutral, unchanging environment (the conditioned stimulus (CS), or the environmental context in this case)." [MP:0001469]
 is_a: VT:0010527 ! associative learning trait
+is_a: VT:0010715 ! fear-related behavior trait
 created_by: caripark
 creation_date: 2013-04-08T12:14:44Z
 
 [Term]
 id: VT:0010530
-name: cued conditioning behavior trait
+name: cued fear conditioning behavior trait
 def: "Any measurable or observable characteristic related to actions or reactions of an organism pertaining to the ability to learn and remember an association between an aversive experience (the unconditioned stimulus (US), usually a shock) and a neutral stimulus (the conditioned stimulus (CS), usually an auditory cue or light flash)." [MP:0001454]
 is_a: VT:0010527 ! associative learning trait
+is_a: VT:0010715 ! fear-related behavior trait
 created_by: caripark
 creation_date: 2013-04-08T12:14:44Z
 
@@ -23668,6 +23676,7 @@ id: VT:0010561
 name: heart left ventricle molecular composition trait
 def: "Any measurable or observable characteristic related to the proportions of proteins, minerals, nutrients, gases, or other substances in the left lower chamber of the heart." [ISBN:0-683-40008-8, MP:0003921]
 is_a: VT:0003921 ! heart left ventricle morphology trait
+is_a: VT:0010755 ! heart molecular composition trait
 created_by: caripark
 creation_date: 2013-07-11T09:14:22Z
 
@@ -23747,6 +23756,7 @@ creation_date: 2013-10-07T12:44:20Z
 id: VT:0010571
 name: prostate integrity trait
 def: "Any measurable or observable characteristic related to the structural soundness of the gland surrounding the beginning of the urethra in males that secretes part of the seminal fluid." [ISBN:0-683-40008-8]
+synonym: "prostate gland integrity trait" EXACT []
 is_a: VT:0001158 ! prostate morphology trait
 created_by: caripark
 creation_date: 2013-10-07T01:04:54Z
@@ -23822,6 +23832,7 @@ id: VT:0010580
 name: kidney integrity trait
 def: "Any measurable or observable characteristic related to the structural soundness of the paired organs responsible for urine excretion and regulation of ion concentrations." [ISBN:0-683-40008-8]
 is_a: VT:0002135 ! kidney morphology trait
+is_a: VT:0010783 ! urinary system integrity trait
 created_by: caripark
 creation_date: 2013-10-08T09:20:20Z
 
@@ -25097,6 +25108,631 @@ created_by: caripark
 creation_date: 2017-02-22T08:48:41Z
 
 [Term]
+id: VT:0010733
+name: trigeminal nerve integrity trait
+def: "Any measurable or observable characteristic related to the structural soundness of the chief sensory nerve of the face and motor nerve of the muscles of mastication." [ISBN:0-683-40008-8, RGD:cur]
+is_a: VT:0001065 ! trigeminal nerve morphology trait
+created_by: caripark
+creation_date: 2017-03-06T10:55:02Z
+
+[Term]
+id: VT:0010734
+name: anorectal integrity trait
+def: "Any measurable or observable characteristic related to the structural soundness of the rectum and anus." [ISBN:0-683-40008-8, RGD:cur]
+is_a: VT:0000492 ! rectum morphology trait
+is_a: VT:0005034 ! anus morphology trait
+created_by: caripark
+creation_date: 2017-06-14T04:10:39Z
+
+[Term]
+id: VT:0010735
+name: urination behavior trait
+def: "Any measurable or observable characteristic related to actions or reactions of an organism with regard to the process in which parasympathetic nerves stimulate the bladder wall muscle to contract and expel urine from the body." [GO:0060073]
+is_a: VT:0010461 ! excretion behavior trait
+created_by: caripark
+creation_date: 2017-08-17T04:25:50Z
+
+[Term]
+id: VT:0010736
+name: wound healing trait
+def: "Any measurable or observable characteristic related to the process of repair of trauma to any tissues of the body, especially that caused by physical means." [MP:0005023]
+is_a: VT:0010454 ! organism trait
+created_by: caripark
+creation_date: 2017-08-24T01:40:42Z
+
+[Term]
+id: VT:0010737
+name: skin molecular composition trait
+def: "Any measurable or observable characteristic related to the proportions of proteins, minerals, nutrients, gases, or other substances in the membranous protective covering of the body." [ISBN:0-683-40008-8, RGD:cur]
+is_a: VT:0002096 ! skin morphology trait
+created_by: caripark
+creation_date: 2017-08-25T01:56:06Z
+
+[Term]
+id: VT:0010738
+name: skin mineral amount
+def: "The proportion, quantity, or volume in the skin of any inorganic element or compound that has importance in body functions." [ISBN:0-8036-1207-9, RGD:cur]
+is_a: VT:0000192 ! mineral amount
+is_a: VT:0010737 ! skin molecular composition trait
+created_by: caripark
+creation_date: 2017-08-25T01:59:17Z
+
+[Term]
+id: VT:0010739
+name: skin chloride amount
+def: "The proportion, quantity, or volume in the skin of the monovalent anion of chlorine." [RGD:cur]
+is_a: VT:0010738 ! skin mineral amount
+created_by: caripark
+creation_date: 2017-08-25T02:08:34Z
+
+[Term]
+id: VT:0010740
+name: skin potassium amount
+def: "The proportion, quantity, or volume in the skin of the monovalent cation of this alkali metal element." [ISBN:0-683-40008-8]
+is_a: VT:0010738 ! skin mineral amount
+created_by: caripark
+creation_date: 2017-08-25T02:08:34Z
+
+[Term]
+id: VT:0010741
+name: skin sodium amount
+def: "The proportion, quantity, or volume in the skin of the monovalent cation of this alkali metal element, the most plentiful extracellular ion in the body." [ISBN:0-683-40008-8, RGD:cur]
+is_a: VT:0010738 ! skin mineral amount
+created_by: caripark
+creation_date: 2017-08-25T02:08:34Z
+
+[Term]
+id: VT:0010742
+name: blood cystatin amount
+def: "The proportion, quantity, or volume in whole blood, serum, or plasma of an inhibitor of cysteine proteases." [GO:0004870, RGD:cur]
+is_a: VT:0005416 ! blood protein amount
+created_by: caripark
+creation_date: 2017-08-25T03:10:31Z
+
+[Term]
+id: VT:0010743
+name: blood cystatin C amount
+def: "The proportion, quantity, or volume in whole blood, serum, or plasma of cystatin C." [RGD:cur]
+is_a: VT:0010742 ! blood cystatin amount
+created_by: caripark
+creation_date: 2017-08-25T03:34:52Z
+
+[Term]
+id: VT:0010744
+name: urine podocalyxin amount
+def: "The proportion, quantity, or volume in the urine of this sialoglycoprotein." [RGD:cur]
+is_a: VT:0005160 ! urine protein amount
+created_by: caripark
+creation_date: 2017-08-25T04:10:04Z
+
+[Term]
+id: VT:0010745
+name: heart left ventricle integrity trait
+def: "Any measurable or observable characteristic related to the structural soundness of the left lower chamber of the heart." [ISBN:0-683-40008-8, RGD:cur]
+is_a: VT:0003921 ! heart left ventricle morphology trait
+is_a: VT:0010757 ! heart integrity trait
+created_by: caripark
+creation_date: 2017-08-25T04:16:41Z
+
+[Term]
+id: VT:0010746
+name: coronary artery integrity trait
+def: "Any measurable or observable characteristic related to the structural soundness of any of the arteries that branch from the aorta to supply blood to the heart." [MP:0004111, RGD:cur]
+is_a: VT:0004111 ! coronary artery morphology trait
+created_by: caripark
+creation_date: 2017-08-25T04:18:05Z
+
+[Term]
+id: VT:0010747
+name: heart left ventricle interstitial collagen amount
+def: "The proportion, quantity, or volume of collagen types I and III in the left lower chamber of the heart." [ISBN:0-683-40008-8, RGD:cur]
+is_a: VT:0010561 ! heart left ventricle molecular composition trait
+created_by: caripark
+creation_date: 2017-08-29T11:21:55Z
+
+[Term]
+id: VT:0010748
+name: stereotypic behavior trait
+def: "Any measurable or observable characteristic of behavior related to repetitive, invariant, perseverative motor patterns that do not appear to be purposeful." [MP:0001408]
+is_a: VT:0010444 ! kinesthetic behavior trait
+created_by: caripark
+creation_date: 2017-08-29T03:04:02Z
+
+[Term]
+id: VT:0010749
+name: heart blood pressure trait
+def: "Any measurable or observable characteristic related to blood pressure in the heart." [RGD:cur]
+is_a: VT:0000183 ! blood pressure trait
+created_by: caripark
+creation_date: 2017-09-11T04:24:54Z
+
+[Term]
+id: VT:0010750
+name: heart left ventricular blood pressure trait
+def: "Any measurable or observable characteristic related to blood pressure in the lower left chamber of the heart." [ISBN:0-683-40008-8, RGD:cur]
+is_a: VT:0010749 ! heart blood pressure trait
+created_by: caripark
+creation_date: 2017-09-11T04:25:19Z
+
+[Term]
+id: VT:0010751
+name: response to methylenedioxymethamphetamine trait
+def: "Any measurable or observable characteristic related to the capacity of an organism to change, adjust, or alter its morphology, physiology, or behavior as a result of methylenedioxymethamphetamine exposure (also known as MDMA or Ecstasy)." [MPD:cur]
+is_a: VT:0010488 ! response to addictive substance trait
+created_by: caripark
+creation_date: 2018-01-23T11:30:38Z
+
+[Term]
+id: VT:0010752
+name: blood angiotensin II amount
+def: "The proportion, quantity, or volume in whole blood, serum, or plasma of this hormone, a vasoconstrictor formed by the action of angiotensin-converting enzyme on angiotensin I." [ISBN:0-683-40008-8, RGD:cur]
+xref: CMO:0000121
+is_a: VT:0005418 ! blood hormone amount
+created_by: caripark
+creation_date: 2018-01-26T09:53:19Z
+
+[Term]
+id: VT:0010753
+name: urine urea amount
+def: "The proportion, quantity, or volume in urine of this product of protein catabolism." [ISBN:0-683-40008-8, RGD:cur]
+is_a: VT:0001757 ! urine molecular composition trait
+created_by: caripark
+creation_date: 2018-01-26T09:56:24Z
+
+[Term]
+id: VT:0010754
+name: kidney adrenomedullin amount
+def: "The proportion, quantity, or volume of adrenomedullin in the kidney." [RGD:cur]
+xref: CHEBI:80339
+is_a: VT:0010558 ! kidney molecular composition trait
+created_by: caripark
+creation_date: 2018-05-17T08:19:30Z
+
+[Term]
+id: VT:0010755
+name: heart molecular composition trait
+def: "Any measurable or observable characteristic related to the proportions of proteins, minerals, nutrients, gases, or other substances in the heart." [RGD:cur]
+is_a: VT:0000266 ! heart morphology trait
+created_by: caripark
+creation_date: 2018-05-17T08:28:46Z
+
+[Term]
+id: VT:0010756
+name: heart lactate dehydrogenase activity
+def: "The degree of function or response in the heart of the enzyme that catalyzes the oxidation of lactate to pyruvate." [ISBN:0-683-40008-8, RGD:cur]
+is_a: VT:0010681 ! lactate dehydrogenase activity
+is_a: VT:0010755 ! heart molecular composition trait
+created_by: caripark
+creation_date: 2018-05-17T08:36:49Z
+
+[Term]
+id: VT:0010757
+name: heart integrity trait
+def: "Any measurable or observable characteristic related to the structural soundness of the heart." [RGD:cur]
+is_a: VT:0000266 ! heart morphology trait
+created_by: caripark
+creation_date: 2018-05-17T08:39:04Z
+
+[Term]
+id: VT:0010758
+name: heart left ventricle end-diastolic diameter
+def: "The distance across the left lower chamber of the heart, immediately after mitral valve closure." [ISBN:0-683-40008-8, RGD:cur]
+is_a: VT:0010492 ! heart left ventricle diameter
+created_by: caripark
+creation_date: 2018-05-17T09:21:04Z
+
+[Term]
+id: VT:0010759
+name: heart left ventricle end-systolic diameter
+def: "The distance across the left lower chamber of the heart, immediately before mitral valve opening." [ISBN:0-683-40008-8, RGD:cur]
+is_a: VT:0010492 ! heart left ventricle diameter
+created_by: caripark
+creation_date: 2018-05-17T09:26:34Z
+
+[Term]
+id: VT:0010760
+name: nitric oxide amount
+def: "The proportion, quantity, or volume in a body tissue or fluid of nitric oxide, the free radical oxide of nitrogen which functions in various physiological capacities." [CMO:0001436, RGD:cur]
+is_a: VT:0015077 ! molecule homeostasis trait
+created_by: caripark
+creation_date: 2018-05-17T09:30:43Z
+
+[Term]
+id: VT:0010761
+name: kidney lipid peroxide amount
+def: "The proportion, quantity, or volume in kidney of the lipid peroxidation end products produced by the oxidative degradation of lipids." [CMO:0002246, RGD:cur]
+is_a: VT:0010558 ! kidney molecular composition trait
+created_by: caripark
+creation_date: 2018-05-17T09:36:23Z
+
+[Term]
+id: VT:0010762
+name: catalase activity
+def: "The degree of function or response of this enzyme that converts the reactive oxygen species hydrogen peroxide to water and oxygen." [ISBN:0-683-40008-8, RGD:cur]
+is_a: VT:0005584 ! enzyme/coenzyme activity trait
+created_by: caripark
+creation_date: 2018-05-17T09:44:53Z
+
+[Term]
+id: VT:0010763
+name: superoxide dismutase activity
+def: "The degree of function or response of this family of enzymes that convert naturally-occurring but harmful superoxide radicals to molecular oxygen and hydrogen peroxide." [ISBN:0-683-40008-8, RGD:cur]
+is_a: VT:0005584 ! enzyme/coenzyme activity trait
+created_by: caripark
+creation_date: 2018-05-17T09:47:11Z
+
+[Term]
+id: VT:0010764
+name: liver lipid amount
+def: "The proportion, quantity, or volume in liver tissue of fat-soluble substances (molecules composed of carbon and hydrogen and are characteristically insoluble in water)." [ISBN:0-683-40008-8, RGD:cur]
+synonym: "liver fat amount" RELATED []
+is_a: VT:0001547 ! lipid amount
+is_a: VT:0010497 ! liver molecular composition trait
+created_by: caripark
+creation_date: 2018-05-17T11:57:51Z
+
+[Term]
+id: VT:0010765
+name: head and neck integrity trait
+def: "Any measurable or observable characteristic related to the structural soundness of the head and/or neck." [RGD:cur]
+is_a: VT:0100003 ! organism subdivision trait
+created_by: caripark
+creation_date: 2018-05-17T14:38:05Z
+
+[Term]
+id: VT:0010766
+name: gluthathione peroxidase activity
+def: "The degree of function or response of the enzyme that catalyzes the following reaction: 2 glutathione + hydrogen peroxide = oxidized glutathione + 2 H2O." [GO:0004602, RGD:cur]
+is_a: VT:0005584 ! enzyme/coenzyme activity trait
+created_by: caripark
+creation_date: 2018-06-12T08:02:07Z
+
+[Term]
+id: VT:0010767
+name: kidney glutathione peroxidase activity
+def: "The degree of function or response in the kidney of the enzyme that catalyzes the following reaction: 2 glutathione + hydrogen peroxide = oxidized glutathione + 2 H2O." [GO:0004602, RGD:cur]
+is_a: VT:0010558 ! kidney molecular composition trait
+is_a: VT:0010766 ! gluthathione peroxidase activity
+created_by: caripark
+creation_date: 2018-06-12T08:05:11Z
+
+[Term]
+id: VT:0010768
+name: kidney superoxide dismutase activity
+def: "The degree of function or response in the kidney of this family of enzymes that convert naturally-occurring but harmful superoxide radicals to molecular oxygen and hydrogen peroxide." [ISBN:0-683-40008-8, RGD:cur]
+is_a: VT:0010558 ! kidney molecular composition trait
+is_a: VT:0010763 ! superoxide dismutase activity
+created_by: caripark
+creation_date: 2018-06-12T08:10:38Z
+
+[Term]
+id: VT:0010769
+name: paraoxonase 1 activity
+def: "The degree of function or response of the arylesterase that hydrolyzes paroxon, an organophosphorus anticholinesterase compound, to produce p-nitrophenol." [RGD:cur]
+is_a: VT:0005584 ! enzyme/coenzyme activity trait
+created_by: caripark
+creation_date: 2018-06-12T08:46:46Z
+
+[Term]
+id: VT:0010770
+name: kidney paraoxonase 1 activity
+def: "The degree of function or response in the kidney of the arylesterase that hydrolyzes paroxon, an organophosphorus anticholinesterase compound, to produce p-nitrophenol." [RGD:cur]
+is_a: VT:0010558 ! kidney molecular composition trait
+is_a: VT:0010769 ! paraoxonase 1 activity
+created_by: caripark
+creation_date: 2018-06-12T08:48:32Z
+
+[Term]
+id: VT:0010771
+name: retina integrity trait
+def: "Any measurable or observable characteristic related to the structural soundness of the thin layer of neural tissue lining the back of the eyeball which contains visual receptors." [MP:0001325, RGD:cur]
+is_a: VT:0001325 ! retina morphology trait
+created_by: caripark
+creation_date: 2018-06-12T08:54:40Z
+
+[Term]
+id: VT:0010772
+name: central nervous system integrity trait
+def: "Any measurable or observable characteristic related to the structural soundness of the core nervous system that serves an integrating and coordinating function. In vertebrates it consists of the neural tube derivatives: the brain and spinal cord. In invertebrates it includes central ganglia plus nerve cord." [RGD:cur, UBERON:0001017]
+is_a: VT:0010566 ! nervous system integrity trait
+created_by: caripark
+creation_date: 2018-06-12T09:02:19Z
+
+[Term]
+id: VT:0010773
+name: peripheral nervous system integrity trait
+def: "Any measurable or observable characteristic related to the structural soundness of the major division of the nervous system that contains nerves which connect the central nervous system (CNS) with sensory organs, other organs, muscles, blood vessels and glands." [RGD:cur, UBERON:0000010]
+is_a: VT:0010566 ! nervous system integrity trait
+created_by: caripark
+creation_date: 2018-06-12T09:10:31Z
+
+[Term]
+id: VT:0010774
+name: ornithine decarboxylase activity trait
+def: "The degree of function or response of the enzyme that catalyzes the decarboxylation of ornithine (a product of the urea cycle) to form putrescine, the rate-limiting and first committed step in polyamine synthesis." [ISBN:0-683-40008-8, RGD:cur]
+is_a: VT:0005584 ! enzyme/coenzyme activity trait
+created_by: caripark
+creation_date: 2018-06-12T09:14:20Z
+
+[Term]
+id: VT:0010775
+name: liver ornithine decarboxylase activity trait
+def: "The degree of function or response in the liver of the enzyme that catalyzes the decarboxylation of ornithine (a product of the urea cycle) to form putrescine, the rate-limiting and first committed step in polyamine synthesis." [ISBN:0-683-40008-8, RGD:cur]
+is_a: VT:0010774 ! ornithine decarboxylase activity trait
+created_by: caripark
+creation_date: 2018-06-12T09:15:28Z
+
+[Term]
+id: VT:0010776
+name: blood alpha-fetoprotein amount
+def: "The proportion, quantity, or volume in whole blood, serum, or plasma of the highly abundant plasma protein produced by the yolk sac, liver, and gastrointestinal tract during fetal life and by certain neoplasms in the adult." [CMO:0001472, RGD:cur]
+is_a: VT:0005416 ! blood protein amount
+created_by: caripark
+creation_date: 2018-06-12T09:38:14Z
+
+[Term]
+id: VT:0010777
+name: serum alpha-fetoprotein amount
+def: "The proportion, quantity, or volume in serum of the highly abundant plasma protein produced by the yolk sac, liver and gastrointestinal tract during fetal life and by certain neoplasms in the adult." [CMO:0001472, RGD:cur]
+is_a: VT:0010776 ! blood alpha-fetoprotein amount
+created_by: caripark
+creation_date: 2018-06-12T09:40:40Z
+
+[Term]
+id: VT:0010778
+name: plasma alpha-fetoprotein amount
+def: "The proportion, quantity, or volume in plasma of the highly abundant plasma protein produced by the yolk sac, liver and gastrointestinal tract during fetal life and by certain neoplasms in the adult." [CMO:0001472, RGD:cur]
+is_a: VT:0010776 ! blood alpha-fetoprotein amount
+created_by: caripark
+creation_date: 2018-06-12T09:41:27Z
+
+[Term]
+id: VT:0010779
+name: blood integrity trait
+def: "Any measurable or observable characteristic related to the biochemical soundness of the internal equilibrium in the cell containing fluid that circulates through the body, carrying nourishment, electrolytes, hormones, vitamins, antibodies, heat, and oxygen to the tissues and taking away waste matter and carbon dioxide." [ISBN:0-8036-0655-9, RGD:cur]
+is_a: VT:0015078 ! blood homeostasis trait
+created_by: caripark
+creation_date: 2018-06-12T09:46:05Z
+
+[Term]
+id: VT:0010780
+name: cerebrovascular system morphology trait
+def: "Any measurable or observable characteristic related to the shape, structure, color or pattern of the network of vessels that convey blood in the brain." [RGD:cur, UBERON:0008998]
+is_a: VT:0001614 ! blood vessel morphology trait
+created_by: caripark
+creation_date: 2018-06-12T09:58:27Z
+
+[Term]
+id: VT:0010781
+name: cerebrovascular system integrity trait
+def: "Any measurable or observable characteristic related to the structural soundness of the network of vessels that convey blood in the brain." [RGD:cur, UBERON:0008998]
+is_a: VT:0010780 ! cerebrovascular system morphology trait
+created_by: caripark
+creation_date: 2018-06-12T10:00:38Z
+
+[Term]
+id: VT:0010782
+name: pulmonary arterial blood pressure trait
+def: "Any measurable or observable characteristic related to blood pressure in the pulmonary artery." [CMO:0000782, RGD:cur]
+is_a: VT:2000000 ! arterial blood pressure trait
+created_by: caripark
+creation_date: 2018-06-12T10:05:45Z
+
+[Term]
+id: VT:0010783
+name: urinary system integrity trait
+def: "Any measurable or observable characteristic related to the structural soundness of any of the organs involved in the production or excretion of urine." [MP:0003942, RGD:cur]
+is_a: VT:0000516 ! urinary system morphology trait
+created_by: caripark
+creation_date: 2018-06-12T10:11:56Z
+
+[Term]
+id: VT:0010784
+name: blood oxygen amount
+def: "The proportion, quantity, or volume of oxygen in whole blood, serum, or plasma." [RGD:cur]
+synonym: "blood O2 amount" EXACT []
+is_a: VT:0002329 ! blood gas amount
+created_by: caripark
+creation_date: 2018-06-12T10:17:20Z
+
+[Term]
+id: VT:0010785
+name: blood carbon dioxide amount
+def: "The proportion, quantity, or volume of carbon dioxide in whole blood, serum, or plasma." [CMO:0001322, RGD:cur]
+synonym: "blood CO2 amount" EXACT []
+is_a: VT:0002329 ! blood gas amount
+created_by: caripark
+creation_date: 2018-06-12T10:20:08Z
+
+[Term]
+id: VT:0010786
+name: mesenteric artery morphology trait
+def: "Any measurable or observable characteristic related to the shape, structure, color or pattern of any of the arteries which arise from the abdominal aorta and distribute to most of the intestines." [RGD:cur, UBERON:0005616]
+is_a: VT:0002191 ! artery morphology trait
+created_by: caripark
+creation_date: 2018-06-12T10:26:48Z
+
+[Term]
+id: VT:0010787
+name: eicosanoid amount
+def: "The proportion, quantity, or volume in a body tissue or fluid of eicosanoids, signaling molecules derived from C20 fatty acids." [MeSH:D015777, RGD:cur]
+is_a: VT:0015077 ! molecule homeostasis trait
+created_by: caripark
+creation_date: 2018-07-11T10:16:47Z
+
+[Term]
+id: VT:0010788
+name: blood alpha-N-acetylgalactosaminidase amount
+def: "The proportion, quantity, or volume in whole blood, serum, or plasma of alpha-N-acetylgalactosaminidase,  a  lysosomal enzyme involved in the degradation of blood type A epitope." [RGD:cur]
+synonym: "blood NAGA amount" EXACT []
+is_a: VT:0001570 ! blood enzyme amount
+created_by: caripark
+creation_date: 2018-07-11T11:54:19Z
+
+[Term]
+id: VT:0010789
+name: adrenal gland molecular composition trait
+def: "Any measurable or observable characteristic related to the proportions of proteins, minerals, nutrients, gases, or other substances in the endocrine glands located above the kidney responsible for hormone and epinephrine secretion." [ISBN:0-683-40008-8, RGD:cur]
+is_a: VT:0000639 ! adrenal gland morphology trait
+created_by: caripark
+creation_date: 2018-10-03T08:32:19Z
+
+[Term]
+id: VT:0010790
+name: adrenal gland ribonucleic acid amount
+def: "The proportion, quantity, or volume of ribonucleic acid in the adrenal glands. Ribonucleic acid is a high molecular weight, linear polymer composed of nucleotides containing ribose and linked by phosphodiester bonds." [CHEBI:33697, ISBN:0-683-40008-8, RGD:cur]
+is_a: VT:0010789 ! adrenal gland molecular composition trait
+created_by: caripark
+creation_date: 2018-10-03T08:34:56Z
+
+[Term]
+id: VT:0010791
+name: brain ribonucleic acid amount
+def: "The proportion, quantity, or volume of ribonucleic acid in the brain. Ribonucleic acid is a high molecular weight, linear polymer composed of nucleotides containing ribose and linked by phosphodiester bonds." [CHEBI:33697, RGD:cur]
+is_a: VT:0010585 ! brain molecular composition trait
+created_by: caripark
+creation_date: 2018-10-03T08:37:10Z
+
+[Term]
+id: VT:0010792
+name: heart ribonucleic acid amount
+def: "The proportion, quantity, or volume of ribonucleic acid in the heart. Ribonucleic acid is a high molecular weight, linear polymer composed of nucleotides containing ribose and linked by phosphodiester bonds." [CHEBI:33697, RGD:cur]
+is_a: VT:0010755 ! heart molecular composition trait
+created_by: caripark
+creation_date: 2018-10-03T08:38:52Z
+
+[Term]
+id: VT:0010793
+name: kidney ribonucleic acid amount
+def: "The proportion, quantity, or volume of ribonucleic acid in the kidney. Ribonucleic acid is a high molecular weight, linear polymer composed of nucleotides containing ribose and linked by phosphodiester bonds." [CHEBI:33697, RGD:cur]
+is_a: VT:0010558 ! kidney molecular composition trait
+created_by: caripark
+creation_date: 2018-10-03T08:40:35Z
+
+[Term]
+id: VT:0010794
+name: liver ribonucleic acid amount
+def: "The proportion, quantity, or volume of ribonucleic acid in the liver. Ribonucleic acid is a high molecular weight, linear polymer composed of nucleotides containing ribose and linked by phosphodiester bonds." [CHEBI:33697, RGD:cur]
+is_a: VT:0010497 ! liver molecular composition trait
+created_by: caripark
+creation_date: 2018-10-03T08:41:57Z
+
+[Term]
+id: VT:0010795
+name: lung molecular composition trait
+def: "Any measurable or observable characteristic related to the proportions of proteins, minerals, nutrients, gases, or other substances in the spongy organs of respiration contained within the pleural cavity of the thorax." [ISBN:0-8036-1207-9, RGD:cur]
+is_a: VT:0001175 ! lung morphology trait
+created_by: caripark
+creation_date: 2018-10-03T08:43:36Z
+
+[Term]
+id: VT:0010796
+name: lung ribonucleic acid amount
+def: "The proportion, quantity, or volume of ribonucleic acid in the lung. Ribonucleic acid is a high molecular weight, linear polymer composed of nucleotides containing ribose and linked by phosphodiester bonds." [CHEBI:33697, RGD:cur]
+is_a: VT:0010795 ! lung molecular composition trait
+created_by: caripark
+creation_date: 2018-10-03T08:45:32Z
+
+[Term]
+id: VT:0010797
+name: muscle ribonucleic acid amount
+def: "The proportion, quantity, or volume of ribonucleic acid in muscle. Ribonucleic acid is a high molecular weight, linear polymer composed of nucleotides containing ribose and linked by phosphodiester bonds." [CHEBI:33697, RGD:cur]
+is_a: VT:0010021 ! muscle molecular composition trait
+created_by: caripark
+creation_date: 2018-10-03T08:51:04Z
+
+[Term]
+id: VT:0010798
+name: spleen molecular composition trait
+def: "Any measurable or observable characteristic related to the proportions of proteins, minerals, nutrients, gases, or other substances in the organ that functions to filter blood and to store red corpuscles and platelets." [ISBN:0-683-40008-8, RGD:cur]
+is_a: VT:0000689 ! spleen morphology trait
+created_by: caripark
+creation_date: 2018-10-03T08:53:15Z
+
+[Term]
+id: VT:0010799
+name: spleen ribonucleic acid amount
+def: "The proportion, quantity, or volume of ribonucleic acid in the spleen. Ribonucleic acid is a high molecular weight, linear polymer composed of nucleotides containing ribose and linked by phosphodiester bonds." [CHEBI:33697, RGD:cur]
+is_a: VT:0010798 ! spleen molecular composition trait
+created_by: caripark
+creation_date: 2018-10-03T09:21:56Z
+
+[Term]
+id: VT:0010800
+name: testis molecular composition trait
+def: "Any measurable or observable characteristic related to the proportions of proteins, minerals, nutrients, gases, or other substances in the  male reproductive gland(s) where sperm production occurs." [ISBN:0-683-40008-8, RGD:cur]
+synonym: "testes molecular composition trait" EXACT []
+is_a: VT:0001146 ! testis morphology trait
+created_by: caripark
+creation_date: 2018-10-03T09:23:45Z
+
+[Term]
+id: VT:0010801
+name: testis ribonucleic acid amount
+def: "The proportion, quantity, or volume of ribonucleic acid in the testis. Ribonucleic acid is a high molecular weight, linear polymer composed of nucleotides containing ribose and linked by phosphodiester bonds." [CHEBI:33697, RGD:cur]
+is_a: VT:0010800 ! testis molecular composition trait
+created_by: caripark
+creation_date: 2018-10-03T09:25:55Z
+
+[Term]
+id: VT:0010802
+name: thymus molecular composition trait
+def: "Any measurable or observable characteristic related to the proportions of proteins, minerals, nutrients, gases, or other substances in the primary lymphoid organ that is required for maturation of T cells." [ISBN:0-683-40008-8, RGD:cur]
+is_a: VT:0000703 ! thymus morphology trait
+created_by: caripark
+creation_date: 2018-10-03T09:28:19Z
+
+[Term]
+id: VT:0010803
+name: thymus ribonucleic acid amount
+def: "The proportion, quantity, or volume of ribonucleic acid in the thymus. Ribonucleic acid is a high molecular weight, linear polymer composed of nucleotides containing ribose and linked by phosphodiester bonds." [CHEBI:33697, RGD:cur]
+is_a: VT:0010802 ! thymus molecular composition trait
+created_by: caripark
+creation_date: 2018-10-03T09:30:37Z
+
+[Term]
+id: VT:0010804
+name: uterus molecular composition trait
+def: "Any measurable or observable characteristic related to the proportions of proteins, minerals, nutrients, gases, or other substances in the hollow muscular organ where the embryo/fetus develops." [ISBN:0-683-40008-8, RGD:cur]
+is_a: VT:0001120 ! uterus morphology trait
+created_by: caripark
+creation_date: 2018-10-03T09:32:20Z
+
+[Term]
+id: VT:0010805
+name: uterus ribonucleic acid amount
+def: "The proportion, quantity, or volume of ribonucleic acid in the uterus. Ribonucleic acid is a high molecular weight, linear polymer composed of nucleotides containing ribose and linked by phosphodiester bonds." [CHEBI:33697, RGD:cur]
+is_a: VT:0010804 ! uterus molecular composition trait
+created_by: caripark
+creation_date: 2018-10-03T09:34:24Z
+
+[Term]
+id: VT:0010806
+name: quadriceps mass
+def: "The amount of matter in the group of four muscles (rectus femoris, vastus intermedius, vastus lteralis, and vastus medialis) which extend down the front of the thigh and are the major extensors of the knee joint." [MP:0010225]
+is_a: VT:0010449 ! hindlimb muscle mass
+is_a: VT:0010569 ! quadriceps morphology trait
+created_by: caripark
+creation_date: 2018-12-04T14:34:22Z
+
+[Term]
+id: VT:0010807
+name: feather pigmentation trait
+def: "Any measurable or observable characteristic related to the deposition or aggregation of coloring matter in the surface covering of birds, made of keratin." [http://www.britannica.com]
+is_a: VT:1000664 ! feather morphology trait
+created_by: caripark
+creation_date: 2018-12-04T15:55:19Z
+
+[Term]
+id: VT:0010808
+name: milk sulfur amount
+def: "The proportion, quantity, or volume in milk of this nonmetallic element." [MPD:cur]
+synonym: "milk sulfate amount" RELATED []
+is_a: VT:0010288 ! milk mineral amount
+created_by: caripark
+creation_date: 2019-06-05T10:03:45Z
+
+[Term]
 id: VT:0015000
 name: epididymal fat pad morphology trait
 def: "Any measurable or observable characteristic related to the shape, structure, color or pattern of the encapsulated adipose tissue associated with the elongated structure connected to the posterior surface of the testes that transports, stores, and matures spermatozoa between testes and vas deferens." [ISBN:0-683-40008-8, MP:0006319]
@@ -25592,7 +26228,7 @@ name: organ system trait
 def: "Any measurable or observable characteristic of an anatomical group that has as its parts distinct anatomical structures interconnected by anatomical structures at a lower level of granularity." [TAO:0001439]
 xref: CARO:0000011
 xref: TAO:0001439
-is_a: VT:0000001 ! Trait
+is_a: VT:0000001 ! vertebrate trait
 created_by: smb
 creation_date: 2010-02-19T03:40:56Z
 
@@ -25890,7 +26526,7 @@ id: VT:0100003
 name: organism subdivision trait
 def: "Any measurable or observable characteristic of an anatomical structure which is a subpart of the whole organism; the mereological sum of these is the whole organism." [TAO:0001308]
 xref: TAO:0001308
-is_a: VT:0000001 ! Trait
+is_a: VT:0000001 ! vertebrate trait
 created_by: caripark
 creation_date: 2009-09-29T10:25:08Z
 
@@ -27567,6 +28203,7 @@ def: "Any measurable or observable characteristic related to the ability of card
 synonym: "cardiac muscle contraction" EXACT []
 synonym: "heart muscle contraction" EXACT []
 is_a: VT:0010110 ! heart muscle physiology trait
+is_a: VT:2000009 ! heart pumping trait
 
 [Term]
 id: VT:2000020
@@ -27574,6 +28211,7 @@ name: heart muscle relaxation trait
 def: "Any measurable or observable characteristic related to the ability of striated, involuntary muscle comprising the myocardium to lengthen following contraction." [RGD:dhm]
 synonym: "cardiac muscle relaxation" EXACT []
 is_a: VT:0010110 ! heart muscle physiology trait
+is_a: VT:2000009 ! heart pumping trait
 
 [Term]
 id: VT:2000021
