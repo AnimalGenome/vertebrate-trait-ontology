@@ -1,6 +1,6 @@
 format-version: 1.2
-data-version: 11.5
-date: 15:04:2021 15:57
+data-version: 11.6
+date: 07:06:2021 09:30
 saved-by: caripark
 auto-generated-by: OBO-Edit 2.3.1
 default-namespace: Trait.ontology
@@ -26775,6 +26775,15 @@ def: "The proportion, quantity, or volume in whole blood, serum, or plasma of co
 is_a: VT:0005416 ! blood protein amount
 created_by: caripark
 creation_date: 2021-04-14T15:21:48Z
+
+[Term]
+id: VT:0010928
+name: bone marrow physiology trait
+def: "Any measurable or observable characteristic related to the function of or processes in the soft tissue that fills the core cavities of bones." [MP:0002397, RGD:cur]
+synonym: "bone marrow function trait" NARROW []
+is_a: VT:0010254 ! hematopoietic system physiology trait
+created_by: caripark
+creation_date: 2021-06-07T08:23:31Z
 
 [Term]
 id: VT:0015000
