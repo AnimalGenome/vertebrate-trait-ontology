@@ -1,6 +1,6 @@
 format-version: 1.2
-data-version: 12.1
-date: 07:01:2022 09:12
+data-version: 12.2
+date: 24:02:2022 11:07
 saved-by: caripark
 auto-generated-by: OBO-Edit 2.3.1
 default-namespace: Trait.ontology
@@ -27098,6 +27098,258 @@ def: "The proportion or number of the subset of regulatory T lymphocytes that ca
 is_a: VT:0010963 ! CD25-positive T cell morphology trait
 created_by: caripark
 creation_date: 2022-01-07T09:05:46Z
+
+[Term]
+id: VT:0010965
+name: blood glycine amount
+def: "The proportion, quantity, or volume in whole blood, serum, or plasma of the simplest (and the only achiral) proteinogenic amino acid, with a hydrogen atom as its side chain." [CHEBI:15428, VTO:INRA]
+is_a: VT:0005311 ! blood amino acid amount
+created_by: caripark
+creation_date: 2022-02-23T10:06:24Z
+
+[Term]
+id: VT:0010966
+name: blood L-serine amount
+def: "The proportion, quantity, or volume in whole blood, serum, or plasma of the L-enantiomer of serine, an alpha-amino acid that is alanine substituted at position 3 by a hydroxy group." [CHEBI:17115, CHEBI:17822, VTO:INRA]
+is_a: VT:0005311 ! blood amino acid amount
+created_by: caripark
+creation_date: 2022-02-23T10:12:32Z
+
+[Term]
+id: VT:0010967
+name: blood L-alanine amount
+def: "The proportion, quantity, or volume in whole blood, serum, or plasma of the L-enantiomer of alanine, an alpha-amino acid that consists of propionic acid bearing an amino substituent at position 2." [CHEBI:16449, CHEBI:16977, VTO:INRA]
+is_a: VT:0005311 ! blood amino acid amount
+created_by: caripark
+creation_date: 2022-02-23T10:44:03Z
+
+[Term]
+id: VT:0010968
+name: blood L-cysteine amount
+def: "The proportion, quantity, or volume in whole blood, serum, or plasma of an optically active form of cysteine having L-configuration." [CHEBI:17561, VTO:INRA]
+is_a: VT:0005311 ! blood amino acid amount
+created_by: caripark
+creation_date: 2022-02-23T10:53:48Z
+
+[Term]
+id: VT:0010969
+name: blood L-aspartic acid amount
+def: "The proportion, quantity, or volume in whole blood, serum, or plasma of the L-enantiomer of aspartic acid, an alpha-amino acid that consists of succinic acid bearing a single alpha-amino substituent." [CHEBI:17053, CHEBI:22660, VTO:INRA]
+is_a: VT:0005311 ! blood amino acid amount
+created_by: caripark
+creation_date: 2022-02-23T11:00:50Z
+
+[Term]
+id: VT:0010970
+name: blood L-asparagine amount
+def: "The proportion, quantity, or volume in whole blood, serum, or plasma of an optically active form of asparagine (an alpha-amino acid in which one of the hydrogens attached to the alpha-carbon of glycine is substituted by a 2-amino-2-oxoethyl group) having L-configuration." [CHEBI:17196, CHEBI:22653, VTO:INRA]
+is_a: VT:0005311 ! blood amino acid amount
+created_by: caripark
+creation_date: 2022-02-23T11:05:21Z
+
+[Term]
+id: VT:0010971
+name: blood L-glutamic acid amount
+def: "The proportion, quantity, or volume in whole blood, serum, or plasma of an optically active form of glutamic acid (an alpha-amino acid that is glutaric acid bearing a single amino substituent at position 2) having L-configuration." [CHEBI:16015, CHEBI:18237, VTO:INRA]
+is_a: VT:0005311 ! blood amino acid amount
+created_by: caripark
+creation_date: 2022-02-23T11:07:25Z
+
+[Term]
+id: VT:0010972
+name: blood L-glutamine amount
+def: "The proportion, quantity, or volume in whole blood, serum, or plasma of an optically active form of glutamine (an alpha-amino acid that consists of butyric acid bearing an amino substituent at position 2 and a carbamoyl substituent at position 4) having L-configuration." [CHEBI:18050, CHEBI:28300, VTO:INRA]
+is_a: VT:0005311 ! blood amino acid amount
+created_by: caripark
+creation_date: 2022-02-23T13:39:21Z
+
+[Term]
+id: VT:0010973
+name: blood L-proline amount
+def: "The proportion, quantity, or volume in whole blood, serum, or plasma of pyrrolidine in which the pro-S hydrogen at position 2 is substituted by a carboxylic acid group. L-Proline is the only one of the twenty DNA-encoded amino acids which has a secondary amino group alpha to the carboxyl group." [CHEBI:17203, VTO:INRA]
+is_a: VT:0005311 ! blood amino acid amount
+created_by: caripark
+creation_date: 2022-02-23T13:42:04Z
+
+[Term]
+id: VT:0010974
+name: blood L-tyrosine amount
+def: "The proportion, quantity, or volume in whole blood, serum, or plasma of an optically active form of tyrosine (an alpha-amino acid that is phenylalanine bearing a hydroxy substituent at position 4 on the phenyl ring) having L-configuration." [CHEBI:17895, CHEBI:18186, VTO:INRA]
+is_a: VT:0005311 ! blood amino acid amount
+created_by: caripark
+creation_date: 2022-02-23T13:47:53Z
+
+[Term]
+id: VT:0010975
+name: blood L-arginine amount
+def: "The proportion, quantity, or volume in whole blood, serum, or plasma of  the L-isomer of arginine, an alpha-amino acid that is glycine in which the alpha-is substituted by a 3-guanidinopropyl group." [CHEBI:16467, CHEBI:29016, VTO:INRA]
+is_a: VT:0005311 ! blood amino acid amount
+is_a: VT:0010932 ! blood arginine amount
+created_by: caripark
+creation_date: 2022-02-23T13:56:42Z
+
+[Term]
+id: VT:0010976
+name: blood L-hisitidine amount
+def: "The proportion, quantity, or volume in whole blood, serum, or plasma of the L-enantiomer of the amino acid histidine, an alpha-amino acid that is propanoic acid bearing an amino substituent at position 2 and a 1H-imidazol-4-yl group at position 3." [CHEBI:15971, CHEBI:27570, VTO:INRA]
+is_a: VT:0005311 ! blood amino acid amount
+created_by: caripark
+creation_date: 2022-02-23T14:30:30Z
+
+[Term]
+id: VT:0010977
+name: blood L-isoleucine amount
+def: "The proportion, quantity, or volume in whole blood, serum, or plasma of the L-enantiomer of isoleucine, a 2-amino-3-methylpentanoic acid having either (2R,3R)- or (2S,3S)-configuration." [CHEBI:17191, CHEBI:24898, VTO:INRA]
+is_a: VT:0005311 ! blood amino acid amount
+created_by: caripark
+creation_date: 2022-02-23T14:33:59Z
+
+[Term]
+id: VT:0010978
+name: blood L-leucine amount
+def: "The proportion, quantity, or volume in whole blood, serum, or plasma of the L-enantiomer of leucine, a branched-chain amino acid that consists of glycine in which one of the hydrogens attached to the alpha-carbon is substituted by an isobutyl group." [CHEBI:15603, CHEBI:25017, VTO:INRA]
+is_a: VT:0005311 ! blood amino acid amount
+created_by: caripark
+creation_date: 2022-02-23T14:36:25Z
+
+[Term]
+id: VT:0010979
+name: blood L-valine amount
+def: "The proportion, quantity, or volume in whole blood, serum, or plasma of the L-enantiomer of valine, a branched-chain amino acid that consists of glycine in which one of the hydrogens attached to the alpha-carbon is substituted by an isopropyl group." [CHEBI:16414, CHEBI:27266, VTO:INRA]
+is_a: VT:0005311 ! blood amino acid amount
+created_by: caripark
+creation_date: 2022-02-23T14:53:25Z
+
+[Term]
+id: VT:0010980
+name: blood L-lysine amount
+def: "The proportion, quantity, or volume in whole blood, serum, or plasma of the L-isomer of lysine, a diamino acid that is caproic (hexanoic) acid bearing two amino substituents at positions 2 and 6." [CHEBI:18019, CHEBI:25094, VTO:INRA]
+is_a: VT:0005311 ! blood amino acid amount
+created_by: caripark
+creation_date: 2022-02-23T15:36:30Z
+
+[Term]
+id: VT:0010981
+name: blood L-methionine amount
+def: "The proportion, quantity, or volume in whole blood, serum, or plasma of the L-enantiomer of methionine, a sulfur-containing amino acid that is butyric acid bearing an amino substituent at position 2 and a methylthio substituent at position 4." [CHEBI:16643, CHEBI:16811, VTO:INRA]
+is_a: VT:0005311 ! blood amino acid amount
+created_by: caripark
+creation_date: 2022-02-23T16:00:35Z
+
+[Term]
+id: VT:0010982
+name: blood L-phenylalanine amount
+def: "The proportion, quantity, or volume in whole blood, serum, or plasma of the L-enantiomer of phenylalanine, an aromatic amino acid that is alanine in which one of the methyl hydrogens is substituted by a phenyl group." [CHEBI:17295, CHEBI:28044, VTO:INRA]
+is_a: VT:0005311 ! blood amino acid amount
+created_by: caripark
+creation_date: 2022-02-23T16:02:41Z
+
+[Term]
+id: VT:0010983
+name: blood L-threonine amount
+def: "The proportion, quantity, or volume in whole blood, serum, or plasma of an optically active form of threonine (An alpha-amino acid in which one of the hydrogens attached to the alpha-carbon of glycine is substituted by a 1-hydroxyethyl group) having L-configuration." [CHEBI:16857, CHEBI:26986, VTO:INRA]
+is_a: VT:0005311 ! blood amino acid amount
+created_by: caripark
+creation_date: 2022-02-23T16:06:06Z
+
+[Term]
+id: VT:0010984
+name: blood L-tryptophan amount
+def: "The proportion, quantity, or volume in whole blood, serum, or plasma of the L-enantiomer of tryptophan an alpha-amino acid that is alanine bearing an indol-3-yl substituent at position 3." [CHEBI:16828, CHEBI:27897, VTO:INRA]
+is_a: VT:0005311 ! blood amino acid amount
+created_by: caripark
+creation_date: 2022-02-23T16:22:07Z
+
+[Term]
+id: VT:0010985
+name: blood L-taurine amount
+def: "The proportion, quantity, or volume in whole blood, serum, or plasma of the L-enantiomer of taurine, an amino sulfonic acid that is the 2-amino derivative of ethanesulfonic acid. It is a naturally occurring amino acid derived from methionine and cysteine metabolism." [CHEBI:15891, VTO:INRA]
+is_a: VT:0005311 ! blood amino acid amount
+created_by: caripark
+creation_date: 2022-02-23T16:28:57Z
+
+[Term]
+id: VT:0010986
+name: blood L-citrulline amount
+def: "The proportion, quantity, or volume in whole blood, serum, or plasma of the L-enantiomer of citrulline, consisting of ornithine having a carbamoyl group at the N5-position." [CHEBI:16349, CHEBI:18211, VTO:INRA]
+is_a: VT:0005311 ! blood amino acid amount
+created_by: caripark
+creation_date: 2022-02-24T08:44:49Z
+
+[Term]
+id: VT:0010987
+name: blood dipeptide amount
+def: "The proportion, quantity, or volume in whole blood, serum, or plasma of any molecule that contains two amino-acid residues connected by peptide linkages." [CHEBI:46761]
+is_a: VT:0010931 ! blood molecular composition trait
+created_by: caripark
+creation_date: 2022-02-24T09:25:59Z
+
+[Term]
+id: VT:0010988
+name: blood anserine amount
+def: "The proportion, quantity, or volume in whole blood, serum, or plasma of a dipeptide comprising of beta-alanine and 3-methyl-L-histidine units." [CHEBI:18323, VTO:INRA]
+is_a: VT:0010987 ! blood dipeptide amount
+created_by: caripark
+creation_date: 2022-02-24T09:28:08Z
+
+[Term]
+id: VT:0010989
+name: blood balenine amount
+def: "The proportion, quantity, or volume in whole blood, serum, or plasma of A dipeptide composed of beta-alanine and 1-methylhistidine." [MeSH:C028119, VTO:INRA]
+synonym: "blood N(beta)-alanyl-1-methyl-histidine amount" EXACT []
+is_a: VT:0010987 ! blood dipeptide amount
+created_by: caripark
+creation_date: 2022-02-24T09:33:22Z
+
+[Term]
+id: VT:0010990
+name: blood carnosine amount
+def: "The proportion, quantity, or volume in whole blood, serum, or plasma of a dipeptide that is the N-(beta-alanyl) derivative of L-histidine." [CHEBI:15727, VTO:INRA]
+is_a: VT:0010987 ! blood dipeptide amount
+created_by: caripark
+creation_date: 2022-02-24T09:38:20Z
+
+[Term]
+id: VT:0010991
+name: blood sarcosine amount
+def: "The proportion, quantity, or volume in whole blood, serum, or plasma of a N-alkylglycine that is the N-methyl derivative of glycine. It is an intermediate in the metabolic pathway of glycine." [CHEBI:15611, VTO:INRA]
+is_a: VT:0005311 ! blood amino acid amount
+created_by: caripark
+creation_date: 2022-02-24T09:43:50Z
+
+[Term]
+id: VT:0010992
+name: blood 3-methylhistidine amount
+def: "The proportion, quantity, or volume in whole blood, serum, or plasma of a methylhistidine in which the methyl group is located at N-3." [CHEBI:70959, VTO:INRA]
+synonym: "blood (pi)-methylhistidine amount" EXACT []
+is_a: VT:0005311 ! blood amino acid amount
+created_by: caripark
+creation_date: 2022-02-24T09:51:04Z
+
+[Term]
+id: VT:0010993
+name: blood 1-methylhistidine amount
+def: "The proportion, quantity, or volume in whole blood, serum, or plasma of a methylhistidine in which the methyl group is located at N-1." [CHEBI:70958, VTO:INRA]
+is_a: VT:0005311 ! blood amino acid amount
+created_by: caripark
+creation_date: 2022-02-24T10:13:24Z
+
+[Term]
+id: VT:0010994
+name: blood L-ornithine amount
+def: "The proportion, quantity, or volume in whole blood, serum, or plasma of an optically active form of ornithine having L-configuration." [CHEBI:15729, VTO:INRA]
+is_a: VT:0005311 ! blood amino acid amount
+created_by: caripark
+creation_date: 2022-02-24T10:23:38Z
+
+[Term]
+id: VT:0010995
+name: blood 4-hydroxyproline amount
+def: "The proportion, quantity, or volume in whole blood, serum, or plasma of a monohydroxyproline where the hydroxy group is located at the 4-position. It is found in fibrillar collagen." [CHEBI:20392, VTO:INRA]
+synonym: "blood L-hydroxyproline amount" EXACT []
+is_a: VT:0005311 ! blood amino acid amount
+created_by: caripark
+creation_date: 2022-02-24T10:26:18Z
 
 [Term]
 id: VT:0015000
