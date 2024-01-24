@@ -1,14 +1,16 @@
 format-version: 1.2
-date: 20:11:2023 15:24
+data-version: releases/2024-01-17
+date: 17:01:2024 10:57
 saved-by: caripark
 auto-generated-by: OBO-Edit 2.3.1
 default-namespace: Trait.ontology
-Data-version: 13.14
 ontology: vt
+property_value: Data-version "2024-01-17" xsd:string
 property_value: http://purl.org/dc/elements/1.1/description "The Vertebrate Trait Ontology is a controlled vocabulary for the description of traits (measurable or observable characteristics) pertaining to the morphology, physiology, or development of vertebrate organisms." xsd:string
 property_value: http://purl.org/dc/elements/1.1/language "English" xsd:string
 property_value: http://purl.org/dc/elements/1.1/title "The Vertebrate Trait Ontology" xsd:string
 property_value: http://purl.org/dc/terms/license https://creativecommons.org/licenses/by/4.0/
+property_value: owl:versionInfo "2024-01-17" xsd:string
 
 [Term]
 id: VT:0000000
@@ -23724,19 +23726,21 @@ creation_date: 2013-07-11T10:44:51Z
 
 [Term]
 id: VT:0010564
-name: heart right ventricle DNA amount
+name: heart right ventricle deoxyribonucleic acid amount
 def: "The proportion, quantity, or volume of deoxyribonucleic acid (DNA), the molecule composed of the sugar deoxyribose, phosphate groups and any combination of the bases adenine, guanine, cytosine, and/or thymine, in the right lower chamber of the heart." [CMO:0001650, ISBN:0-683-40008-8, RGD:cur]
-synonym: "heart right ventricle deoxyribonucleic acid amount" EXACT []
-is_a: VT:0003920 ! heart right ventricle morphology trait
+synonym: "heart right ventricle DNA amount" EXACT []
+is_a: VT:0010951 ! heart right ventricle molecular composition trait
+is_a: VT:0011005 ! tissue dexoyribonucleic acid amount
 created_by: caripark
 creation_date: 2013-07-11T11:14:06Z
 
 [Term]
 id: VT:0010565
-name: heart left ventricle DNA amount
+name: heart left ventricle deoxyribonucleic acid amount
 def: "The proportion, quantity, or volume of deoxyribonucleic acid (DNA), the molecule composed of the sugar deoxyribose, phosphate groups and any combination of the bases adenine, guanine, cytosine, and/or thymine, in the left lower chamber of the heart." [CMO:0001647, ISBN:0-683-40008-8, RGD:cur]
-synonym: "heart left ventricle deoxyribonucleic acid amount" EXACT []
+synonym: "heart left ventricle DNA amount" EXACT []
 is_a: VT:0010561 ! heart left ventricle molecular composition trait
+is_a: VT:0011005 ! tissue dexoyribonucleic acid amount
 created_by: caripark
 creation_date: 2013-07-11T11:16:35Z
 
@@ -27982,6 +27986,14 @@ def: "The proportion, quantity, or volume of ribonucleic acid in the fibrous ban
 is_a: VT:0011069 ! tendon molecular composition trait
 created_by: caripark
 creation_date: 2023-11-20T15:19:57Z
+
+[Term]
+id: VT:0011071
+name: heart right ventricle ribonucleic acid amount
+def: "The proportion, quantity, or volume of ribonucleic acid in the right lower chamber of the heart. Ribonucleic acid is a high molecular weight, linear polymer composed of nucleotides containing ribose and linked by phosphodiester bonds." [CHEBI:33697, ISBN:0-683-40008-8, RGD:cur]
+is_a: VT:0010951 ! heart right ventricle molecular composition trait
+created_by: caripark
+creation_date: 2024-01-17T10:28:13Z
 
 [Term]
 id: VT:0015000
