@@ -12,7 +12,7 @@ ns Attribution Non-commercial 4.0 International License</a>.
 
 Project home: `https://www.animalgenome.org/bioinfo/projects/vt/`
 
-#### Some technical links:
+#### Some technical notes:
 
     PURL to obtain the current release data: http://purl.obolibrary.org/obo/vt.owl
     YAML: https://github.com/OBOFoundry/purl.obolibrary.org/blob/master/config/vt.yml
