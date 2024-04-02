@@ -17,5 +17,9 @@ Project home: `https://www.animalgenome.org/bioinfo/projects/vt/`
     PURL to obtain the current release data: http://purl.obolibrary.org/obo/vt.owl
     YAML: https://github.com/OBOFoundry/purl.obolibrary.org/blob/master/config/vt.yml
 
+    These folder structures are for collaborators to pickup new releases easily:
+    /current_release/ : for AgroPortal;
+    /releases/ : with version format in yyyy-mm-dd is good for OBO Foundry and others.
+
 --
 Bioinfo-Team@animalgenome.org
