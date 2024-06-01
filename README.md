@@ -17,9 +17,9 @@ Project home: `https://www.animalgenome.org/bioinfo/projects/vt/`
     PURL to obtain the current release data: http://purl.obolibrary.org/obo/vt.owl
     YAML: https://github.com/OBOFoundry/purl.obolibrary.org/blob/master/config/vt.yml
 
-    /archive/ : all releases before Dec. 2023 when the releases were numerically numbered.
-    /current_release/ : contains current release, especially for AgroPortal data sync;
-    /releases/ : with version format in yyyy-mm-dd, good for OBO Foundry and others.
+    /archive/ : prior to Dec.2023 releases each marked with incremental numbers
+    /current_release/ : for AgroPortal data sync
+    /releases/ : version format in yyyy-mm-dd, good for OBO Foundry and others
 
 --
 Bioinfo-Team@animalgenome.org
