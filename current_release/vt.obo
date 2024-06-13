@@ -1,6 +1,6 @@
 format-version: 1.2
-data-version: releases/2024-05-31
-date: 31:05:2024 14:00
+data-version: releases/2024-06-12
+date: 12:06:2024 15:36
 saved-by: caripark
 auto-generated-by: OBO-Edit 2.3.1
 default-namespace: Trait.ontology
@@ -9,7 +9,7 @@ property_value: http://purl.org/dc/elements/1.1/description "The Vertebrate Trai
 property_value: http://purl.org/dc/elements/1.1/language "English" xsd:string
 property_value: http://purl.org/dc/elements/1.1/title "The Vertebrate Trait Ontology" xsd:string
 property_value: http://purl.org/dc/terms/license https://creativecommons.org/licenses/by/4.0/
-property_value: owl:versionInfo "2024-05-31" xsd:string
+property_value: owl:versionInfo "2024-06-12" xsd:string
 
 [Term]
 id: VT:0000000
@@ -250,6 +250,7 @@ creation_date: 2011-06-21T01:05:20Z
 id: VT:0000033
 name: mitral valve morphology trait
 def: "Any measurable or observable characteristic related to the shape, structure, color or pattern of the valve between the left atrium and the left ventricle of the heart." [MP:0000286]
+xref: EFO:0020096
 is_a: VT:0000025 ! atrioventricular valve morphology trait
 
 [Term]
@@ -1174,6 +1175,7 @@ id: VT:0000231
 name: heart excitatory physiology trait
 def: "Any measurable characteristic related to the function of or processes involved in generation and conduction of electrical impulses in the heart." [RGD:dhm]
 synonym: "cardiac excitatory physiology trait" EXACT []
+xref: EFO:0020097
 is_a: VT:0010301 ! heart physiology trait
 
 [Term]
@@ -6514,6 +6516,8 @@ is_a: VT:0010105 ! hindlimb long bone morphology trait
 id: VT:0002191
 name: artery morphology trait
 def: "Any measurable or observable characteristic related to the shape, structure, color or pattern of the blood vessels that carry blood away from the heart." [ISBN:0-683-40008-8]
+xref: EFO:0007719
+xref: EFO:0007720
 xref: MP:0002191
 is_a: VT:0001614 ! blood vessel morphology trait
 
@@ -7729,6 +7733,7 @@ id: VT:0002467
 name: neutrophil phagocytosis trait
 def: "Any measurable or observable characteristic related to the ability of neutrophils (granular leukocytes that have a three- to five-lobed nucleus and cytoplasm that contains inconspicuous granules stainable by neutral dyes) to internalize particulate matter." [CL:0000775, ISBN:0-8153-1691-7, MP:0002467]
 xref: ATOL:0000413
+xref: EFO:0020172
 is_a: VT:0002419 ! innate immune response trait
 is_a: VT:0002463 ! neutrophil physiology trait
 is_a: VT:0010667 ! phagocytosis trait
@@ -7854,6 +7859,7 @@ is_obsolete: true
 id: VT:0002572
 name: emotion/affect behavior trait
 def: "Any measurable or observable characteristic related to actions or reactions in tests for emotional-related behaviors." [MP:0002572]
+xref: EFO:0007706
 is_a: VT:0010442 ! behavior trait
 
 [Term]
@@ -13605,6 +13611,8 @@ synonym: "bone density" RELATED []
 synonym: "bone mineral content" RELATED []
 synonym: "bone mineral density" RELATED []
 xref: EFO:0003923
+xref: EFO:0020104
+xref: EFO:0020105
 is_a: VT:1000111 ! bone mass
 
 [Term]
@@ -18006,6 +18014,12 @@ xref: EFO:0010778
 xref: EFO:0010779
 xref: EFO:0010780
 xref: EFO:0010789
+xref: EFO:0020195
+xref: EFO:0020196
+xref: EFO:0020197
+xref: EFO:0020198
+xref: EFO:0020199
+xref: EFO:0020205
 is_a: VT:0008713 ! cytokine amount
 
 [Term]
@@ -18909,6 +18923,11 @@ creation_date: 2010-02-02T02:15:38Z
 id: VT:0010046
 name: fatty acid amount
 def: "The proportion, quantity, or volume in a body fluid or tissue of organic, monobasic acids derived from hydrocarbons; they are saturated and unsaturated." [MeSH:D005227]
+xref: EFO:0007759
+xref: EFO:0007760
+xref: EFO:0007761
+xref: EFO:0007762
+xref: EFO:0007763
 is_a: VT:0001547 ! lipid amount
 created_by: caripark
 creation_date: 2010-02-09T12:45:06Z
@@ -22979,6 +22998,7 @@ def: "The amount of matter in the muscle tissue of the posterior/inferior jointe
 synonym: "drumstick muscle mass" NARROW []
 synonym: "ham muscle mass" NARROW []
 synonym: "thigh muscle mass" NARROW []
+xref: EFO:0020107
 is_a: VT:0010107 ! hindlimb muscle morphology trait
 is_a: VT:1000689 ! hindlimb mass
 created_by: caripark
@@ -22988,6 +23008,7 @@ creation_date: 2010-07-02T04:25:47Z
 id: VT:0010450
 name: cognitive behavior trait
 def: "Any measurable or observable characteristic of actions or reactions of an organism that occur as the result of cognition; where cognition is defined as the operation of the mind by which an organism becomes aware of objects of thought or perception." [GO:0050890, NBO:0000607]
+xref: EFO:0007710
 is_a: VT:0010442 ! behavior trait
 created_by: caripark
 creation_date: 2012-10-19T11:48:07Z
@@ -23782,6 +23803,7 @@ synonym: "blood Acrp30 amount" RELATED []
 synonym: "blood AdipoQ amount" EXACT []
 synonym: "blood apM1 amount" EXACT []
 synonym: "blood GBP--28 amount" EXACT []
+xref: EFO:0007737
 is_a: VT:0005418 ! blood hormone amount
 created_by: caripark
 creation_date: 2013-07-10T01:05:58Z
@@ -25706,6 +25728,7 @@ creation_date: 2018-06-12T08:54:40Z
 id: VT:0010772
 name: central nervous system integrity trait
 def: "Any measurable or observable characteristic related to the structural soundness of the core nervous system that serves an integrating and coordinating function. In vertebrates it consists of the neural tube derivatives: the brain and spinal cord. In invertebrates it includes central ganglia plus nerve cord." [RGD:cur, UBERON:0001017]
+xref: EFO:0007746
 is_a: VT:0010566 ! nervous system integrity trait
 created_by: caripark
 creation_date: 2018-06-12T09:02:19Z
@@ -26877,6 +26900,7 @@ creation_date: 2020-05-27T10:29:04Z
 id: VT:0010906
 name: lung integrity trait
 def: "Any measurable or observable characteristic related to the structural soundness of either or both of the spongy organs of respiration contained within the pleural cavity of the thorax." [ISBN:0-8036-1207-9, RGD:cur]
+xref: EFO:0007744
 is_a: VT:0001175 ! lung morphology trait
 created_by: caripark
 creation_date: 2020-07-15T08:36:52Z
@@ -27022,6 +27046,9 @@ creation_date: 2021-02-04T09:19:52Z
 id: VT:0010923
 name: cerebral cortex integrity trait
 def: "Any measurable or observable characteristic related to the structural soundness of the grey matter on the surface of the cerebral hemisphere that develops from the telencephalon and folds into gyri; it is responsible for intellectual faculties and higher mental functions." [ISBN:0-683-40008-8, RGD:cur]
+xref: EFO:0007707
+xref: EFO:0007708
+xref: EFO:0007709
 is_a: VT:0000788 ! cerebral cortex morphology trait
 is_a: VT:0010549 ! cerebrum integrity trait
 created_by: caripark
@@ -28865,6 +28892,8 @@ creation_date: 2009-08-27T11:32:45Z
 id: VT:0015015
 name: depression-related behavior trait
 def: "Any measurable or observable characteristic related to responses to a stressful or pleasurable situation or stimulus." [MP:0003360]
+synonym: "depressive episode measurement" NARROW []
+xref: EFO:0007704
 is_a: VT:0002572 ! emotion/affect behavior trait
 created_by: smb
 creation_date: 2009-08-27T11:33:59Z
@@ -30876,6 +30905,7 @@ id: VT:1000711
 name: abdominal fat pad mass
 def: "The amount of matter in the encapsulated adipose tissue in the cavity bounded by the abdominal walls, the diaphragm, and the pelvis." [ISBN:0-683-40008-8, MS:RGD]
 synonym: "abdominal fat pad weight" RELATED []
+xref: EFO:0020098
 is_a: VT:0000010 ! abdominal fat pad morphology trait
 created_by: caripark
 creation_date: 2009-04-29T03:54:23Z
