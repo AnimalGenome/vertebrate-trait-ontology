@@ -1,6 +1,6 @@
 format-version: 1.2
-data-version: releases/2024-08-13
-date: 13:08:2024 15:00
+data-version: releases/2024-08-29
+date: 29:08:2024 15:36
 saved-by: caripark
 auto-generated-by: OBO-Edit 2.3.1
 default-namespace: Trait.ontology
@@ -9,7 +9,7 @@ property_value: http://purl.org/dc/elements/1.1/description "The Vertebrate Trai
 property_value: http://purl.org/dc/elements/1.1/language "English" xsd:string
 property_value: http://purl.org/dc/elements/1.1/title "The Vertebrate Trait Ontology" xsd:string
 property_value: http://purl.org/dc/terms/license https://creativecommons.org/licenses/by/4.0/
-property_value: owl:versionInfo "2024-08-13" xsd:string
+property_value: owl:versionInfo "2024-08-29" xsd:string
 
 [Term]
 id: VT:0000000
@@ -981,6 +981,9 @@ name: blood cholesterol amount
 def: "The proportion, quantity, or volume in whole blood, serum, or plasma of the most abundant steroid in animal tissues, and precursor to steroid hormones and bile salts; also component of plasma membranes." [ISBN:0-683-40008-8]
 synonym: "blood cholesterol level" RELATED []
 synonym: "circulating cholesterol level" RELATED []
+xref: EFO:0022263
+xref: EFO:0022277
+xref: EFO:0022278
 is_a: VT:0003947 ! cholesterol amount
 is_a: VT:0010582 ! blood sterol amount
 
@@ -994,6 +997,9 @@ synonym: "circulating LDL cholesterol amount" EXACT []
 synonym: "circulating LDL cholesterol level" RELATED []
 synonym: "LDL cholesterol level" BROAD []
 synonym: "LDL level" RELATED []
+xref: EFO:0022266
+xref: EFO:0022268
+xref: EFO:0022271
 is_a: VT:0000180 ! blood cholesterol amount
 
 [Term]
@@ -1019,6 +1025,11 @@ synonym: "circulating HDL cholesterol amount" EXACT []
 synonym: "circulating HDL cholesterol level" RELATED []
 synonym: "HDL cholesterol level" RELATED []
 synonym: "HDL level" RELATED []
+xref: EFO:0022264
+xref: EFO:0022267
+xref: EFO:0022270
+xref: EFO:0022273
+xref: EFO:0022279
 is_a: VT:0000180 ! blood cholesterol amount
 
 [Term]
@@ -11572,6 +11583,11 @@ xref: EFO:0010368
 xref: EFO:0010369
 xref: EFO:0010370
 xref: EFO:0010371
+xref: EFO:0022255
+xref: EFO:0022256
+xref: EFO:0022257
+xref: EFO:0022258
+xref: EFO:0022259
 is_a: VT:0001547 ! lipid amount
 is_a: VT:0010931 ! blood molecular composition trait
 
@@ -14020,6 +14036,12 @@ synonym: "blood very low density lipoprotein cholesterol amount" EXACT []
 synonym: "blood VLDL-C amount" EXACT []
 synonym: "circulating VLDL cholesterol amount" EXACT []
 synonym: "circulating VLDL cholesterol level" RELATED []
+xref: EFO:0022265
+xref: EFO:0022269
+xref: EFO:0022272
+xref: EFO:0022274
+xref: EFO:0022275
+xref: EFO:0022276
 is_a: VT:0000180 ! blood cholesterol amount
 
 [Term]
@@ -19014,6 +19036,7 @@ xref: EFO:0007760
 xref: EFO:0007761
 xref: EFO:0007762
 xref: EFO:0007763
+xref: EFO:0022262
 is_a: VT:0001547 ! lipid amount
 created_by: caripark
 creation_date: 2010-02-09T12:45:06Z
