@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: releases/2025-09-09
+data-version: releases/2025-10-14
 saved-by: caripark
 default-namespace: Trait.ontology
 ontology: vt
@@ -7,7 +7,7 @@ property_value: http://purl.org/dc/elements/1.1/description "The Vertebrate Trai
 property_value: http://purl.org/dc/elements/1.1/language "English" xsd:string
 property_value: http://purl.org/dc/elements/1.1/title "The Vertebrate Trait Ontology" xsd:string
 property_value: http://purl.org/dc/terms/license https://creativecommons.org/licenses/by/4.0/
-property_value: owl:versionInfo "2025-09-09" xsd:string
+property_value: owl:versionInfo "2025-10-14" xsd:string
 
 [Term]
 id: VT:0000000
@@ -12746,6 +12746,7 @@ name: orbitofrontal cortex morphology trait
 def: "Any measurable or observable characteristic related to the shape, structure, color, or pattern of the region of the cerebral cortex covering the basal surface of the frontal lobes; this region normally controls emotion and decision making." [MP:0004170]
 xref: EFO:0010312
 xref: EFO:0010315
+is_a: VT:0000788 ! cerebral cortex morphology trait
 is_a: VT:0000798 ! frontal lobe morphology trait
 is_a: VT:0004166 ! limbic system morphology trait
 
@@ -30791,6 +30792,7 @@ property_value: http://purl.org/dc/terms/date 2025-04-09T13:33:02Z xsd:dateTime
 id: VT:0011159
 name: striatum ribonucleic acid amount
 def: "The proportion, quantity, or volume of ribonucleic acid in the striatum of the brain. The striatum region of the forebrain consists of the caudate nucleus, putamen, and fundus striati. Ribonucleic acid is a high molecular weight, linear polymer composed of nucleotides containing ribose and linked by phosphodiester bonds." [CHEBI:33697, RGD:cur, UBERON:0002435]
+is_a: VT:0004077 ! striatum morphology trait
 is_a: VT:0010791 ! brain ribonucleic acid amount
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
 property_value: http://purl.org/dc/terms/date 2025-04-09T13:37:04Z xsd:dateTime
@@ -31367,6 +31369,43 @@ def: "Any measurable or observable characteristic related to the ability to reca
 is_a: VT:0002063 ! learning/memory/conditioning trait
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
 property_value: http://purl.org/dc/terms/date 2025-09-09T16:37:57Z xsd:dateTime
+
+[Term]
+id: VT:0011229
+name: substantia nigra molecular composition trait
+def: "Any measurable or observable characteristic related to the proportions of proteins, minerals, nutrients, gases, or other substances in the substantia nigra of the brain, the layer of grey substance that separates the posterior parts of the cerebral peduncles (tegmentum mesencephali) from the anterior parts; it normally includes a posterior compact part with many pigmented cells (pars compacta) and an anterior reticular part whose cells contain little pigment (pars reticularis)." [ISBN:0-683-40008-8, MP:0000836]
+is_a: VT:0000836 ! substantia nigra morphology trait
+property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
+property_value: http://purl.org/dc/terms/date 2025-10-14T18:10:11Z xsd:dateTime
+
+[Term]
+id: VT:0011230
+name: substantia nigra ribonucleic acid amount
+def: "The proportion, quantity, or volume of ribonucleic acid in the substantia nigra of the brain, the layer of grey substance that separates the posterior parts of the cerebral peduncles (tegmentum mesencephali) from the anterior parts; it normally includes a posterior compact part with many pigmented cells (pars compacta) and an anterior reticular part whose cells contain little pigment (pars reticularis). Ribonucleic acid is a high molecular weight, linear polymer composed of nucleotides containing ribose and linked by phosphodiester bonds." [CHEBI:33697, ISBN:0-683-40008-8, MP:0000836, RGD:cur]
+is_a: VT:0010791 ! brain ribonucleic acid amount
+is_a: VT:0011229 ! substantia nigra molecular composition trait
+property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
+property_value: http://purl.org/dc/terms/date 2025-10-14T18:10:22Z xsd:dateTime
+
+[Term]
+id: VT:0011231
+name: primary motor cortex morphology trait
+def: "Any measurable or observable characteristic related to the shape, structure, color, or pattern of the part of the cerebral cortex that receives projections from the motor thalamus and which projects to motor neurons in the brainstem and spinal cord; the primary motor cortex, or M1, is located on the precentral gyrus and on the anterior paracentral lobule on the medial surface of the brain." [MP:0012448, UBERON:0001384]
+synonym: "motor cortex morphology trait" EXACT []
+is_a: VT:0000788 ! cerebral cortex morphology trait
+is_a: VT:0000799 ! precentral gyrus morphology trait
+property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
+property_value: http://purl.org/dc/terms/date 2025-10-14T19:20:16Z xsd:dateTime
+
+[Term]
+id: VT:0011232
+name: primary motor cortex ribonucleic acid amount
+def: "The proportion, quantity, or volume of ribonucleic acid in the part of the cerebral cortex that receives projections from the motor thalamus and which projects to motor neurons in the brainstem and spinal cord; the primary motor cortex, or M1, is located on the precentral gyrus and on the anterior paracentral lobule on the medial surface of the brain. Ribonucleic acid is a high molecular weight, linear polymer composed of nucleotides containing ribose and linked by phosphodiester bonds." [CHEBI:33697, MP:0012448, RGD:cur, UBERON:0001384]
+synonym: "motor cortex ribonucleic acid amount" EXACT []
+is_a: VT:0010791 ! brain ribonucleic acid amount
+is_a: VT:0011231 ! primary motor cortex morphology trait
+property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
+property_value: http://purl.org/dc/terms/date 2025-10-14T19:27:40Z xsd:dateTime
 
 [Term]
 id: VT:0015000
