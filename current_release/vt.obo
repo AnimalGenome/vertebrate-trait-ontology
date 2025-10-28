@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: releases/2025-10-22
+data-version: releases/2025-10-28
 saved-by: caripark
 default-namespace: Trait.ontology
 ontology: vt
@@ -7,7 +7,7 @@ property_value: http://purl.org/dc/elements/1.1/description "The Vertebrate Trai
 property_value: http://purl.org/dc/elements/1.1/language "English" xsd:string
 property_value: http://purl.org/dc/elements/1.1/title "The Vertebrate Trait Ontology" xsd:string
 property_value: http://purl.org/dc/terms/license https://creativecommons.org/licenses/by/4.0/
-property_value: owl:versionInfo "2025-10-22" xsd:string
+property_value: owl:versionInfo "2025-10-28" xsd:string
 
 [Term]
 id: VT:0000000
@@ -29993,7 +29993,8 @@ id: VT:0011059
 name: skeletal muscle ribonucleic acid amount
 def: "The proportion, quantity, or volume of ribonucleic acid in any of the striated muscles connected at either or both extremities with the bony framework of the body. Ribonucleic acid is a high molecular weight, linear polymer composed of nucleotides containing ribose and linked by phosphodiester bonds." [CHEBI:33697, ISBN:0-683-40008-8, RGD:cur]
 synonym: "skeletal muscle RNA amount" EXACT []
-is_a: VT:0010021 ! muscle molecular composition trait
+is_a: VT:0010797 ! muscle ribonucleic acid amount
+is_a: VT:0011239 ! skeletal muscle molecular composition trait
 created_by: caripark
 creation_date: 2023-08-02T13:39:02Z
 
@@ -31552,6 +31553,24 @@ synonym: "right common carotid artery RNA amount" EXACT []
 is_a: VT:0011235 ! carotid artery molecular composition trait
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
 property_value: http://purl.org/dc/terms/date 2025-10-22T13:31:09Z xsd:dateTime
+
+[Term]
+id: VT:0011238
+name: tibialis anterior ribonucleic acid amount
+def: "The proportion, quantity, or volume of ribonucleic acid in the muscle of the shin that is responsible for dorsiflexion and inversion of the foot. Ribonucleic acid is a high molecular weight, linear polymer composed of nucleotides containing ribose and linked by phosphodiester bonds." [CHEBI:33697, ISBN:0-683-40008-8, MP:0003083, RGD:cur]
+is_a: VT:0003083 ! tibialis anterior morphology trait
+is_a: VT:0011059 ! skeletal muscle ribonucleic acid amount
+property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
+property_value: http://purl.org/dc/terms/date 2025-10-28T19:15:43Z xsd:dateTime
+
+[Term]
+id: VT:0011239
+name: skeletal muscle molecular composition trait
+def: "Any measurable or observable characteristic related to the proportions of proteins, minerals, nutrients, gases, or other substances in any of the striated muscles connected at either or both extremities with the bony framework of the body." [ISBN:0-683-40008-8]
+is_a: VT:0000759 ! skeletal muscle morphology trait
+is_a: VT:0010021 ! muscle molecular composition trait
+property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
+property_value: http://purl.org/dc/terms/date 2025-10-28T19:19:38Z xsd:dateTime
 
 [Term]
 id: VT:0015000
@@ -33918,8 +33937,7 @@ creation_date: 2009-05-07T03:19:34Z
 id: VT:1000746
 name: skeletal muscle myosin isoform amount
 def: "The proportion, quantity, or volume of any of several forms of the thick filament protein in any of the striated muscles connected at either or both extremities with the bony framework of the body." [ISBN:0-683-40008-8, RGD:MS]
-is_a: VT:0000759 ! skeletal muscle morphology trait
-is_a: VT:0010021 ! muscle molecular composition trait
+is_a: VT:0011239 ! skeletal muscle molecular composition trait
 created_by: caripark
 creation_date: 2009-05-07T03:52:39Z
 
