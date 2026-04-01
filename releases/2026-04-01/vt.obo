@@ -34421,7 +34421,7 @@ creation_date: 2009-11-19T03:13:22Z
 [Term]
 id: VT:1000000
 name: body conformation trait
-def: "Any measurable or observable characteristic related to the symmetry, size and shape of the various body regions relative to each other or general appearance of an organism." [Saunders:Saunders_Veterinary_Dictionary]
+def: "Any measurable or observable characteristic related to the symmetry, size and shape of the various body regions relative to each other or general appearance of an organism." [ISBN:9780702047435]
 xref: ATOL:0000987
 xref: EFO:0801227
 is_a: VT:0100006 ! anatomical relation trait
@@ -35601,7 +35601,7 @@ creation_date: 2009-05-06T09:39:43Z
 [Term]
 id: VT:1000726
 name: back conformation trait
-def: "Any measurable or observable characteristic related to the arrangement of an organism's back, neck, and area between the shoulder blades, known as the withers in some animals." [Saunders:Saunders_Veterinary_Dictionary]
+def: "Any measurable or observable characteristic related to the arrangement of an organism's back, neck, and area between the shoulder blades, known as the withers in some animals." [ISBN:9780702047435]
 synonym: "dairy form" RELATED []
 is_a: VT:1000000 ! body conformation trait
 created_by: caripark
@@ -35670,7 +35670,7 @@ creation_date: 2009-05-07T01:44:48Z
 [Term]
 id: VT:1000738
 name: limb conformation trait
-def: "Any measurable or observable characteristic related to the assessment of the overall structure and proportions of the jointed appendages of an animal, used for locomotion or grasping." [ISBN:978-0440237013, Saunders:Saunders_Veterinary_Dictionary]
+def: "Any measurable or observable characteristic related to the assessment of the overall structure and proportions of the jointed appendages of an animal, used for locomotion or grasping." [ISBN:978-0440237013, ISBN:9780702047435]
 synonym: "conformation of limbs" EXACT []
 is_a: VT:0002109 ! limb morphology trait
 is_a: VT:1000000 ! body conformation trait
