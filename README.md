@@ -29,8 +29,9 @@ submit the following information:
 #### Fetch or Sync Data
     PURL to obtain the current release data: http://purl.obolibrary.org/obo/vt.owl
     YAML: https://github.com/OBOFoundry/purl.obolibrary.org/blob/master/config/vt.yml
+
 #### File Structure
-    /archive/ : prior to Dec.2023 releases each marked with incremental numbers
+    /archive/ : prior to Dec.2023 releases; each marked with incremental numbers
     /current_release/ : for AgroPortal data sync
     /releases/ : version format in yyyy-mm-dd, good for OBO Foundry and others
 
