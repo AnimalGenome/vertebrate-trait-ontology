@@ -31,11 +31,10 @@ submit the following information:
     PURL to obtain the current release data: http://purl.obolibrary.org/obo/vt.owl
     YAML: https://github.com/OBOFoundry/purl.obolibrary.org/blob/master/config/vt.yml
 
-#### File Structure
+#### Site Structure (File Organizations)
     /archive/ : prior to Dec.2023 releases; each marked with incremental numbers
     /current_release/ : for AgroPortal data sync
     /releases/ : version format in yyyy-mm-dd, good for OBO Foundry and others
 
-
 --
-Bioinfo-Team@animalgenome.org
+_`Bioinfo-Team@animalgenome.org`_
