@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: releases/2026-07-23
+data-version: releases/2026-09-09
 saved-by: caripark
 default-namespace: Trait.ontology
 ontology: vt
@@ -7,11 +7,12 @@ property_value: http://purl.org/dc/elements/1.1/description "The Vertebrate Trai
 property_value: http://purl.org/dc/elements/1.1/language "English" xsd:string
 property_value: http://purl.org/dc/elements/1.1/title "The Vertebrate Trait Ontology" xsd:string
 property_value: http://purl.org/dc/terms/license https://creativecommons.org/licenses/by/4.0/
-property_value: owl:versionInfo "2026-07-23" xsd:string
+property_value: owl:versionInfo "2026-09-09" xsd:string
 
 [Term]
 id: VT:0000000
 name: mammary gland secreted fluid morphology trait
+def: "Any measurable or observable characteristic related to the shape, structure, color, or pattern of fluids released by the milk-producing glands in female mammals, consisting of lobes containing clusters of alveoli with a system of ducts to convey the milk to an external nipple or teat." [ISBN:978-0440237013]
 is_a: VT:0000627 ! mammary gland morphology trait
 created_by: mshimoyama
 creation_date: 2011-06-22T04:12:42Z
@@ -1652,7 +1653,7 @@ is_a: VT:0000365 ! hearing electrophysiology trait
 [Term]
 id: VT:0000367
 name: coat/hair morphology trait
-def: "Any measurable or observable characteristic related to the shape, structure, color, or pattern of the fine, keratinized filamentous growths arising from the epidermis of mammals." [ISBN:0-683-40008-8]
+def: "Any measurable or observable characteristic related to the shape, structure, color, or pattern of the hair, wool, or fur of an organism, that is, of either a single cylindrical, keratinized, often pigmented filament characteristically growing from the epidermis of a mammal, or of the aggregate of all such filaments." [CMO:0001808, ISBN:0-683-40008-8]
 synonym: "hair morphology measurement" EXACT []
 xref: EFO:0005038
 xref: EFO:0007821
@@ -1715,8 +1716,8 @@ is_a: VT:4000007 ! coat/hair physiology trait
 [Term]
 id: VT:0000416
 name: hair amount
-def: "The proportion or number of the fine, keratinized filamentous growths arising from the epidermis of mammals." [ISBN:0-683-40008-8]
-synonym: "coat density" RELATED []
+def: "The proportion or quantity of the hair, wool, or fur of an organism, that is, of either a single cylindrical, keratinized, often pigmented filament characteristically growing from the epidermis of a mammal, or of the aggregate of all such filaments." [CMO:0001808, ISBN:0-683-40008-8]
+synonym: "coat density" NARROW []
 synonym: "hair quantity" RELATED []
 xref: EFO:0007823
 xref: EFO:0007825
@@ -1725,7 +1726,7 @@ is_a: VT:0000367 ! coat/hair morphology trait
 [Term]
 id: VT:0000417
 name: hair length
-def: "The distance from point to point along the longest axis of the fine, keratinized filamentous growths arising from the epidermis of mammals." [ISBN:0-683-40008-8]
+def: "The distance from point to point along the longest axis of the hair, wool, or fur of an organism, that is, of either a single cylindrical, keratinized, often pigmented filament characteristically growing from the epidermis of a mammal, or of the aggregate of all such filaments." [CMO:0001808, ISBN:0-683-40008-8]
 is_a: VT:0000367 ! coat/hair morphology trait
 
 [Term]
@@ -6645,7 +6646,7 @@ is_obsolete: true
 [Term]
 id: VT:0002074
 name: hair texture trait
-def: "Any measurable or observable characteristic related to the visual or tactile surface characteristics of the fine, keratinized filamentous growths arising from the epidermis of mammals." [ISBN:0-683-40008-8]
+def: "Any measurable or observable characteristic related to the visual or tactile surface characteristics of the hair, wool, or fur of an organism, that is, of either a single cylindrical, keratinized, often pigmented filament characteristically growing from the epidermis of a mammal, or of the aggregate of all such filaments." [CMO:0001808, ISBN:0-683-40008-8]
 comment: pslim term
 xref: EFO:0007824
 is_a: VT:0000367 ! coat/hair morphology trait
@@ -12653,7 +12654,7 @@ is_a: VT:0001765 ! ion homeostasis trait
 [Term]
 id: VT:0004047
 name: milk trait
-def: "Any measurable characteristic related to the content or the appearance of milk." [MGI:smb]
+def: "Any measurable or observable characteristic related to the content or the appearance of a fluid secreted by the mammary glands of female mammals for the nourishment of their young." [https://www.merriam-webster.com/dictionary/milk, MGI:smb]
 xref: ATOL:0000240
 xref: EFO:0009092
 is_a: VT:0000000 ! mammary gland secreted fluid morphology trait
@@ -13012,6 +13013,8 @@ id: VT:0004134
 name: thorax morphology trait
 def: "Any measurable or observable characteristic related to the shape, structure, color or pattern of the part of the body between the head and the abdomen or any of its component parts." [MP:0004134, PMID:10608859]
 synonym: "chest morphology trait" NARROW []
+synonym: "thoracic segment of trunk morphology trait" EXACT []
+is_a: VT:0011360 ! trunk morphology trait
 is_a: VT:0015059 ! thorax trait
 
 [Term]
@@ -22561,7 +22564,7 @@ name: milk fat amount
 def: "Any measurable or observable characteristic related to the proportion, quantity, or volume of butterfat present in milk." [ATOL:0001520, VT:CP, VT:INRA]
 synonym: "milk fat content" EXACT []
 xref: ATOL:0001520
-is_a: VT:0004047 ! milk trait
+is_a: VT:0011350 ! milk molecular composition trait
 created_by: caripark
 creation_date: 2010-05-19T04:15:04Z
 
@@ -22703,7 +22706,7 @@ synonym: "hormones in milk" RELATED []
 synonym: "milk hormone concentration" RELATED []
 synonym: "milk hormone content" EXACT []
 xref: ATOL:0000607
-is_a: VT:0004047 ! milk trait
+is_a: VT:0011350 ! milk molecular composition trait
 created_by: caripark
 creation_date: 2010-05-21T11:21:36Z
 
@@ -22815,7 +22818,7 @@ synonym: "milk nitrogen" RELATED []
 synonym: "milk nitrogen concentration" RELATED []
 synonym: "milk nitrogen content" EXACT []
 xref: ATOL:0001521
-is_a: VT:0004047 ! milk trait
+is_a: VT:0011350 ! milk molecular composition trait
 created_by: caripark
 creation_date: 2010-05-21T02:13:16Z
 
@@ -22835,7 +22838,7 @@ synonym: "milk lactose concentration" RELATED []
 synonym: "milk lactose content" EXACT []
 xref: ATOL:0000619
 xref: EFO:0010507
-is_a: VT:0004047 ! milk trait
+is_a: VT:0011350 ! milk molecular composition trait
 created_by: caripark
 creation_date: 2010-05-21T02:24:28Z
 
@@ -22847,7 +22850,7 @@ synonym: "milk mineral concentration" RELATED []
 synonym: "milk mineral content" EXACT []
 xref: ATOL:0000620
 is_a: VT:0000192 ! mineral amount
-is_a: VT:0004047 ! milk trait
+is_a: VT:0011350 ! milk molecular composition trait
 created_by: caripark
 creation_date: 2010-05-21T02:44:27Z
 
@@ -23908,7 +23911,7 @@ synonym: "milk beta carotene concentration" RELATED []
 synonym: "milk beta-carotene concentration" RELATED []
 synonym: "milk beta-carotene content" EXACT []
 xref: ATOL:0000709
-is_a: VT:0004047 ! milk trait
+is_a: VT:0011350 ! milk molecular composition trait
 created_by: caripark
 creation_date: 2010-05-26T01:12:38Z
 
@@ -24140,7 +24143,7 @@ def: "The proportion, quantity, or volume in milk of the chief end product of ni
 synonym: "milk urea concentration" RELATED []
 synonym: "milk urea content" EXACT []
 xref: ATOL:0000727
-is_a: VT:0004047 ! milk trait
+is_a: VT:0011350 ! milk molecular composition trait
 created_by: caripark
 creation_date: 2010-05-26T03:59:27Z
 
@@ -24150,7 +24153,7 @@ name: milk ammonia amount
 def: "The proportion, quantity, or volume in milk of an alkaline gas formed by decomposition of nitrogen-containing substances such as proteins and amino acids." [ISBN:0-8036-0655-9, VT:INRA]
 synonym: "milk ammonia concentration" RELATED []
 xref: ATOL:0000728
-is_a: VT:0004047 ! milk trait
+is_a: VT:0011350 ! milk molecular composition trait
 created_by: caripark
 creation_date: 2010-05-26T03:59:27Z
 
@@ -24914,7 +24917,7 @@ creation_date: 2012-10-24T10:43:31Z
 [Term]
 id: VT:0010463
 name: coat/hair pigmentation trait
-def: "Any measurable or observable characteristic related to the deposition or aggregation of coloring matter in the fine, keratinized filamentous growths arising from the epidermis of mammals." [ISBN:0-683-40008-8, MP:0002075]
+def: "Any measurable or observable characteristic related to the deposition or aggregation of coloring matter in the hair, wool, or fur of an organism, that is, of either a single cylindrical, keratinized, often pigmented filament characteristically growing from the epidermis of a mammal, or of the aggregate of all such filaments." [CMO:0001808, ISBN:0-683-40008-8, MP:0002075]
 synonym: "coat color trait" EXACT []
 synonym: "coat/hair color trait" EXACT []
 synonym: "hair color trait" EXACT []
@@ -25437,6 +25440,7 @@ id: VT:0010510
 name: lumbar vertebra mass
 def: "The amount of matter in the bony segments of the spinal column located anterior/superior to the sacral vertebrae and posterior/inferior to the thoracic vertebrae." [ISBN:0-683-40008-8, ISBN:0-8036-1207-9]
 is_a: VT:0010518 ! lumbar vertebra size trait
+is_a: VT:0011342 ! vertebra mass
 created_by: caripark
 creation_date: 2013-02-18T02:42:24Z
 
@@ -25473,7 +25477,7 @@ id: VT:0010514
 name: blood transferrin amount
 def: "The proportion, quantity, or volume in whole blood, serum, or plasma of this iron-binding glycoprotein." [MP:0011892]
 xref: EFO:0006341
-is_a: VT:0005416 ! blood protein amount
+is_a: VT:0011345 ! blood beta-globulin amount
 created_by: caripark
 creation_date: 2013-03-18T11:10:00Z
 
@@ -25512,6 +25516,7 @@ id: VT:0010518
 name: lumbar vertebra size trait
 def: "Any measurable or observable characteristic related to the physical magnitude of the bony segments of the spinal column located anterior/superior to the sacral vertebrae and posterior/inferior to the thoracic vertebrae." [ISBN:0-683-40008-8, ISBN:0-8036-1207-9]
 is_a: VT:0010494 ! lumbar vertebra morphology trait
+is_a: VT:0011341 ! vertebra size trait
 created_by: caripark
 creation_date: 2013-03-18T12:28:56Z
 
@@ -27096,7 +27101,7 @@ id: VT:0010650
 name: blood haptoglobin amount
 def: "The proportion, quantity, or volume in whole blood, serum, or plasma of any alpha2 globulin that can combine with free oxyhemoglobin to form a stable complex." [GO:0031720]
 xref: EFO:0004640
-is_a: VT:0010628 ! blood globulin amount
+is_a: VT:0011344 ! blood alpha-2 globulin amount
 created_by: caripark
 creation_date: 2014-07-23T10:55:44Z
 
@@ -27146,6 +27151,7 @@ creation_date: 2014-07-24T03:58:56Z
 id: VT:0010656
 name: comb morphology trait
 def: "Any measurable or observable characteristic related to the shape, structure, color, or pattern of the vascular, red cutaneous structure attached in a sagittal plane to the dorsum of the skull of domestic fowl." [UBERON:0012176]
+is_a: VT:0010007 ! skin adnexa morphology trait
 is_a: VT:0015071 ! appendage morphology trait
 created_by: caripark
 creation_date: 2014-07-24T04:09:33Z
@@ -30803,6 +30809,7 @@ creation_date: 2022-10-25T13:25:34Z
 id: VT:0011016
 name: CD3-positive T cell quantity
 def: "The proportion or number of T lymphocytes that are positive for the CD3 T-cell co-receptor complex." [https://www.bio-rad-antibodies.com/minireview-cd3-antibody.html?JSESSIONID_STERLING=0D666F4BD1F583E1F1D619E4B4842929.ecommerce1&evCntryLang=US-en&cntry=US&thirdPartyCookieEnabled=true, RGD:cur]
+synonym: "CD3+ T cell quantity" EXACT []
 is_a: VT:0006387 ! T cell quantity
 created_by: caripark
 creation_date: 2022-10-25T14:05:35Z
@@ -31799,7 +31806,7 @@ creation_date: 2024-04-15T13:59:23Z
 [Term]
 id: VT:0011117
 name: eyelid pigmentation trait
-def: "Any measurable or observable characteristic related to the deposition or aggregation of coloring matter in the  skin folds covering the front of the eyeball." [MP:0001340]
+def: "Any measurable or observable characteristic related to the deposition or aggregation of coloring matter in the skin folds covering the front of the eyeball." [MP:0001340]
 is_a: VT:0001324 ! eye pigmentation trait
 is_a: VT:0001340 ! eyelid morphology trait
 created_by: caripark
@@ -32469,7 +32476,7 @@ property_value: http://purl.org/dc/terms/date 2025-08-19T19:05:01Z xsd:dateTime
 id: VT:0011191
 name: milk acidity/alkalinity trait
 def: "Any measurable or observable characteristic related to the ability of milk to resist changes in pH (buffering capacity)." [https://www.sciencedirect.com/topics/engineering/acidity-and-alkalinity]
-is_a: VT:0004047 ! milk trait
+is_a: VT:0011350 ! milk molecular composition trait
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
 property_value: http://purl.org/dc/terms/date 2025-08-07T14:29:52Z xsd:dateTime
 
@@ -32658,7 +32665,8 @@ property_value: http://purl.org/dc/terms/date 2025-08-13T15:24:40Z xsd:dateTime
 [Term]
 id: VT:0011214
 name: CD3-negative T cell quantity
-def: "The proportion or number of T lymphocytes that are negative for the CD3 T-cell co-receptor complex." [https://www.bio-rad-antibodies.com/minireview-cd3-antibody.html?JSESSIONID_STERLING=0D666F4BD1F583E1F1D619E4B4842929.ecommerce1&evCntryLang=US-en&cntry=US&thirdPartyCookieEnabled=true]
+def: "The proportion or number of T lymphocytes that are negative for the CD3 T-cell co-receptor complex." [https://www.bio-rad-antibodies.com/minireview-cd3-antibody.html?thirdPartyCookieEnabled=true]
+synonym: "CD3- T cell quantity" EXACT []
 is_a: VT:0006387 ! T cell quantity
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
 property_value: http://purl.org/dc/terms/date 2025-08-19T20:09:39Z xsd:dateTime
@@ -33759,6 +33767,379 @@ property_value: http://purl.org/dc/terms/date 2026-07-23T21:17:55Z xsd:dateTime
 property_value: http://www.geneontology.org/formats/oboInOwl#http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
 
 [Term]
+id: VT:0011326
+name: sex gland secreted fluid morphology trait
+def: "Any measurable or observable characteristic related to the shape, structure, color, or pattern of fluids released by any of the organized aggregations of cells that function as secretory or excretory organs and are associated with reproduction." [MP:0000653]
+is_a: VT:0000653 ! sex gland morphology trait
+property_value: http://purl.org/dc/terms/date 2026-08-13T14:09:10Z xsd:dateTime
+property_value: http://www.geneontology.org/formats/oboInOwl#http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
+
+[Term]
+id: VT:0011327
+name: semen trait
+def: "Any measurable or observable characteristic related to the substance that is composed of sperm cells suspended in seminal fluid." [UBERON:0001968]
+is_a: VT:0011326 ! sex gland secreted fluid morphology trait
+property_value: http://purl.org/dc/terms/date 2026-08-13T14:11:56Z xsd:dateTime
+property_value: http://www.geneontology.org/formats/oboInOwl#http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
+
+[Term]
+id: VT:0011328
+name: sperm viability trait
+def: "Any measurable or observable characteristic related to the ability of the male gamete to function adequately." [https://www.merriam-webster.com/]
+is_a: VT:0001922 ! male fertility trait
+property_value: http://purl.org/dc/terms/date 2026-08-13T15:22:43Z xsd:dateTime
+property_value: http://www.geneontology.org/formats/oboInOwl#http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
+
+[Term]
+id: VT:0011329
+name: semen color
+def: "The visually perceived hue of the substance that is composed of sperm cells suspended in seminal fluid." [UBERON:0001968]
+is_a: VT:0011327 ! semen trait
+property_value: http://purl.org/dc/terms/date 2026-08-13T15:32:23Z xsd:dateTime
+property_value: http://www.geneontology.org/formats/oboInOwl#http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
+
+[Term]
+id: VT:0011330
+name: nose pigmentation trait
+def: "Any measurable or observable characteristic related to the deposition or aggregation of coloring matter in the organ that is specialized for smell and is part of the respiratory system." [MP:0002233]
+is_a: VT:0002233 ! nose morphology trait
+property_value: http://purl.org/dc/terms/date 2026-08-13T17:31:40Z xsd:dateTime
+property_value: http://www.geneontology.org/formats/oboInOwl#http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
+
+[Term]
+id: VT:0011331
+name: CD3-negative, CD8-negative T cell quantity
+def: "The proportion or number of T lymphocytes that are negative for both the CD3 T-cell co-receptor complex and the CD8 glycoprotein." [https://www.bio-rad-antibodies.com/minireview-cd3-antibody.html?thirdPartyCookieEnabled=true]
+synonym: "CD3-CD8- T cell quantity" EXACT []
+is_a: VT:0011214 ! CD3-negative T cell quantity
+property_value: http://purl.org/dc/terms/date 2026-08-13T18:55:54Z xsd:dateTime
+property_value: http://www.geneontology.org/formats/oboInOwl#http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
+
+[Term]
+id: VT:0011332
+name: CD3-negative, CD8-positive T cell quantity
+def: "The proportion or number of T lymphocytes that are negative for the CD3 T-cell co-receptor complex and positive for the CD8 glycoprotein." [https://www.bio-rad-antibodies.com/minireview-cd3-antibody.html?thirdPartyCookieEnabled=true]
+synonym: "CD3-CD8+ T cell quantity" EXACT []
+is_a: VT:0011214 ! CD3-negative T cell quantity
+property_value: http://purl.org/dc/terms/date 2026-08-13T19:01:44Z xsd:dateTime
+property_value: http://www.geneontology.org/formats/oboInOwl#http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
+
+[Term]
+id: VT:0011333
+name: adipose color
+def: "The visually perceived hue of the fat-storing cells/tissue." [MP:0000003]
+synonym: "fat color" EXACT []
+is_a: VT:0000003 ! adipose morphology trait
+property_value: http://purl.org/dc/terms/date 2026-08-13T19:48:27Z xsd:dateTime
+property_value: http://www.geneontology.org/formats/oboInOwl#http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
+
+[Term]
+id: VT:0011334
+name: mouth size trait
+def: "Any measurable or observable characteristic related to the physical magnitude of the oral cavity." [MP:0000452]
+is_a: VT:0000452 ! mouth morphology trait
+property_value: http://purl.org/dc/terms/date 2026-08-13T19:59:52Z xsd:dateTime
+property_value: http://www.geneontology.org/formats/oboInOwl#http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
+
+[Term]
+id: VT:0011335
+name: blood anti-Mullerian hormone amount
+def: "The proportion, quantity, or volume in whole blood, serum, or plasma of the heterodimeric glycoprotein hormone that plays an essential role in sex determination in early embryonic development." [MP:0014513]
+synonym: "blood AMH amount" EXACT []
+is_a: VT:0005418 ! blood hormone amount
+property_value: http://purl.org/dc/terms/date 2026-08-13T20:39:08Z xsd:dateTime
+property_value: http://www.geneontology.org/formats/oboInOwl#http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
+
+[Term]
+id: VT:0011336
+name: blood beta-carotene amount
+def: "The proportion, quantity, or volume in whole blood, serum, or plasma of a carotenoid that is a precursor of vitamin A." [MESH:D019207]
+is_a: VT:0010626 ! blood vitamin amount
+property_value: http://purl.org/dc/terms/date 2026-08-13T20:48:07Z xsd:dateTime
+property_value: http://www.geneontology.org/formats/oboInOwl#http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
+
+[Term]
+id: VT:0011337
+name: blood vitamin E amount
+def: "The proportion, quantity, or volume in whole blood, serum, or plasma of a fat-soluble vitamin that acts as a natural antioxidant by scavenging free radicals and molecular oxygen." [CHEBI:33234]
+is_a: VT:0010626 ! blood vitamin amount
+property_value: http://purl.org/dc/terms/date 2026-08-13T20:51:57Z xsd:dateTime
+property_value: http://www.geneontology.org/formats/oboInOwl#http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
+
+[Term]
+id: VT:0011338
+name: tail circumference
+def: "The distance around the appendage at the caudal end of the vertebral column." [MP:0002111]
+is_a: VT:0003456 ! tail size trait
+property_value: http://purl.org/dc/terms/date 2026-08-14T17:52:08Z xsd:dateTime
+property_value: http://www.geneontology.org/formats/oboInOwl#http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
+
+[Term]
+id: VT:0011339
+name: heterophil quantity
+def: "The proportion or number of the white blood cells that are the avian equivalent to mammalian neutrophils but have eosinophilic cytoplasmic granules." [https://www.merckvetmanual.com/circulatory-system/hematopoietic-system-introduction/white-blood-cells-in-animals?query=heterophil]
+is_a: VT:0000334 ! granulocyte quantity
+property_value: http://purl.org/dc/terms/date 2026-08-14T18:17:04Z xsd:dateTime
+property_value: http://www.geneontology.org/formats/oboInOwl#http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
+
+[Term]
+id: VT:0011340
+name: feather amount
+def: "The proportion or number of the surface covering of birds, made of keratin." [http://www.britannica.com]
+synonym: "feather density" NARROW []
+is_a: VT:1000664 ! feather morphology trait
+property_value: http://purl.org/dc/terms/date 2026-08-14T18:46:48Z xsd:dateTime
+property_value: http://www.geneontology.org/formats/oboInOwl#http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
+
+[Term]
+id: VT:0011341
+name: vertebra size trait
+def: "Any measurable or observable characteristic related to the physical magnitude of the bony segments of the spinal column." [ISBN:0-683-40008-8]
+is_a: VT:0000137 ! vertebra morphology trait
+property_value: http://purl.org/dc/terms/date 2026-08-14T21:06:40Z xsd:dateTime
+property_value: http://www.geneontology.org/formats/oboInOwl#http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
+
+[Term]
+id: VT:0011342
+name: vertebra mass
+def: "The amount of matter in the bony segments of the spinal column." [ISBN:0-683-40008-8]
+is_a: VT:0011341 ! vertebra size trait
+property_value: http://purl.org/dc/terms/date 2026-08-14T21:10:36Z xsd:dateTime
+property_value: http://www.geneontology.org/formats/oboInOwl#http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
+
+[Term]
+id: VT:0011343
+name: blood alpha-1 globulin amount
+def: "The proportion, quantity, or volume in whole blood, serum, or plasma of the proteins in the alpha-1 (faster) subgroup of the serum proteins that have the most rapid migration during electrophoresis." [MESH:D000510]
+is_a: VT:0010628 ! blood globulin amount
+property_value: http://purl.org/dc/terms/date 2026-08-19T14:11:42Z xsd:dateTime
+property_value: http://www.geneontology.org/formats/oboInOwl#http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
+
+[Term]
+id: VT:0011344
+name: blood alpha-2 globulin amount
+def: "The proportion, quantity, or volume in whole blood, serum, or plasma of the proteins in the alpha-1 (faster) subgroup of the serum proteins that have the most rapid migration during electrophoresis." [MESH:D000510]
+is_a: VT:0010628 ! blood globulin amount
+property_value: http://purl.org/dc/terms/date 2026-08-19T14:11:59Z xsd:dateTime
+property_value: http://www.geneontology.org/formats/oboInOwl#http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
+
+[Term]
+id: VT:0011345
+name: blood beta-globulin amount
+def: "The proportion, quantity, or volume in whole blood, serum, or plasma of the serum proteins with an electrophoretic mobility that falls between alpha-globulins and gamma-globulins." [MESH:D001609]
+is_a: VT:0010628 ! blood globulin amount
+property_value: http://purl.org/dc/terms/date 2026-08-19T14:12:20Z xsd:dateTime
+property_value: http://www.geneontology.org/formats/oboInOwl#http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
+
+[Term]
+id: VT:0011346
+name: blood gamma-globulin amount
+def: "The proportion, quantity, or volume in whole blood, serum, or plasma of the serum proteins that migrate to the gamma region (most positively charged) upon electrophoresis." [MESH:D005719]
+is_a: VT:0010628 ! blood globulin amount
+property_value: http://purl.org/dc/terms/date 2026-08-19T14:12:37Z xsd:dateTime
+property_value: http://www.geneontology.org/formats/oboInOwl#http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
+
+[Term]
+id: VT:0011347
+name: skin temperature trait
+def: "Any measurable or observable characteristic related to the level of heat on the external surface of the skin of an organism." [MESH:D001831]
+is_a: VT:0005535 ! body temperature trait
+property_value: http://purl.org/dc/terms/date 2026-08-19T18:33:54Z xsd:dateTime
+property_value: http://www.geneontology.org/formats/oboInOwl#http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
+
+[Term]
+id: VT:0011348
+name: horn morphology trait
+def: "Any measurable or observable characteristic related to the shape, structure, color or pattern of a pointed projection of the skin on the head of various animals, consisting of a covering of horn (keratin and other proteins) surrounding a core of living bone." [UBERON:0006967]
+is_a: VT:0015071 ! appendage morphology trait
+property_value: http://purl.org/dc/terms/date 2026-08-19T18:49:29Z xsd:dateTime
+property_value: http://www.geneontology.org/formats/oboInOwl#http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
+
+[Term]
+id: VT:0011349
+name: udder integrity trait
+def: "Any measurable or observable characteristic related to the structural soundness of the organ in certain species containing two or more mammary glands, each with its own nipple." [http://www.merriam-webster.com/dictionary/udder]
+is_a: VT:1000067 ! udder morphology trait
+property_value: http://purl.org/dc/terms/date 2026-08-19T20:38:40Z xsd:dateTime
+property_value: http://www.geneontology.org/formats/oboInOwl#http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
+
+[Term]
+id: VT:0011350
+name: milk molecular composition trait
+def: "Any measurable or observable characteristic related to the proportions of proteins, minerals, nutrients, gases, or other substances in the fluid secreted by the mammary glands of female mammals for the nourishment of their young." [https://www.merriam-webster.com/dictionary/milk]
+is_a: VT:0004047 ! milk trait
+property_value: http://purl.org/dc/terms/date 2026-08-20T13:16:39Z xsd:dateTime
+property_value: http://www.geneontology.org/formats/oboInOwl#http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
+
+[Term]
+id: VT:0011351
+name: wattle morphology trait
+def: "Any measurable or observable characteristic related to the shape, structure, color, or pattern of the fleshy dewlap or caruncle hanging from various parts of the head or neck in several groups of birds, goats, and other animals." [UBERON:0007623]
+is_a: VT:0010007 ! skin adnexa morphology trait
+is_a: VT:0015071 ! appendage morphology trait
+property_value: http://purl.org/dc/terms/date 2026-08-20T15:53:38Z xsd:dateTime
+property_value: http://www.geneontology.org/formats/oboInOwl#http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
+
+[Term]
+id: VT:0011352
+name: wattle size trait
+def: "Any measurable or observable characteristic related to the physical magnitude of the fleshy dewlap or caruncle hanging from various parts of the head or neck in several groups of birds, goats, and other animals." [UBERON:0007623]
+is_a: VT:0011351 ! wattle morphology trait
+property_value: http://purl.org/dc/terms/date 2026-08-20T15:56:39Z xsd:dateTime
+property_value: http://www.geneontology.org/formats/oboInOwl#http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
+
+[Term]
+id: VT:0011353
+name: wattle mass
+def: "The amount of matter in the fleshy dewlap or caruncle hanging from various parts of the head or neck in several groups of birds, goats, and other animals." [UBERON:0007623]
+is_a: VT:0011352 ! wattle size trait
+property_value: http://purl.org/dc/terms/date 2026-08-20T16:01:05Z xsd:dateTime
+property_value: http://www.geneontology.org/formats/oboInOwl#http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
+
+[Term]
+id: VT:0011354
+name: wattle length
+def: "The distance from point to point along the longest axis of the fleshy dewlap or caruncle hanging from various parts of the head or neck in several groups of birds, goats, and other animals." [UBERON:0007623]
+is_a: VT:0011352 ! wattle size trait
+property_value: http://purl.org/dc/terms/date 2026-08-20T16:02:17Z xsd:dateTime
+property_value: http://www.geneontology.org/formats/oboInOwl#http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
+
+[Term]
+id: VT:0011355
+name: blood pepsinogen amount
+def: "The proportion, quantity, or volume in whole blood, serum, or plasma of the granular zymogen of the gastric glands that is converted to pepsin under acidic conditions." [https://www.merriam-webster.com/dictionary/pepsinogen]
+is_a: VT:0005416 ! blood protein amount
+property_value: http://purl.org/dc/terms/date 2026-08-20T16:28:35Z xsd:dateTime
+property_value: http://www.geneontology.org/formats/oboInOwl#http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
+
+[Term]
+id: VT:0011356
+name: coat/hair distribution trait
+def: "Any measurable or observable characteristic related to the placement of the hair, wool, or fur of an organism, that is, of either a single cylindrical, keratinized, often pigmented filament characteristically growing from the epidermis of a mammal, or of the aggregate of all such filaments, on the body." [CMO:0001808]
+is_a: VT:0000367 ! coat/hair morphology trait
+property_value: http://purl.org/dc/terms/date 2026-08-20T19:24:32Z xsd:dateTime
+property_value: http://www.geneontology.org/formats/oboInOwl#http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
+
+[Term]
+id: VT:0011357
+name: feather distribution trait
+def: "Any measurable or observable characteristic related to the placement of the surface covering of birds, made of keratin, on the body." [http://www.britannica.com]
+is_a: VT:1000664 ! feather morphology trait
+property_value: http://purl.org/dc/terms/date 2026-08-20T19:38:31Z xsd:dateTime
+property_value: http://www.geneontology.org/formats/oboInOwl#http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
+
+[Term]
+id: VT:0011358
+name: blood immunoglobulin Y amount
+def: "The proportion, quantity, or volume in whole blood, serum, or plasma of the immunoglobulin which is the major antibody in amphibian, bird, reptile, and lungfish blood." [https://en.wikipedia.org/wiki/Immunoglobulin_Y]
+is_a: VT:0002460 ! blood immunoglobulin amount
+property_value: http://purl.org/dc/terms/date 2026-08-20T19:55:11Z xsd:dateTime
+property_value: http://www.geneontology.org/formats/oboInOwl#http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
+
+[Term]
+id: VT:0011359
+name: trunk trait
+def: "Any measurable or observable characteristic related to the organism subdivision which is the part of the body posterior to the cervical region (or head, when cervical region not present) and anterior to the caudal region. Includes the sacrum when present." [UBERON:0002100]
+synonym: "thoracolumbar region trait" EXACT []
+synonym: "torso trait" EXACT []
+is_a: VT:0100003 ! organism subdivision trait
+property_value: http://purl.org/dc/terms/date 2026-08-20T20:46:48Z xsd:dateTime
+property_value: http://www.geneontology.org/formats/oboInOwl#http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
+
+[Term]
+id: VT:0011360
+name: trunk morphology trait
+def: "Any measurable or observable characteristic related to the shape, structure, color or pattern of the organism subdivision which is the part of the body posterior to the cervical region (or head, when cervical region not present) and anterior to the caudal region. Includes the sacrum when present." [UBERON:0002100]
+synonym: "thoracolumbar region morphology trait" EXACT []
+synonym: "torso morphology trait" EXACT []
+is_a: VT:0011359 ! trunk trait
+property_value: http://purl.org/dc/terms/date 2026-08-20T20:47:20Z xsd:dateTime
+property_value: http://www.geneontology.org/formats/oboInOwl#http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
+
+[Term]
+id: VT:0011361
+name: trunk circumference
+def: "The distance around the organism subdivision which is the part of the body posterior to the cervical region (or head, when cervical region not present) and anterior to the caudal region." [UBERON:0002100]
+synonym: "torso circumference" EXACT []
+is_a: VT:0011360 ! trunk morphology trait
+property_value: http://purl.org/dc/terms/date 2026-08-20T21:14:20Z xsd:dateTime
+property_value: http://www.geneontology.org/formats/oboInOwl#http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
+
+[Term]
+id: VT:0011362
+name: trunk depth
+def: "The dorsal-ventral dimension of the organism subdivision which is the part of the body posterior to the cervical region (or head, when cervical region not present) and anterior to the caudal region." [UBERON:0002100]
+synonym: "torso depth" EXACT []
+is_a: VT:0011360 ! trunk morphology trait
+property_value: http://purl.org/dc/terms/date 2026-08-20T21:20:35Z xsd:dateTime
+property_value: http://www.geneontology.org/formats/oboInOwl#http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
+
+[Term]
+id: VT:0011363
+name: milk fatty acid trans-12-C18:1 amount
+def: "The proportion, quantity, or volume in milk fat of an unsaturated fatty acid with an eighteen-carbon backbone and a trans double bond at C-12." [VT:CP]
+synonym: "milk trans-12-Octadecenoic acid amount" EXACT []
+is_a: VT:0010373 ! milk monounsaturated fatty acid amount
+property_value: http://purl.org/dc/terms/date 2026-09-09T16:45:05Z xsd:dateTime
+property_value: http://www.geneontology.org/formats/oboInOwl#http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
+
+[Term]
+id: VT:0011364
+name: embryo quantity
+def: "The proportion or number of the anatomical entity that comprises the organism in the early stages of growth and differentiation that are characterized by cleavage, the laying down of fundamental tissues, and the formation of primitive organs and organ systems." [UBERON:0000922]
+is_a: VT:0000069 ! embryo trait
+property_value: http://purl.org/dc/terms/date 2026-09-09T18:12:39Z xsd:dateTime
+property_value: http://www.geneontology.org/formats/oboInOwl#http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
+
+[Term]
+id: VT:0011365
+name: rumination trait
+def: "Any measurable or observable characteristic related to the digestive process in some species in which food, usually grass or hay, is swallowed into a multi-compartmented stomach, regurgitated, chewed again, and swallowed again." [GO:0036147]
+is_a: VT:0001664 ! digestion trait
+property_value: http://purl.org/dc/terms/date 2026-09-09T18:56:03Z xsd:dateTime
+property_value: http://www.geneontology.org/formats/oboInOwl#http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
+
+[Term]
+id: VT:0011366
+name: viable embryo quantity
+def: "The proportion or number of embryos that have attained such form and development of structures as to be normally capable of survival." [https://www.merriam-webster.com/dictionary/viable]
+is_a: VT:0011364 ! embryo quantity
+property_value: http://purl.org/dc/terms/date 2026-09-09T19:01:48Z xsd:dateTime
+property_value: http://www.geneontology.org/formats/oboInOwl#http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
+
+[Term]
+id: VT:0011367
+name: non-viable embryo quantity
+def: "The proportion or number of embryos that are not capable of living, growing, or developing successfully." [https://www.merriam-webster.com/dictionary/non-viable]
+is_a: VT:0011364 ! embryo quantity
+property_value: http://purl.org/dc/terms/date 2026-09-09T19:08:28Z xsd:dateTime
+property_value: http://www.geneontology.org/formats/oboInOwl#http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
+
+[Term]
+id: VT:0011368
+name: sperm flagellum morphology trait
+def: "Any measurable or observable characteristic related to the shape, structure, color, or pattern of a microtubule-based flagellum (or cilium) that is part of a sperm, a mature male germ cell that develops from a spermatid." [GO:0036126]
+is_a: VT:0010042 ! sperm morphology trait
+property_value: http://purl.org/dc/terms/date 2026-09-09T19:12:15Z xsd:dateTime
+property_value: http://www.geneontology.org/formats/oboInOwl#http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
+
+[Term]
+id: VT:0011369
+name: digestive gas excretion trait
+def: "Any measurable or observable characteristic related to any excreted gas that is produced by the digestive tract." [UBERON:0034946]
+is_a: VT:0001664 ! digestion trait
+property_value: http://purl.org/dc/terms/date 2026-09-09T19:25:40Z xsd:dateTime
+property_value: http://www.geneontology.org/formats/oboInOwl#http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
+
+[Term]
+id: VT:0011370
+name: methane excretion trait
+def: "Any measurable or observable characteristic related to the excretion of methane, a colorless, flammable gas formed in the decomposition of organic matter." [MESH:D008697]
+is_a: VT:0011369 ! digestive gas excretion trait
+property_value: http://purl.org/dc/terms/date 2026-09-09T19:50:56Z xsd:dateTime
+property_value: http://www.geneontology.org/formats/oboInOwl#http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
+
+[Term]
 id: VT:0015000
 name: epididymal fat pad morphology trait
 def: "Any measurable or observable characteristic related to the shape, structure, color or pattern of the encapsulated adipose tissue associated with the elongated structure connected to the posterior surface of the testes that transports, stores, and matures spermatozoa between testes and vas deferens." [ISBN:0-683-40008-8, MP:0006319]
@@ -34014,6 +34395,7 @@ name: milk amount
 def: "The proportion, quantity, or volume of milk produced by the mammary gland." [MGI:smb]
 synonym: "milk yield" NARROW []
 is_a: VT:0003838 ! milk secretion trait
+is_a: VT:0004047 ! milk trait
 created_by: mgi
 creation_date: 2010-01-21T04:32:49Z
 
@@ -34152,7 +34534,8 @@ id: VT:0015059
 name: thorax trait
 def: "Any measurable or observable characteristic related to the portion of the body between the head and the abdomen; in mammals this region is formed by the sternum, thoracic vertebrae and ribs and does not include the upper limbs." [MGI:smb, MP:0004134]
 synonym: "chest trait" NARROW []
-is_a: VT:0100003 ! organism subdivision trait
+synonym: "thoracic segment of trunk trait" EXACT []
+is_a: VT:0011359 ! trunk trait
 created_by: smb
 creation_date: 2010-02-19T01:44:04Z
 
@@ -34904,6 +35287,7 @@ def: "The distance around an organism's thorax measured just posterior to the fo
 synonym: "chest girth" EXACT []
 synonym: "heart girth" EXACT []
 is_a: VT:0004134 ! thorax morphology trait
+is_a: VT:0011361 ! trunk circumference
 created_by: caripark
 creation_date: 2008-11-10T01:17:50Z
 
@@ -35065,7 +35449,7 @@ def: "The proportion, quantity, or volume in milk of macromolecules consisting o
 synonym: "milk protein concentration" RELATED []
 synonym: "milk protein content" EXACT []
 synonym: "milk protein percentage" RELATED []
-is_a: VT:0004047 ! milk trait
+is_a: VT:0011350 ! milk molecular composition trait
 created_by: caripark
 creation_date: 2008-11-10T02:45:00Z
 
@@ -36049,6 +36433,7 @@ id: VT:1000732
 name: chest depth
 def: "The dorsal-ventral dimension of the chest, measured directly behind the forelimbs." [VT:CP]
 is_a: VT:0004134 ! thorax morphology trait
+is_a: VT:0011362 ! trunk depth
 created_by: caripark
 creation_date: 2009-05-07T12:59:41Z
 
