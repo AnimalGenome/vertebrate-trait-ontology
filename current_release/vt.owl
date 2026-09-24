@@ -12,8 +12,8 @@
      xmlns:terms1="http://www.geneontology.org/formats/oboInOwl#http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/vt.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/vt/releases/2026-09-09/vt.owl"/>
-        <obo:owl_versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-09-09</obo:owl_versionInfo>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/vt/releases/2026-09-23/vt.owl"/>
+        <obo:owl_versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-09-23</obo:owl_versionInfo>
         <dc:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The Vertebrate Trait Ontology is a controlled vocabulary for the description of traits (measurable or observable characteristics) pertaining to the morphology, physiology, or development of vertebrate organisms.</dc:description>
         <dc:language rdf:datatype="http://www.w3.org/2001/XMLSchema#string">English</dc:language>
         <dc:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The Vertebrate Trait Ontology</dc:title>
@@ -48514,6 +48514,7 @@ consider: VT:0001299</owl:annotatedTarget>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/VT_0008495">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/VT_0001805"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The proportion, quantity, or volume in whole blood, serum, or plasma of immunoglobulin class G1.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>CMO:0004167</oboInOwl:hasDbXref>
         <oboInOwl:hasNarrowSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">plasma immunoglobulin G1 amount</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Trait.ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IgG1 concentration</oboInOwl:hasRelatedSynonym>
@@ -48960,6 +48961,7 @@ consider: VT:0001299</owl:annotatedTarget>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/VT_0008590">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/VT_0008588"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The proportion, quantity, or volume in whole blood, serum, or plasma of a cytokine produced by a variety of cell types, including T-cells, monocytes, dendritic cells and epithelial cells that exerts a variety of effects on immunoregulation and inflammation.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>CMO:0004202</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EFO:0004750</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Trait.ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">circulating CSIF-10 level</oboInOwl:hasRelatedSynonym>
@@ -49022,6 +49024,7 @@ consider: VT:0001299</owl:annotatedTarget>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/VT_0008588"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The proportion, quantity, or volume in whole blood, serum, or plasma of a soluble substance elaborated by antigen- or mitogen-stimulated T-cells which induces DNA synthesis in naive lymphocytes.</obo:IAO_0000115>
         <oboInOwl:hasBroadSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">interleukin 2 measurement</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasDbXref>CMO:0004200</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EFO:0008331</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EFO:0801723</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Trait.ontology</oboInOwl:hasOBONamespace>
@@ -49192,6 +49195,7 @@ consider: VT:0001299</owl:annotatedTarget>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/VT_0008616">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/VT_0008588"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The proportion, quantity, or volume in whole blood, serum, or plasma of a heterodimeric cytokine that plays a role in innate and adaptive immune responses; it is produced by dendritic cells, macrophages and a variety of other immune cells and plays a role in the stimulation of interferon-gamma production by T-cells and natural killer cells.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>CMO:0004203</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EFO:0004753</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Trait.ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">circulating IL-12 level</oboInOwl:hasRelatedSynonym>
@@ -55643,6 +55647,7 @@ consider: VT:0001299</owl:annotatedTarget>
         <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">caripark</oboInOwl:created_by>
         <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2010-05-18T09:53:20Z</oboInOwl:creation_date>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ATOL:0001084</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>CMO:0004178</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Trait.ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">VT:0010197</oboInOwl:id>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">duodenum length</rdfs:label>
@@ -55665,6 +55670,7 @@ consider: VT:0001299</owl:annotatedTarget>
         <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">caripark</oboInOwl:created_by>
         <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2010-05-18T09:54:49Z</oboInOwl:creation_date>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ATOL:0001086</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>CMO:0004179</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Trait.ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">duodenum weight</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tissue weight of the duodenum</oboInOwl:hasRelatedSynonym>
@@ -55999,6 +56005,7 @@ consider: VT:0001299</owl:annotatedTarget>
         <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">caripark</oboInOwl:created_by>
         <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2010-05-18T12:32:04Z</oboInOwl:creation_date>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ATOL:0001093</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>CMO:0004182</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Trait.ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">VT:0010212</oboInOwl:id>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">jejunum length</rdfs:label>
@@ -56023,6 +56030,7 @@ consider: VT:0001299</owl:annotatedTarget>
         <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">caripark</oboInOwl:created_by>
         <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2010-05-18T12:33:17Z</oboInOwl:creation_date>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ATOL:0001095</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>CMO:0004183</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Trait.ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">jejunum weight</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tissue weight of the jejunum</oboInOwl:hasRelatedSynonym>
@@ -56283,6 +56291,7 @@ consider: VT:0001299</owl:annotatedTarget>
         <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">caripark</oboInOwl:created_by>
         <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2010-05-18T01:29:40Z</oboInOwl:creation_date>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ATOL:0000571</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>CMO:0004180</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Trait.ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">VT:0010224</oboInOwl:id>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ileum length</rdfs:label>
@@ -56305,6 +56314,7 @@ consider: VT:0001299</owl:annotatedTarget>
         <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">caripark</oboInOwl:created_by>
         <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2010-05-18T01:30:45Z</oboInOwl:creation_date>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ATOL:0000572</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>CMO:0004181</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Trait.ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ileum weight</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tissue weight of the ileum</oboInOwl:hasRelatedSynonym>
@@ -57823,6 +57833,7 @@ consider: VT:0001299</owl:annotatedTarget>
         <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">caripark</oboInOwl:created_by>
         <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2010-05-21T02:58:45Z</oboInOwl:creation_date>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ATOL:0000622</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>CMO:0004189</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">milk calcium content</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Trait.ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">milk calcium concentration</oboInOwl:hasRelatedSynonym>
@@ -57849,6 +57860,7 @@ consider: VT:0001299</owl:annotatedTarget>
         <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">caripark</oboInOwl:created_by>
         <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2010-05-21T03:03:34Z</oboInOwl:creation_date>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ATOL:0000623</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>CMO:0004184</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">milk potassium content</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Trait.ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">milk potassium concentration</oboInOwl:hasRelatedSynonym>
@@ -57875,6 +57887,7 @@ consider: VT:0001299</owl:annotatedTarget>
         <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">caripark</oboInOwl:created_by>
         <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2010-05-21T03:03:34Z</oboInOwl:creation_date>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ATOL:0000624</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>CMO:0004184</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">milk sodium content</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Trait.ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">milk sodium concentration</oboInOwl:hasRelatedSynonym>
@@ -57900,6 +57913,7 @@ consider: VT:0001299</owl:annotatedTarget>
         <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">caripark</oboInOwl:created_by>
         <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2010-05-21T03:03:34Z</oboInOwl:creation_date>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ATOL:0000625</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>CMO:0004184</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">milk phosphorus content</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Trait.ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">milk phosphorus concentration</oboInOwl:hasRelatedSynonym>
@@ -57926,6 +57940,7 @@ consider: VT:0001299</owl:annotatedTarget>
         <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">caripark</oboInOwl:created_by>
         <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2010-05-21T03:03:34Z</oboInOwl:creation_date>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ATOL:0000626</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>CMO:0004190</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">milk chloride content</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Trait.ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">milk chloride concentration</oboInOwl:hasRelatedSynonym>
@@ -57951,6 +57966,7 @@ consider: VT:0001299</owl:annotatedTarget>
         <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">caripark</oboInOwl:created_by>
         <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2010-05-21T03:03:34Z</oboInOwl:creation_date>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ATOL:0000627</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>CMO:0004192</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">milk magnesium content</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Trait.ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">milk magnesium concentration</oboInOwl:hasRelatedSynonym>
@@ -66065,6 +66081,7 @@ consider: VT:0001299</owl:annotatedTarget>
         <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">caripark</oboInOwl:created_by>
         <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2014-06-18T03:13:53Z</oboInOwl:creation_date>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CMO:0002456</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>CMO:0004164</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EFO:0004857</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EFO:0007893</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EFO:0007900</oboInOwl:hasDbXref>
@@ -67912,6 +67929,7 @@ consider: VT:0001299</owl:annotatedTarget>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The proportion, quantity, or volume in milk of this metallic bioelement found in a number of proteins.</obo:IAO_0000115>
         <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">caripark</oboInOwl:created_by>
         <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2016-03-04T02:52:37Z</oboInOwl:creation_date>
+        <oboInOwl:hasDbXref>CMO:0004185</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Trait.ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">VT:0010710</oboInOwl:id>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">milk copper amount</rdfs:label>
@@ -67932,6 +67950,7 @@ consider: VT:0001299</owl:annotatedTarget>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The proportion, quantity, or volume in milk of this metallic element that is an essential constituent of hemoglobins, cytochromes, and iron-binding proteins.</obo:IAO_0000115>
         <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">caripark</oboInOwl:created_by>
         <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2016-03-04T02:59:14Z</oboInOwl:creation_date>
+        <oboInOwl:hasDbXref>CMO:0004186</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Trait.ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">VT:0010711</oboInOwl:id>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">milk iron amount</rdfs:label>
@@ -67952,6 +67971,7 @@ consider: VT:0001299</owl:annotatedTarget>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The proportion, quantity, or volume in milk of this metallic element that resembles iron.</obo:IAO_0000115>
         <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">caripark</oboInOwl:created_by>
         <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2016-03-04T03:04:22Z</oboInOwl:creation_date>
+        <oboInOwl:hasDbXref>CMO:0004193</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Trait.ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">VT:0010712</oboInOwl:id>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">milk manganese amount</rdfs:label>
@@ -67973,6 +67993,7 @@ consider: VT:0001299</owl:annotatedTarget>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The proportion, quantity, or volume in milk of this metallic element chemically similar to sulfur.</obo:IAO_0000115>
         <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">caripark</oboInOwl:created_by>
         <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2016-03-04T03:06:06Z</oboInOwl:creation_date>
+        <oboInOwl:hasDbXref>CMO:0004187</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Trait.ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">VT:0010713</oboInOwl:id>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">milk selenium amount</rdfs:label>
@@ -67993,6 +68014,7 @@ consider: VT:0001299</owl:annotatedTarget>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The proportion, quantity, or volume in milk of this metallic element that is a cofactor in many proteins.</obo:IAO_0000115>
         <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">caripark</oboInOwl:created_by>
         <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2016-03-04T03:08:19Z</oboInOwl:creation_date>
+        <oboInOwl:hasDbXref>CMO:0004188</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Trait.ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">VT:0010714</oboInOwl:id>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">milk zinc amount</rdfs:label>
@@ -70206,6 +70228,7 @@ consider: VT:0001299</owl:annotatedTarget>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The proportion, quantity, or volume in milk of this nonmetallic element with atomic symbol S and atomic number 16.</obo:IAO_0000115>
         <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">caripark</oboInOwl:created_by>
         <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2019-06-05T10:03:45Z</oboInOwl:creation_date>
+        <oboInOwl:hasDbXref>CMO:0004197</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Trait.ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">milk sulfate amount</oboInOwl:hasRelatedSynonym>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">VT:0010808</oboInOwl:id>
@@ -70552,6 +70575,7 @@ consider: VT:0001299</owl:annotatedTarget>
         <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">caripark</oboInOwl:created_by>
         <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2019-10-15T15:24:16Z</oboInOwl:creation_date>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ATOL:0000274</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>CMO:0004191</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Trait.ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">VT:0010824</oboInOwl:id>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">milk iodine amount</rdfs:label>
@@ -79501,6 +79525,7 @@ consider: VT:0001299</owl:annotatedTarget>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The proportion, quantity, or volume in whole blood, serum, or plasma of a cytokine produced by a variety of cell types that plays a role in the regulation of the acute inflammatory response; it induces chemotaxis of neutrophils and other inflammatory cells.</obo:IAO_0000115>
         <terms:contributor rdf:resource="http://orcid.org/0000-0002-2346-5201"/>
         <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-08-19T20:20:56Z</terms:date>
+        <oboInOwl:hasDbXref>CMO:0004201</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Trait.ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">VT:0011215</oboInOwl:id>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blood interleukin-8 amount</rdfs:label>
@@ -79563,6 +79588,7 @@ consider: VT:0001299</owl:annotatedTarget>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The proportion, quantity, or volume in whole blood, serum, or plasma of immunoglobulin class G2.</obo:IAO_0000115>
         <terms:contributor rdf:resource="http://orcid.org/0000-0002-2346-5201"/>
         <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-08-19T21:30:48Z</terms:date>
+        <oboInOwl:hasDbXref>CMO:0004168</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Trait.ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">VT:0011218</oboInOwl:id>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blood immunoglobulin G2 amount</rdfs:label>
@@ -79584,6 +79610,7 @@ consider: VT:0001299</owl:annotatedTarget>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The proportion, quantity, or volume in whole blood, serum, or plasma of this monoamine neurotransmitter derived primarily from tryptophan.</obo:IAO_0000115>
         <terms:contributor rdf:resource="http://orcid.org/0000-0002-2346-5201"/>
         <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-08-19T21:40:26Z</terms:date>
+        <oboInOwl:hasDbXref>CMO:0004166</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Trait.ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">VT:0011219</oboInOwl:id>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blood serotonin amount</rdfs:label>
@@ -82262,6 +82289,7 @@ in the connective tissue consisting of fat-storing cells and arranged in lobular
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/VT_0005418"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The proportion, quantity, or volume in whole blood, serum, or plasma of the heterodimeric glycoprotein hormone that plays an essential role in sex determination in early embryonic development.</obo:IAO_0000115>
         <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-08-13T20:39:08Z</terms:date>
+        <oboInOwl:hasDbXref>CMO:0004162</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blood AMH amount</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Trait.ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">VT:0011335</oboInOwl:id>
@@ -82283,6 +82311,7 @@ in the connective tissue consisting of fat-storing cells and arranged in lobular
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/VT_0010626"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The proportion, quantity, or volume in whole blood, serum, or plasma of a carotenoid that is a precursor of vitamin A.</obo:IAO_0000115>
         <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-08-13T20:48:07Z</terms:date>
+        <oboInOwl:hasDbXref>CMO:0004163</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Trait.ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">VT:0011336</oboInOwl:id>
         <terms1:contributor rdf:resource="http://orcid.org/0000-0002-2346-5201"/>
@@ -82303,6 +82332,7 @@ in the connective tissue consisting of fat-storing cells and arranged in lobular
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/VT_0010626"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The proportion, quantity, or volume in whole blood, serum, or plasma of a fat-soluble vitamin that acts as a natural antioxidant by scavenging free radicals and molecular oxygen.</obo:IAO_0000115>
         <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-08-13T20:51:57Z</terms:date>
+        <oboInOwl:hasDbXref>CMO:0004165</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Trait.ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">VT:0011337</oboInOwl:id>
         <terms1:contributor rdf:resource="http://orcid.org/0000-0002-2346-5201"/>
@@ -82323,6 +82353,7 @@ in the connective tissue consisting of fat-storing cells and arranged in lobular
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/VT_0003456"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The distance around the appendage at the caudal end of the vertebral column.</obo:IAO_0000115>
         <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-08-14T17:52:08Z</terms:date>
+        <oboInOwl:hasDbXref>CMO:0004169</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Trait.ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">VT:0011338</oboInOwl:id>
         <terms1:contributor rdf:resource="http://orcid.org/0000-0002-2346-5201"/>
@@ -82424,6 +82455,7 @@ in the connective tissue consisting of fat-storing cells and arranged in lobular
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/VT_0010628"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The proportion, quantity, or volume in whole blood, serum, or plasma of the proteins in the alpha-1 (faster) subgroup of the serum proteins that have the most rapid migration during electrophoresis.</obo:IAO_0000115>
         <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-08-19T14:11:42Z</terms:date>
+        <oboInOwl:hasDbXref>CMO:0004170</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Trait.ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">VT:0011343</oboInOwl:id>
         <terms1:contributor rdf:resource="http://orcid.org/0000-0002-2346-5201"/>
@@ -82444,6 +82476,7 @@ in the connective tissue consisting of fat-storing cells and arranged in lobular
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/VT_0010628"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The proportion, quantity, or volume in whole blood, serum, or plasma of the proteins in the alpha-1 (faster) subgroup of the serum proteins that have the most rapid migration during electrophoresis.</obo:IAO_0000115>
         <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-08-19T14:11:59Z</terms:date>
+        <oboInOwl:hasDbXref>CMO:0004171</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Trait.ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">VT:0011344</oboInOwl:id>
         <terms1:contributor rdf:resource="http://orcid.org/0000-0002-2346-5201"/>
@@ -82464,6 +82497,7 @@ in the connective tissue consisting of fat-storing cells and arranged in lobular
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/VT_0010628"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The proportion, quantity, or volume in whole blood, serum, or plasma of the serum proteins with an electrophoretic mobility that falls between alpha-globulins and gamma-globulins.</obo:IAO_0000115>
         <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-08-19T14:12:20Z</terms:date>
+        <oboInOwl:hasDbXref>CMO:0004172</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Trait.ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">VT:0011345</oboInOwl:id>
         <terms1:contributor rdf:resource="http://orcid.org/0000-0002-2346-5201"/>
@@ -82484,6 +82518,7 @@ in the connective tissue consisting of fat-storing cells and arranged in lobular
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/VT_0010628"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The proportion, quantity, or volume in whole blood, serum, or plasma of the serum proteins that migrate to the gamma region (most positively charged) upon electrophoresis.</obo:IAO_0000115>
         <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-08-19T14:12:37Z</terms:date>
+        <oboInOwl:hasDbXref>CMO:0004173</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Trait.ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">VT:0011346</oboInOwl:id>
         <terms1:contributor rdf:resource="http://orcid.org/0000-0002-2346-5201"/>
@@ -82504,6 +82539,7 @@ in the connective tissue consisting of fat-storing cells and arranged in lobular
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/VT_0005535"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Any measurable or observable characteristic related to the level of heat on the external surface of the skin of an organism.</obo:IAO_0000115>
         <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-08-19T18:33:54Z</terms:date>
+        <oboInOwl:hasDbXref>CMO:0004174</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Trait.ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">VT:0011347</oboInOwl:id>
         <terms1:contributor rdf:resource="http://orcid.org/0000-0002-2346-5201"/>
@@ -82665,6 +82701,7 @@ in the connective tissue consisting of fat-storing cells and arranged in lobular
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/VT_0005416"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The proportion, quantity, or volume in whole blood, serum, or plasma of the granular zymogen of the gastric glands that is converted to pepsin under acidic conditions.</obo:IAO_0000115>
         <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-08-20T16:28:35Z</terms:date>
+        <oboInOwl:hasDbXref>CMO:0004176</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Trait.ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">VT:0011355</oboInOwl:id>
         <terms1:contributor rdf:resource="http://orcid.org/0000-0002-2346-5201"/>
@@ -82725,6 +82762,7 @@ in the connective tissue consisting of fat-storing cells and arranged in lobular
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/VT_0002460"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The proportion, quantity, or volume in whole blood, serum, or plasma of the immunoglobulin which is the major antibody in amphibian, bird, reptile, and lungfish blood.</obo:IAO_0000115>
         <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-08-20T19:55:11Z</terms:date>
+        <oboInOwl:hasDbXref>CMO:0004177</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Trait.ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">VT:0011358</oboInOwl:id>
         <terms1:contributor rdf:resource="http://orcid.org/0000-0002-2346-5201"/>
@@ -82831,6 +82869,7 @@ in the connective tissue consisting of fat-storing cells and arranged in lobular
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/VT_0010373"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The proportion, quantity, or volume in milk fat of an unsaturated fatty acid with an eighteen-carbon backbone and a trans double bond at C-12.</obo:IAO_0000115>
         <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-09-09T16:45:05Z</terms:date>
+        <oboInOwl:hasDbXref>CMO:0004198</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">milk trans-12-Octadecenoic acid amount</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Trait.ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">VT:0011363</oboInOwl:id>
@@ -82932,6 +82971,7 @@ in the connective tissue consisting of fat-storing cells and arranged in lobular
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/VT_0010042"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Any measurable or observable characteristic related to the shape, structure, color, or pattern of a microtubule-based flagellum (or cilium) that is part of a sperm, a mature male germ cell that develops from a spermatid.</obo:IAO_0000115>
         <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-09-09T19:12:15Z</terms:date>
+        <oboInOwl:hasExactSynonym>sperm tail morphology trait</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Trait.ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">VT:0011368</oboInOwl:id>
         <terms1:contributor rdf:resource="http://orcid.org/0000-0002-2346-5201"/>
@@ -82970,7 +83010,7 @@ in the connective tissue consisting of fat-storing cells and arranged in lobular
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/VT_0011370">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/VT_0011369"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Any measurable or observable characteristic related to the excretion of methane, a colorless, flammable gas formed in the decomposition of organic matter.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Any measurable or observable characteristic related to the elimination by an organism of methane, a colorless, flammable gas formed in the decomposition of organic matter.</obo:IAO_0000115>
         <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-09-09T19:50:56Z</terms:date>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Trait.ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">VT:0011370</oboInOwl:id>
@@ -82980,8 +83020,89 @@ in the connective tissue consisting of fat-storing cells and arranged in lobular
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/VT_0011370"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Any measurable or observable characteristic related to the excretion of methane, a colorless, flammable gas formed in the decomposition of organic matter.</owl:annotatedTarget>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Any measurable or observable characteristic related to the elimination by an organism of methane, a colorless, flammable gas formed in the decomposition of organic matter.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MESH:D008697</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/VT_0011371 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/VT_0011371">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/VT_0001422"/>
+        <obo:IAO_0000115>Any measurable or observable characteristic related to the process whereby water (a colorless, odorless, tasteless liquid, each molecule of which contains one atom of oxygen and two atoms of hydrogen (H2O)) is taken in for utilization by the body.</obo:IAO_0000115>
+        <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-09-23T14:58:46Z</terms:date>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Trait.ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">VT:0011371</oboInOwl:id>
+        <terms1:contributor rdf:resource="http://orcid.org/0000-0002-2346-5201"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">water intake trait</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/VT_0011371"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Any measurable or observable characteristic related to the process whereby water (a colorless, odorless, tasteless liquid, each molecule of which contains one atom of oxygen and two atoms of hydrogen (H2O)) is taken in for utilization by the body.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>CMO:0000774</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>https://www.merriam-webster.com/dictionary/water</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/VT_0011372 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/VT_0011372">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/VT_0010242"/>
+        <obo:IAO_0000115>The amount of matter in the first compartment of the ruminant stomach. It lies on the left side of the body, occupying the whole of the left side of the abdomen and even stretching across the median plane of the body to the right side. It is capacious, divided into an upper and a lower sac, each of which has a blind sac at its posterior extremity.</obo:IAO_0000115>
+        <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-09-23T15:39:34Z</terms:date>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Trait.ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">VT:0011372</oboInOwl:id>
+        <terms1:contributor rdf:resource="http://orcid.org/0000-0002-2346-5201"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rumen mass</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/VT_0011372"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>The amount of matter in the first compartment of the ruminant stomach. It lies on the left side of the body, occupying the whole of the left side of the abdomen and even stretching across the median plane of the body to the right side. It is capacious, divided into an upper and a lower sac, each of which has a blind sac at its posterior extremity.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>UBERON:0007365</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/VT_0011373 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/VT_0011373">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/VT_0001943"/>
+        <obo:IAO_0000115>Any measurable or observable characteristic related to any gas that is excreted by the respiratory system.</obo:IAO_0000115>
+        <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-09-23T15:44:37Z</terms:date>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Trait.ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">VT:0011373</oboInOwl:id>
+        <terms1:contributor rdf:resource="http://orcid.org/0000-0002-2346-5201"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">respiratory gas excretion trait</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/VT_0011373"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Any measurable or observable characteristic related to any gas that is excreted by the respiratory system.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>VT:CP</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/VT_0011374 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/VT_0011374">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/VT_0011373"/>
+        <obo:IAO_0000115>Any measurable or observable characteristic related to the elimination by an organism of carbon dioxide, a colorless, odorless gas produced during respiration by all animals that depend directly or indirectly on living or decaying plants for food.</obo:IAO_0000115>
+        <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-09-23T15:48:42Z</terms:date>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Trait.ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">VT:0011374</oboInOwl:id>
+        <terms1:contributor rdf:resource="http://orcid.org/0000-0002-2346-5201"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">carbon dioxide excretion trait</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/VT_0011374"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Any measurable or observable characteristic related to the elimination by an organism of carbon dioxide, a colorless, odorless gas produced during respiration by all animals that depend directly or indirectly on living or decaying plants for food.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>CHEBI:16526</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
