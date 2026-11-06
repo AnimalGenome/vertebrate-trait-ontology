@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: releases/2026-10-02
+data-version: releases/2026-11-06
 saved-by: caripark
 default-namespace: Trait.ontology
 ontology: vt
@@ -7,7 +7,7 @@ property_value: http://purl.org/dc/elements/1.1/description "The Vertebrate Trai
 property_value: http://purl.org/dc/elements/1.1/language "English" xsd:string
 property_value: http://purl.org/dc/elements/1.1/title "The Vertebrate Trait Ontology" xsd:string
 property_value: http://purl.org/dc/terms/license https://creativecommons.org/licenses/by/4.0/
-property_value: owl:versionInfo "2026-10-02" xsd:string
+property_value: owl:versionInfo "2026-11-06" xsd:string
 
 [Term]
 id: VT:0000000
@@ -2229,21 +2229,21 @@ is_obsolete: true
 
 [Term]
 id: VT:0000572
-name: autopod morphology trait
-def: "Any measurable or observable characteristic related to the shape, structure, color, or pattern of the distal elements of the developing limb of vertebrates that will give rise to the pedal or prehensile appendages (e.g. hand, foot, paw, phalanges and/or digits)." [PMID:12560810]
-is_a: VT:0006279 ! limb development trait
+name: obsolete autopod morphology trait
+def: "OBSOLETE. Any measurable or observable characteristic related to the shape, structure, color, or pattern of the distal elements of the developing limb of vertebrates that will give rise to the pedal or prehensile appendages (e.g. hand, foot, paw, phalanges and/or digits)." [PMID:12560810]
+is_obsolete: true
 
 [Term]
 id: VT:0000573
 name: hind paw size trait
 def: "Any measurable or observable characteristic related to the physical dimensions of the rear feet." [PMID:9845363]
-is_a: VT:0004271 ! paw/hand/foot/hoof morphology trait
+is_a: VT:0011387 ! autopod size trait
 
 [Term]
 id: VT:0000574
 name: foot pad morphology trait
 def: "Any measurable or observable characteristic related to the shape, structure, color, or pattern of the body of fat on the foot." [MP:0000574]
-is_a: VT:0004271 ! paw/hand/foot/hoof morphology trait
+is_a: VT:0004271 ! autopod morphology trait
 
 [Term]
 id: VT:0000579
@@ -2526,7 +2526,7 @@ id: VT:0000675
 name: palmar eccrine gland morphology trait
 def: "Any measurable or observable characteristic related to the shape, structure, or pattern of the sweat glands of the palm." [MP:0000675]
 is_a: VT:0000674 ! sweat gland morphology trait
-is_a: VT:0004271 ! paw/hand/foot/hoof morphology trait
+is_a: VT:0004271 ! autopod morphology trait
 
 [Term]
 id: VT:0000678
@@ -6804,7 +6804,7 @@ name: digit morphology trait
 def: "Any measurable or observable characteristic related to the shape, structure, color, or pattern of the fingers or toes, or their corresponding parts in other vertebrates." [ISBN:0-683-40008-8, MP:0002110]
 comment: pslim term
 xref: EFO:0010822
-is_a: VT:0004271 ! paw/hand/foot/hoof morphology trait
+is_a: VT:0004271 ! autopod morphology trait
 
 [Term]
 id: VT:0002111
@@ -13582,8 +13582,9 @@ is_a: VT:0001286 ! eye development trait
 
 [Term]
 id: VT:0004271
-name: paw/hand/foot/hoof morphology trait
-def: "Any measurable or observable characteristic related to the shape, structure, color, or pattern of the pedal or prehensile extremity of vertebrates." [MP:0000572]
+name: autopod morphology trait
+def: "Any measurable or observable characteristic related to the shape, structure, color, or pattern of the distal elements of the limb of vertebrates including the pedal or prehensile appendages (e.g., hand, foot, paw, phalanges, and/or digits)." [MP:0000572]
+synonym: "paw/hand/foot/hoof morphology trait" EXACT []
 is_a: VT:0002109 ! limb morphology trait
 
 [Term]
@@ -17349,7 +17350,7 @@ is_a: VT:0015069 ! appendage development trait
 id: VT:0006280
 name: digit development trait
 def: "Any measurable or observable characteristic related to the morphology or physiology of the digits during their formation and differentiation." [MP:0006280, PMID:11470817]
-is_a: VT:0000572 ! autopod morphology trait
+is_a: VT:0006279 ! limb development trait
 
 [Term]
 id: VT:0006281
@@ -28560,6 +28561,7 @@ def: "The proportion, quantity, or volume of ribonucleic acid in the adrenal gla
 synonym: "adrenal gland RNA amount" EXACT []
 xref: CMO:0002794
 is_a: VT:0010789 ! adrenal gland molecular composition trait
+is_a: VT:0011393 ! gland ribonucleic acid amount
 created_by: caripark
 creation_date: 2018-10-03T08:34:56Z
 
@@ -28588,6 +28590,7 @@ xref: CMO:0002933
 xref: CMO:0002934
 xref: CMO:0002940
 is_a: VT:0010755 ! heart molecular composition trait
+is_a: VT:0011060 ! tissue ribonucleic acid amount
 created_by: caripark
 creation_date: 2018-10-03T08:38:52Z
 
@@ -28599,6 +28602,7 @@ synonym: "kidney RNA amount" EXACT []
 xref: CMO:0003912
 is_a: VT:0003014 ! kidney medulla morphology trait
 is_a: VT:0010558 ! kidney molecular composition trait
+is_a: VT:0011060 ! tissue ribonucleic acid amount
 created_by: caripark
 creation_date: 2018-10-03T08:40:35Z
 
@@ -28609,6 +28613,7 @@ def: "The proportion, quantity, or volume of ribonucleic acid in the liver. Ribo
 synonym: "liver RNA amount" EXACT []
 xref: CMO:0001919
 is_a: VT:0010497 ! liver molecular composition trait
+is_a: VT:0011060 ! tissue ribonucleic acid amount
 created_by: caripark
 creation_date: 2018-10-03T08:41:57Z
 
@@ -28627,6 +28632,7 @@ def: "The proportion, quantity, or volume of ribonucleic acid in the lung. Ribon
 synonym: "lung RNA amount" EXACT []
 xref: CMO:0002798
 is_a: VT:0010795 ! lung molecular composition trait
+is_a: VT:0011060 ! tissue ribonucleic acid amount
 created_by: caripark
 creation_date: 2018-10-03T08:45:32Z
 
@@ -28637,6 +28643,7 @@ def: "The proportion, quantity, or volume of ribonucleic acid in muscle. Ribonuc
 synonym: "muscle RNA amount" EXACT []
 xref: CMO:0002799
 is_a: VT:0010021 ! muscle molecular composition trait
+is_a: VT:0011060 ! tissue ribonucleic acid amount
 created_by: caripark
 creation_date: 2018-10-03T08:51:04Z
 
@@ -28676,6 +28683,7 @@ synonym: "testes RNA amount" EXACT []
 synonym: "testis RNA amount" EXACT []
 xref: CMO:0002801
 is_a: VT:0010800 ! testis molecular composition trait
+is_a: VT:0011393 ! gland ribonucleic acid amount
 created_by: caripark
 creation_date: 2018-10-03T09:25:55Z
 
@@ -30909,11 +30917,11 @@ name: adipose ribonucleic acid amount
 def: "The proportion, quantity, or volume of ribonucleic acid in fat-storing cells/tissue. Ribonucleic acid is a high molecular weight, linear polymer composed of nucleotides containing ribose and linked by phosphodiester bonds." [CHEBI:33697, RGD:cur]
 synonym: "adipose RNA amount" EXACT []
 synonym: "adipose tissue ribonucleic acid amount" EXACT []
+synonym: "adipose tissue RNA amount" EXACT []
 xref: CMO:0003276
 xref: CMO:0003972
 xref: CMO:0004027
 is_a: VT:0010006 ! adipose molecular composition trait
-is_a: VT:0011060 ! tissue ribonucleic acid amount
 is_a: VT:0011284 ! connective tissue ribonucleic acid amount
 created_by: caripark
 creation_date: 2023-05-22T10:21:48Z
@@ -30938,6 +30946,7 @@ xref: CMO:0003255
 xref: CMO:0003931
 xref: CMO:0003932
 is_a: VT:0010737 ! skin molecular composition trait
+is_a: VT:0011060 ! tissue ribonucleic acid amount
 created_by: caripark
 creation_date: 2023-05-22T13:05:55Z
 
@@ -30956,6 +30965,7 @@ def: "The proportion, quantity, or volume of ribonucleic acid in the gland surro
 synonym: "prostate RNA amount" EXACT []
 xref: CMO:0003272
 is_a: VT:0011026 ! prostate molecular composition trait
+is_a: VT:0011393 ! gland ribonucleic acid amount
 created_by: caripark
 creation_date: 2023-05-22T13:12:54Z
 
@@ -30984,6 +30994,7 @@ def: "The proportion, quantity, or volume of ribonucleic acid in the female repr
 synonym: "ovary RNA amount" EXACT []
 xref: CMO:0003253
 is_a: VT:0010893 ! ovary molecular composition trait
+is_a: VT:0011393 ! gland ribonucleic acid amount
 created_by: caripark
 creation_date: 2023-05-22T13:21:17Z
 
@@ -31005,6 +31016,7 @@ def: "The proportion, quantity, or volume of ribonucleic acid in the organ that 
 synonym: "pancreas RNA amount" EXACT []
 xref: CMO:0003266
 is_a: VT:0010469 ! pancreas molecular composition trait
+is_a: VT:0011393 ! gland ribonucleic acid amount
 created_by: caripark
 creation_date: 2023-06-09T10:04:14Z
 
@@ -31015,6 +31027,7 @@ def: "The proportion, quantity, or volume of ribonucleic acid in the cylindrical
 synonym: "spinal cord RNA amount" EXACT []
 xref: CMO:0003295
 is_a: VT:0010577 ! spinal cord molecular composition trait
+is_a: VT:0011060 ! tissue ribonucleic acid amount
 created_by: caripark
 creation_date: 2023-06-09T10:25:40Z
 
@@ -31035,6 +31048,7 @@ synonym: "pituitary gland RNA amount" EXACT []
 xref: CMO:0003304
 is_a: VT:0011034 ! pituitary gland molecular composition trait
 is_a: VT:0011259 ! forebrain ribonucleic acid amount
+is_a: VT:0011393 ! gland ribonucleic acid amount
 created_by: caripark
 creation_date: 2023-06-27T08:12:22Z
 
@@ -31065,6 +31079,7 @@ synonym: "pineal body RNA amount" EXACT []
 synonym: "pineal gland RNA amount" EXACT []
 xref: CMO:0003307
 is_a: VT:0011040 ! pineal gland molecular composition trait
+is_a: VT:0011393 ! gland ribonucleic acid amount
 created_by: caripark
 creation_date: 2023-06-30T11:01:12Z
 
@@ -31105,6 +31120,7 @@ synonym: "small intestine RNA amount" EXACT []
 xref: CMO:0003262
 xref: CMO:0003354
 is_a: VT:0011041 ! small intestine molecular composition trait
+is_a: VT:0011060 ! tissue ribonucleic acid amount
 created_by: caripark
 creation_date: 2023-06-30T13:25:32Z
 
@@ -31143,6 +31159,7 @@ synonym: "sciatic nerve RNA amount" EXACT []
 xref: CMO:0003926
 xref: CMO:0003927
 is_a: VT:0011045 ! sciatic nerve molecular composition trait
+is_a: VT:0011392 ! nerve ribonucleic acid amount
 created_by: caripark
 creation_date: 2023-07-12T16:04:30Z
 
@@ -31237,6 +31254,7 @@ def: "The proportion, quantity, or volume of ribonucleic acid in the thyroid gla
 synonym: "thyroid gland RNA amount" EXACT []
 xref: CMO:0003259
 is_a: VT:0011055 ! thyroid gland molecular composition trait
+is_a: VT:0011393 ! gland ribonucleic acid amount
 created_by: caripark
 creation_date: 2023-07-12T20:40:04Z
 
@@ -31541,6 +31559,7 @@ synonym: "mammary gland RNA amount" EXACT []
 xref: CMO:0003977
 xref: CMO:0004006
 is_a: VT:0011086 ! mammary gland molecular composition trait
+is_a: VT:0011393 ! gland ribonucleic acid amount
 created_by: caripark
 creation_date: 2024-03-08T14:09:15Z
 
@@ -31576,6 +31595,7 @@ def: "The proportion, quantity, or volume of ribonucleic acid in the saliva-secr
 synonym: "salivary gland RNA amount" EXACT []
 xref: CMO:0003263
 is_a: VT:0011090 ! salivary gland molecular composition trait
+is_a: VT:0011393 ! gland ribonucleic acid amount
 created_by: caripark
 creation_date: 2024-03-08T14:29:29Z
 
@@ -31593,6 +31613,7 @@ name: lymph node ribonucleic acid amount
 def: "The proportion, quantity, or volume of ribonucleic acid in the oval or bean shaped bodies located along the lymphatic system that consist of densely packed lymphocytes, lymph fluid and connective tissue; the sites where acquired immune responses are launched. Ribonucleic acid is a high molecular weight, linear polymer composed of nucleotides containing ribose and linked by phosphodiester bonds." [CHEBI:33697, MeSH:D008198, MP:0002339, RGD:cur]
 synonym: "lymph node RNA amount" EXACT []
 xref: CMO:0003273
+is_a: VT:0011060 ! tissue ribonucleic acid amount
 is_a: VT:0011092 ! lymph node molecular composition trait
 created_by: caripark
 creation_date: 2024-03-08T14:35:17Z
@@ -31611,6 +31632,7 @@ name: esophagus ribonucleic acid amount
 def: "The proportion, quantity, or volume of ribonucleic acid in the part of the digestive canal through which food passes from the pharynx to the stomach. Ribonucleic acid is a high molecular weight, linear polymer composed of nucleotides containing ribose and linked by phosphodiester bonds." [CHEBI:33697, ISBN:0-683-40008-8, MP:0000467, RGD:cur]
 synonym: "esophagus RNA amount" EXACT []
 xref: CMO:0003269
+is_a: VT:0011060 ! tissue ribonucleic acid amount
 is_a: VT:0011094 ! esophagus molecular composition trait
 created_by: caripark
 creation_date: 2024-03-08T14:41:30Z
@@ -31829,6 +31851,7 @@ def: "The proportion, quantity, or volume of ribonucleic acid in the branch of t
 synonym: "inferior alveolar nerve RNA amount" EXACT []
 xref: CMO:0003993
 is_a: VT:0011115 ! inferior alveolar nerve molecular composition trait
+is_a: VT:0011392 ! nerve ribonucleic acid amount
 created_by: caripark
 creation_date: 2024-04-15T13:59:23Z
 
@@ -31887,7 +31910,7 @@ id: VT:0011122
 name: digit integrity trait
 def: "Any measurable or observable characteristic related to the structural soundness of the fingers or toes, or their corresponding parts in other vertebrates." [ISBN:0-683-40008-8, RGD:cur]
 is_a: VT:0002110 ! digit morphology trait
-is_a: VT:0011224 ! paw/hand/foot/hoof integrity trait
+is_a: VT:0011224 ! autopod integrity trait
 created_by: caripark
 creation_date: 2024-05-14T11:23:51Z
 
@@ -31923,7 +31946,7 @@ synonym: "placenta RNA amount" EXACT []
 xref: CMO:0003265
 is_a: VT:0011125 ! placenta molecular composition trait
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
-property_value: http://purl.org/dc/terms/date 2024-07-11T00:08:09Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2024-07-11T00:08:09Z" xsd:dateTime
 
 [Term]
 id: VT:0011127
@@ -31931,7 +31954,7 @@ name: blood IDL triglyceride amount
 def: "The proportion, quantity, or volume of triglyceride found in the intermediate density lipoprotein fraction of whole blood, serum, or plasma." [https://www.ncbi.nlm.nih.gov/books/NBK305896/, RGD:cur]
 is_a: VT:0002644 ! blood triglyceride amount
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
-property_value: http://purl.org/dc/terms/date 2024-09-03T14:25:26Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2024-09-03T14:25:26Z" xsd:dateTime
 
 [Term]
 id: VT:0011128
@@ -31939,7 +31962,7 @@ name: aqueous humor molecular composition trait
 def: "Any measurable or observable characteristic related to the proportions of proteins, minerals, nutrients, gases, or other substances in the clear, watery fluid that fills the anterior and possibly posterior chambers of the eye." [https://www.ncbi.nlm.nih.gov/books/NBK553209/, RGD:cur, UBERON:0001796]
 is_a: VT:0005206 ! aqueous humor morphology trait
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
-property_value: http://purl.org/dc/terms/date 2024-09-03T14:31:14Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2024-09-03T14:31:14Z" xsd:dateTime
 
 [Term]
 id: VT:0011130
@@ -31951,7 +31974,7 @@ synonym: "medial collateral ligament RNA amount" EXACT []
 xref: CMO:0004024
 is_a: VT:0011052 ! knee joint ribonucleic acid amount
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
-property_value: http://purl.org/dc/terms/date 2024-09-20T14:07:46Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2024-09-20T14:07:46Z" xsd:dateTime
 
 [Term]
 id: VT:0011131
@@ -31962,7 +31985,7 @@ synonym: "LCL ribonucleic acid amount" EXACT []
 synonym: "LCL RNA amount" EXACT []
 is_a: VT:0011052 ! knee joint ribonucleic acid amount
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
-property_value: http://purl.org/dc/terms/date 2024-09-20T14:12:52Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2024-09-20T14:12:52Z" xsd:dateTime
 
 [Term]
 id: VT:0011132
@@ -31970,7 +31993,7 @@ name: right pulmonary vein morphology trait
 def: "Any measurable or observable characteristic related to the shape, structure, color, or pattern of the right pulmonary vein, the vein that drains the right lung and returns blood to the heart." [UBERON:0009032]
 is_a: VT:0002726 ! pulmonary vein morphology trait
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
-property_value: http://purl.org/dc/terms/date 2024-12-11T20:44:27Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2024-12-11T20:44:27Z" xsd:dateTime
 
 [Term]
 id: VT:0011133
@@ -31978,7 +32001,7 @@ name: blood secretin amount
 def: "The proportion, quantity, or volume in whole blood, serum, or plasma of this polypeptide hormone, secreted by the wall of the upper part of the small intestine (duodenum), that regulates gastric acid secretion and water homeostasis throughout the body." [https://www.britannica.com/science/secretin, MPD:cur]
 is_a: VT:0005418 ! blood hormone amount
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
-property_value: http://purl.org/dc/terms/date 2024-10-16T18:33:04Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2024-10-16T18:33:04Z" xsd:dateTime
 
 [Term]
 id: VT:0011134
@@ -31986,7 +32009,7 @@ name: blood pancreatic polypeptide amount
 def: "The proportion, quantity, or volume in whole blood, serum, or plasma of this polypeptide hormone, secreted by the endocrine pancreas, that regulates pancreatic secretion activities, liver glycogen storage, and gastrointestinal secretion." [MP:0009197, MPD:cur]
 is_a: VT:0005418 ! blood hormone amount
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
-property_value: http://purl.org/dc/terms/date 2024-10-16T18:54:42Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2024-10-16T18:54:42Z" xsd:dateTime
 
 [Term]
 id: VT:0011135
@@ -31994,7 +32017,7 @@ name: blood peptide YY (tyrosine tyrosine) amount
 def: "The proportion, quantity, or volume in whole blood, serum, or plasma of this peptide hormone, released from cells in the ileum and colon in response to feeding, that plays a role in appetite regulation and obesity." [MPD:cur]
 is_a: VT:0005418 ! blood hormone amount
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
-property_value: http://purl.org/dc/terms/date 2024-10-16T19:14:17Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2024-10-16T19:14:17Z" xsd:dateTime
 
 [Term]
 id: VT:0011136
@@ -32002,7 +32025,7 @@ name: blood resistin amount
 def: "The proportion, quantity, or volume in whole blood, serum, or plasma of this cysteine-rich peptide hormone, derived from adipose tissue, that is implicated in the modulation of insulin activity, energy, glucose, and lipid homeostasis." [MPD:cur]
 is_a: VT:0005418 ! blood hormone amount
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
-property_value: http://purl.org/dc/terms/date 2024-10-16T19:19:43Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2024-10-16T19:19:43Z" xsd:dateTime
 
 [Term]
 id: VT:0011137
@@ -32010,7 +32033,7 @@ name: carotid body molecular composition trait
 def: "Any measurable or observable characteristic related to the proportions of proteins, minerals, nutrients, gases, or other substances in the small epithelioid structure consisting of a small cluster of chemoreceptive and supporting cells located near the bifurcation of the common carotid artery that serves as a chemoreceptive organ that senses the pH, carbon dioxide, and oxygen concentrations in the blood and plays a crucial role in their homeostatic control." [ISBN:0-683-40008-8, MP:0003437, RGD:cur, UBERON:0001629]
 is_a: VT:0003437 ! carotid body morphology trait
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
-property_value: http://purl.org/dc/terms/date 2024-11-15T16:10:56Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2024-11-15T16:10:56Z" xsd:dateTime
 
 [Term]
 id: VT:0011138
@@ -32020,7 +32043,7 @@ synonym: "carotid body RNA amount" EXACT []
 xref: CMO:0004029
 is_a: VT:0011137 ! carotid body molecular composition trait
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
-property_value: http://purl.org/dc/terms/date 2024-11-15T16:16:09Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2024-11-15T16:16:09Z" xsd:dateTime
 
 [Term]
 id: VT:0011139
@@ -32028,7 +32051,7 @@ name: superior cervical ganglion molecular composition trait
 def: "Any measurable or observable characteristic related to the proportions of proteins, minerals, nutrients, gases or other substances in the group of neurons that is the largest of the sympathetic trunk; normally lies at the base of the skull and innervates the head and neck." [ISBN:0-683-40008-8, RGD:cur, UBERON:0001989]
 is_a: VT:0001011 ! superior cervical ganglion morphology trait
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
-property_value: http://purl.org/dc/terms/date 2024-11-15T19:00:12Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2024-11-15T19:00:12Z" xsd:dateTime
 
 [Term]
 id: VT:0011140
@@ -32038,7 +32061,7 @@ synonym: "superior cervical ganglion RNA amount" EXACT []
 xref: CMO:0004030
 is_a: VT:0011139 ! superior cervical ganglion molecular composition trait
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
-property_value: http://purl.org/dc/terms/date 2024-11-15T19:02:40Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2024-11-15T19:02:40Z" xsd:dateTime
 
 [Term]
 id: VT:0011141
@@ -32046,7 +32069,7 @@ name: right pulmonary vein molecular composition trait
 def: "Any measurable or observable characteristic related to the proportions of proteins, minerals, nutrients, gases, or other substances in the vein that drains the right lung and returns blood to the heart." [UBERON:0009032]
 is_a: VT:0011132 ! right pulmonary vein morphology trait
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
-property_value: http://purl.org/dc/terms/date 2024-12-11T20:46:38Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2024-12-11T20:46:38Z" xsd:dateTime
 
 [Term]
 id: VT:0011142
@@ -32056,7 +32079,7 @@ synonym: "right pulmonary vein RNA amount" EXACT []
 xref: CMO:0004034
 is_a: VT:0011141 ! right pulmonary vein molecular composition trait
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
-property_value: http://purl.org/dc/terms/date 2024-12-11T20:56:49Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2024-12-11T20:56:49Z" xsd:dateTime
 
 [Term]
 id: VT:0011143
@@ -32064,7 +32087,7 @@ name: lymphatic vessel molecular composition trait
 def: "Any measurable or observable characteristic related to the proportions of proteins, minerals, nutrients, gases, or ther substances in the lymphatic vessels, vessels that contain or convey lymph, that originate as an interfibrillar or intercellular cleft or space in a tissue or organ." [UBERON:0001473]
 is_a: VT:0001879 ! lymphatic vessel morphology trait
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
-property_value: http://purl.org/dc/terms/date 2024-12-11T21:14:39Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2024-12-11T21:14:39Z" xsd:dateTime
 
 [Term]
 id: VT:0011144
@@ -32074,7 +32097,7 @@ synonym: "lymphatic vessel RNA amount" EXACT []
 xref: CMO:0004036
 is_a: VT:0011143 ! lymphatic vessel molecular composition trait
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
-property_value: http://purl.org/dc/terms/date 2024-12-11T21:45:15Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2024-12-11T21:45:15Z" xsd:dateTime
 
 [Term]
 id: VT:0011145
@@ -32082,7 +32105,7 @@ name: blood interleukin-19 amount
 def: "The proportion, quantity, or volume in whole blood, serum, or plasma of a cytokine which is a member of the IL-10 cytokine subfamily and involved in the inflammatory response." [GeneID:29949]
 is_a: VT:0008588 ! blood interleukin amount
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
-property_value: http://purl.org/dc/terms/date 2024-12-11T21:53:15Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2024-12-11T21:53:15Z" xsd:dateTime
 
 [Term]
 id: VT:0011146
@@ -32090,7 +32113,7 @@ name: blood interleukin-25 amount
 def: "The proportion, quantity, or volume in whole blood, serum, or plasma of a cytokine which is a member of the IL-17 cytokine subfamily and is a pro-inflammatory cytokine favoring the Th2-type immune response." [https://en.wikipedia.org/wiki/Interleukin_25]
 is_a: VT:0008588 ! blood interleukin amount
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
-property_value: http://purl.org/dc/terms/date 2024-12-11T21:57:32Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2024-12-11T21:57:32Z" xsd:dateTime
 
 [Term]
 id: VT:0011147
@@ -32098,7 +32121,7 @@ name: interleukin-19 secretion trait
 def: "Any measurable or observable characteristic related to the controlled release of interleukin-19 a monocytic cytokine which is a member of the IL-10 cytokine subfamily and involved in the inflammatory response." [GeneID:29949]
 is_a: VT:0008568 ! interleukin secretion trait
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
-property_value: http://purl.org/dc/terms/date 2024-12-11T22:08:48Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2024-12-11T22:08:48Z" xsd:dateTime
 
 [Term]
 id: VT:0011148
@@ -32106,7 +32129,7 @@ name: interleukin-25 secretion trait
 def: "Any measurable or observable characteristic related to the controlled release of interleukin-25, a member of the IL-17 cytokine subfamily and a pro-inflammatory cytokine favoring the Th2-type immune response." [https://en.wikipedia.org/wiki/Interleukin_25]
 is_a: VT:0008568 ! interleukin secretion trait
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
-property_value: http://purl.org/dc/terms/date 2024-12-11T22:09:08Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2024-12-11T22:09:08Z" xsd:dateTime
 
 [Term]
 id: VT:0011149
@@ -32114,7 +32137,7 @@ name: intervertebral disk molecular composition trait
 def: "Any measurable or observable characteristic related to the proportions of proteins, minerals, nutrients, gases, or other substances in the cartilaginous and gelatinous structures found between the bodies of adjacent vertebrae." [ISBN:0-683-40008-8, MP:0004173, RGD:cur]
 is_a: VT:0004173 ! intervertebral disk morphology trait
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
-property_value: http://purl.org/dc/terms/date 2025-01-08T16:05:05Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2025-01-08T16:05:05Z" xsd:dateTime
 
 [Term]
 id: VT:0011150
@@ -32125,7 +32148,7 @@ xref: CMO:0004038
 is_a: VT:0011149 ! intervertebral disk molecular composition trait
 is_a: VT:0011234 ! cartilage ribonucleic acid amount
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
-property_value: http://purl.org/dc/terms/date 2025-01-08T16:05:44Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2025-01-08T16:05:44Z" xsd:dateTime
 
 [Term]
 id: VT:0011151
@@ -32137,7 +32160,7 @@ xref: CMO:0004039
 is_a: VT:0010791 ! brain ribonucleic acid amount
 is_a: VT:0011301 ! hippocampus molecular composition trait
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
-property_value: http://purl.org/dc/terms/date 2025-01-08T16:17:32Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2025-01-08T16:17:32Z" xsd:dateTime
 
 [Term]
 id: VT:0011152
@@ -32145,7 +32168,7 @@ name: laryngeal muscle molecular composition trait
 def: "Any measurable or observable characteristic related to the proportions of proteins, minerals, nutrients, gases, or other substances in the muscles associated with the larynx." [ISBN:0-397-51047-0, MP:0002263, RGD:cur]
 is_a: VT:0002263 ! laryngeal muscle morphology trait
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
-property_value: http://purl.org/dc/terms/date 2025-02-11T20:25:20Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2025-02-11T20:25:20Z" xsd:dateTime
 
 [Term]
 id: VT:0011153
@@ -32155,7 +32178,7 @@ synonym: "laryngeal muscle RNA amount" EXACT []
 xref: CMO:0004043
 is_a: VT:0011152 ! laryngeal muscle molecular composition trait
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
-property_value: http://purl.org/dc/terms/date 2025-02-11T20:29:26Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2025-02-11T20:29:26Z" xsd:dateTime
 
 [Term]
 id: VT:0011154
@@ -32163,7 +32186,7 @@ name: tibia molecular composition trait
 def: "Any measurable or observable characteristic related to the proportions of proteins, minerals, nutrients, gases, or other substances in the tibia, the medial and larger of the two bones of the lower leg, which articulates with the femur, fibula, and talus." [ISBN:0-683-40008-8, RGD:cur]
 is_a: VT:0000558 ! tibia morphology trait
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
-property_value: http://purl.org/dc/terms/date 2025-02-11T20:33:47Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2025-02-11T20:33:47Z" xsd:dateTime
 
 [Term]
 id: VT:0011155
@@ -32174,7 +32197,7 @@ xref: CMO:0004046
 is_a: VT:0011068 ! bone ribonucleic acid amount
 is_a: VT:0011154 ! tibia molecular composition trait
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
-property_value: http://purl.org/dc/terms/date 2025-02-11T20:41:13Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2025-02-11T20:41:13Z" xsd:dateTime
 
 [Term]
 id: VT:0011156
@@ -32182,7 +32205,7 @@ name: cranium molecular composition trait
 def: "Any measurable or observable characteristic related to the proportions of proteins, minerals, nutrients, gases, or other substances in the upper portion of the skull, excluding the mandible." [RGD:cur, UBERON:0003128]
 is_a: VT:0010612 ! cranium morphology trait
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
-property_value: http://purl.org/dc/terms/date 2025-02-11T20:44:31Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2025-02-11T20:44:31Z" xsd:dateTime
 
 [Term]
 id: VT:0011157
@@ -32190,9 +32213,10 @@ name: cranium ribonucleic acid amount
 def: "The proportion, quantity, or volume of ribonucleic acid in the upper portion of the skull, excluding the mandible. Ribonucleic acid is a high molecular weight, linear polymer composed of nucleotides containing ribose and linked by phosphodiester bonds." [CHEBI:33697, RGD:cur, UBERON:0003128]
 synonym: "cranium RNA amount" EXACT []
 xref: CMO:0004048
+is_a: VT:0011068 ! bone ribonucleic acid amount
 is_a: VT:0011156 ! cranium molecular composition trait
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
-property_value: http://purl.org/dc/terms/date 2025-02-11T20:46:16Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2025-02-11T20:46:16Z" xsd:dateTime
 
 [Term]
 id: VT:0011158
@@ -32201,7 +32225,7 @@ def: "Any measurable or observable characteristic related to intentional lack of
 xref: CMO:0004055
 is_a: VT:0010444 ! kinesthetic behavior trait
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
-property_value: http://purl.org/dc/terms/date 2025-04-09T13:33:02Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2025-04-09T13:33:02Z" xsd:dateTime
 
 [Term]
 id: VT:0011159
@@ -32212,7 +32236,7 @@ xref: CMO:0004069
 is_a: VT:0004077 ! striatum morphology trait
 is_a: VT:0011257 ! telencephalon ribonucleic acid amount
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
-property_value: http://purl.org/dc/terms/date 2025-04-09T13:37:04Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2025-04-09T13:37:04Z" xsd:dateTime
 
 [Term]
 id: VT:0011160
@@ -32222,7 +32246,7 @@ synonym: "EDL muscle mass" EXACT []
 is_a: VT:0004246 ! extensor digitorum longus morphology trait
 is_a: VT:1000712 ! skeletal muscle mass
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
-property_value: http://purl.org/dc/terms/date 2025-04-09T13:41:46Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2025-04-09T13:41:46Z" xsd:dateTime
 
 [Term]
 id: VT:0011161
@@ -32231,7 +32255,7 @@ def: "The amount of matter in the muscle of the shin that is responsible for dor
 is_a: VT:0003083 ! tibialis anterior morphology trait
 is_a: VT:1000712 ! skeletal muscle mass
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
-property_value: http://purl.org/dc/terms/date 2025-04-09T13:46:09Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2025-04-09T13:46:09Z" xsd:dateTime
 
 [Term]
 id: VT:0011162
@@ -32240,7 +32264,7 @@ def: "Any measurable or observable characteristic related to the proportions of 
 is_a: VT:0010920 ! cerebral artery morphology trait
 is_a: VT:0015090 ! artery molecular composition trait
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
-property_value: http://purl.org/dc/terms/date 2025-04-14T17:57:44Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2025-04-14T17:57:44Z" xsd:dateTime
 
 [Term]
 id: VT:0011163
@@ -32250,7 +32274,7 @@ synonym: "cerebral artery RNA amount" EXACT []
 is_a: VT:0011162 ! cerebral artery molecular composition trait
 is_a: VT:0011176 ! artery ribonucleic acid amount
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
-property_value: http://purl.org/dc/terms/date 2025-04-14T18:01:54Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2025-04-14T18:01:54Z" xsd:dateTime
 
 [Term]
 id: VT:0011164
@@ -32263,7 +32287,7 @@ xref: CMO:0002209
 xref: CMO:0002214
 is_a: VT:0001431 ! eating behavior trait
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
-property_value: http://purl.org/dc/terms/date 2025-04-15T17:43:06Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2025-04-15T17:43:06Z" xsd:dateTime
 
 [Term]
 id: VT:0011165
@@ -32271,7 +32295,7 @@ name: bone marrow molecular composition trait
 def: "Any measurable or observable characteristic related to the proportions of proteins, minerals, nutrients, gases, or other substances in bone marrow, the soft tissue that fills the cavities of bones." [RGD:cur, UBERON:0002371]
 is_a: VT:0011067 ! bone molecular composition trait
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
-property_value: http://purl.org/dc/terms/date 2025-05-01T20:10:34Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2025-05-01T20:10:34Z" xsd:dateTime
 
 [Term]
 id: VT:0011166
@@ -32282,7 +32306,7 @@ xref: CMO:0003271
 is_a: VT:0011068 ! bone ribonucleic acid amount
 is_a: VT:0011165 ! bone marrow molecular composition trait
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
-property_value: http://purl.org/dc/terms/date 2025-05-01T20:14:44Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2025-05-01T20:14:44Z" xsd:dateTime
 
 [Term]
 id: VT:0011167
@@ -32290,7 +32314,7 @@ name: sperm molecular composition trait
 def: "Any measurable or observable characteristic related to the proportions of proteins, minerals, nutrients, gases, or other substances in the male gamete, which is produced in the testes. Sperm cells play an important role in the process of fertilization, where they fuse with a female gamete or egg cell (ovum) to form a zygote." [CL:0000019, RGD:cur]
 is_a: VT:0010042 ! sperm morphology trait
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
-property_value: http://purl.org/dc/terms/date 2025-05-01T20:22:19Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2025-05-01T20:22:19Z" xsd:dateTime
 
 [Term]
 id: VT:0011168
@@ -32300,7 +32324,7 @@ synonym: "sperm RNA amount" EXACT []
 xref: CMO:0004081
 is_a: VT:0011167 ! sperm molecular composition trait
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
-property_value: http://purl.org/dc/terms/date 2025-05-01T20:29:39Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2025-05-01T20:29:39Z" xsd:dateTime
 
 [Term]
 id: VT:0011169
@@ -32308,7 +32332,7 @@ name: parathyroid gland molecular composition trait
 def: "Any measurable or observable characteristic related to the proportions of proteins, minerals, nutrients, gases, or other substances in one of the two small, paired endocrine glands, usually found embedded in the connective tissue capsule on the posterior surface of the thyroid gland." [ISBN:0-683-40008-8, RGD:cur, UBERON:0001132]
 is_a: VT:0000678 ! parathyroid gland morphology trait
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
-property_value: http://purl.org/dc/terms/date 2025-05-01T20:33:10Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2025-05-01T20:33:10Z" xsd:dateTime
 
 [Term]
 id: VT:0011170
@@ -32317,8 +32341,9 @@ def: "The proportion, quantity, or volume of ribonucleic acid in in one of the t
 synonym: "parathyroid gland RNA amount" EXACT []
 xref: CMO:0004082
 is_a: VT:0011169 ! parathyroid gland molecular composition trait
+is_a: VT:0011393 ! gland ribonucleic acid amount
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
-property_value: http://purl.org/dc/terms/date 2025-05-01T20:33:22Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2025-05-01T20:33:22Z" xsd:dateTime
 
 [Term]
 id: VT:0011171
@@ -32326,7 +32351,7 @@ name: carotid artery morphology trait
 def: "Any measurable or observable characteristic related to the shape, structure, color or pattern of the bilaterally paired branched artery that originates from the aortic arches and divides into and includes as parts the internal and external carotid arteries." [UBERON:0001530]
 is_a: VT:0002191 ! artery morphology trait
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
-property_value: http://purl.org/dc/terms/date 2025-05-05T14:38:30Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2025-05-05T14:38:30Z" xsd:dateTime
 
 [Term]
 id: VT:0011172
@@ -32336,7 +32361,7 @@ xref: EFO:0009783
 is_a: VT:0010639 ! artery integrity trait
 is_a: VT:0011171 ! carotid artery morphology trait
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
-property_value: http://purl.org/dc/terms/date 2025-05-05T14:49:29Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2025-05-05T14:49:29Z" xsd:dateTime
 
 [Term]
 id: VT:0011173
@@ -32344,7 +32369,7 @@ name: monocyte physiology trait
 def: "Any measurable or observable characteristic related to the function of or processes in the large, phagocytic mononuclear leukocytes produced in the vertebrate bone marrow and released into the blood." [CL:0000576, MP:0002620]
 is_a: VT:0002442 ! leukocyte physiology trait
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
-property_value: http://purl.org/dc/terms/date 2025-05-05T14:58:24Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2025-05-05T14:58:24Z" xsd:dateTime
 
 [Term]
 id: VT:0011174
@@ -32352,7 +32377,7 @@ name: prenatal growth trait
 def: "Any measurable or observable characteristic related to the increase in size or mass of an organism before birth." [GO:0048589]
 is_a: VT:0100007 ! growth trait
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
-property_value: http://purl.org/dc/terms/date 2025-05-05T16:11:27Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2025-05-05T16:11:27Z" xsd:dateTime
 
 [Term]
 id: VT:0011175
@@ -32360,16 +32385,17 @@ name: connective tissue integrity trait
 def: "Any measurable or observable characteristic related to the structural soundness of the physical or functional supporting tissue of the body, a major constituent of which is an extracellular matrix of ground substance, protein fibers, and structural glycoproteins." [ISBN:0-683-40008-8]
 is_a: VT:0001248 ! connective tissue morphology trait
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
-property_value: http://purl.org/dc/terms/date 2025-05-05T16:19:53Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2025-05-05T16:19:53Z" xsd:dateTime
 
 [Term]
 id: VT:0011176
 name: artery ribonucleic acid amount
 def: "The proportion, quantity, or volume of ribonucleic acid in any of the blood vessels that carry blood away from the heart. Ribonucleic acid is a high molecular weight, linear polymer composed of nucleotides containing ribose and linked by phosphodiester bonds." [CHEBI:33697, ISBN:0-683-40008-8, RGD:cur]
 synonym: "artery RNA amount" EXACT []
+is_a: VT:0011060 ! tissue ribonucleic acid amount
 is_a: VT:0015090 ! artery molecular composition trait
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
-property_value: http://purl.org/dc/terms/date 2025-06-10T18:06:38Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2025-06-10T18:06:38Z" xsd:dateTime
 
 [Term]
 id: VT:0011177
@@ -32380,7 +32406,7 @@ xref: CMO:0004089
 is_a: VT:0010786 ! mesenteric artery morphology trait
 is_a: VT:0011176 ! artery ribonucleic acid amount
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
-property_value: http://purl.org/dc/terms/date 2025-06-10T18:18:34Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2025-06-10T18:18:34Z" xsd:dateTime
 
 [Term]
 id: VT:0011178
@@ -32388,7 +32414,7 @@ name: penis molecular composition trait
 def: "Any measurable or observable characteristic related to the proportions of molecules (proteins, minerals, nutrients, gases, or other substances) within the organ of copulation and urination in the male." [ISBN:0-683-40008-8]
 is_a: VT:0005187 ! penis morphology trait
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
-property_value: http://purl.org/dc/terms/date 2025-06-10T18:36:50Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2025-06-10T18:36:50Z" xsd:dateTime
 
 [Term]
 id: VT:0011179
@@ -32398,7 +32424,7 @@ synonym: "corpus cavernosum penis RNA amount" EXACT []
 xref: CMO:0004092
 is_a: VT:0011178 ! penis molecular composition trait
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
-property_value: http://purl.org/dc/terms/date 2025-06-10T18:38:52Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2025-06-10T18:38:52Z" xsd:dateTime
 
 [Term]
 id: VT:0011180
@@ -32406,7 +32432,7 @@ name: gastric mucosa molecular composition trait
 def: "Any measurable or observable characteristic related to the proportions of proteins, minerals, nutrients, gases, or other substances in the surface epithelium of the stomach, which is made up of several different cell types." [MP:0010792, RGD:cur]
 is_a: VT:0005209 ! gastric mucosa morphology trait
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
-property_value: http://purl.org/dc/terms/date 2025-06-16T21:00:12Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2025-06-16T21:00:12Z" xsd:dateTime
 
 [Term]
 id: VT:0011181
@@ -32416,7 +32442,7 @@ synonym: "gastric mucosa RNA amount" EXACT []
 xref: CMO:0004101
 is_a: VT:0011180 ! gastric mucosa molecular composition trait
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
-property_value: http://purl.org/dc/terms/date 2025-06-16T21:02:22Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2025-06-16T21:02:22Z" xsd:dateTime
 
 [Term]
 id: VT:0011182
@@ -32424,7 +32450,7 @@ name: Circle of Willis molecular composition trait
 def: "Any measurable or observable characteristic related to the proportions of proteins, minerals, nutrients, gases, or other substances in the Circle of Willis, a network of arteries at the base of the brain that connects the two major arterial systems supplying blood to the brain." [RGD:cur, UBERON:0003709]
 is_a: VT:0015090 ! artery molecular composition trait
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
-property_value: http://purl.org/dc/terms/date 2025-06-16T21:10:16Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2025-06-16T21:10:16Z" xsd:dateTime
 
 [Term]
 id: VT:0011183
@@ -32434,7 +32460,7 @@ synonym: "Circle of Willis RNA amount" EXACT []
 xref: CMO:0004094
 is_a: VT:0011182 ! Circle of Willis molecular composition trait
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
-property_value: http://purl.org/dc/terms/date 2025-06-16T21:12:49Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2025-06-16T21:12:49Z" xsd:dateTime
 
 [Term]
 id: VT:0011184
@@ -32442,7 +32468,7 @@ name: choroid plexus molecular composition trait
 def: "Any measurable or observable characteristic related to the proportions of proteins, minerals, nutrients, gases, or other substances in the network formed by blood vessels and the tela choroidea which secretes CSF into the ventricular spaces." [RGD:cur, UBERON:0001886]
 is_a: VT:0000820 ! choroid plexus morphology trait
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
-property_value: http://purl.org/dc/terms/date 2025-06-27T16:18:39Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2025-06-27T16:18:39Z" xsd:dateTime
 
 [Term]
 id: VT:0011185
@@ -32452,7 +32478,7 @@ synonym: "choroid plexus RNA amount" EXACT []
 xref: CMO:0003367
 is_a: VT:0011184 ! choroid plexus molecular composition trait
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
-property_value: http://purl.org/dc/terms/date 2025-06-27T16:25:33Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2025-06-27T16:25:33Z" xsd:dateTime
 
 [Term]
 id: VT:0011186
@@ -32460,7 +32486,7 @@ name: lumbar vertebra molecular composition trait
 def: "Any measurable or observable characteristic related to the proportions of proteins, minerals, nutrients, gases, or other substances in the bony segments of the spinal column located anterior/superior to the sacral vertebrae and posterior/inferior to the thoracic vertebrae." [ISBN:0-683-40008-8, ISBN:0-8036-1207-9, RGD:cur]
 is_a: VT:0010494 ! lumbar vertebra morphology trait
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
-property_value: http://purl.org/dc/terms/date 2025-06-27T16:35:23Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2025-06-27T16:35:23Z" xsd:dateTime
 
 [Term]
 id: VT:0011187
@@ -32471,7 +32497,7 @@ xref: CMO:0004104
 is_a: VT:0011068 ! bone ribonucleic acid amount
 is_a: VT:0011186 ! lumbar vertebra molecular composition trait
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
-property_value: http://purl.org/dc/terms/date 2025-06-27T16:36:52Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2025-06-27T16:36:52Z" xsd:dateTime
 
 [Term]
 id: VT:0011188
@@ -32481,7 +32507,7 @@ synonym: "CA1 stratum radiatum RNA amount" EXACT []
 xref: CMO:0004105
 is_a: VT:0011300 ! CA1 field of hippocampus ribonucleic acid amount
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
-property_value: http://purl.org/dc/terms/date 2025-07-15T16:50:11Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2025-07-15T16:50:11Z" xsd:dateTime
 
 [Term]
 id: VT:0011189
@@ -32491,7 +32517,7 @@ synonym: "CA1 stratum oriens RNA amount" EXACT []
 xref: CMO:0004106
 is_a: VT:0011300 ! CA1 field of hippocampus ribonucleic acid amount
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
-property_value: http://purl.org/dc/terms/date 2025-07-15T16:58:03Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2025-07-15T16:58:03Z" xsd:dateTime
 
 [Term]
 id: VT:0011190
@@ -32499,7 +32525,7 @@ name: blood estrone sulfate amount
 def: "The proportion, quantity, or volume in whole blood, serum, or plasma of this steroid that is the 3-sulfate of estrone." [CID:3001028]
 is_a: VT:0005418 ! blood hormone amount
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
-property_value: http://purl.org/dc/terms/date 2025-08-19T19:05:01Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2025-08-19T19:05:01Z" xsd:dateTime
 
 [Term]
 id: VT:0011191
@@ -32507,7 +32533,7 @@ name: milk acidity/alkalinity trait
 def: "Any measurable or observable characteristic related to the ability of milk to resist changes in pH (buffering capacity)." [https://www.sciencedirect.com/topics/engineering/acidity-and-alkalinity]
 is_a: VT:0011350 ! milk molecular composition trait
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
-property_value: http://purl.org/dc/terms/date 2025-08-07T14:29:52Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2025-08-07T14:29:52Z" xsd:dateTime
 
 [Term]
 id: VT:0011192
@@ -32515,7 +32541,7 @@ name: milk cyclophilin A amount
 def: "The proportion, quantity, or volume in milk of cyclophilin A, a peptidylprolyl isomerase involved in immunoregulation." [MeSH:D021984]
 is_a: VT:1000165 ! milk protein amount
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
-property_value: http://purl.org/dc/terms/date 2025-08-07T14:40:38Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2025-08-07T14:40:38Z" xsd:dateTime
 
 [Term]
 id: VT:0011193
@@ -32524,7 +32550,7 @@ def: "The proportion, quantity, or volume in milk of members of a diverse group 
 synonym: "milk Ig amount" EXACT []
 is_a: VT:1000165 ! milk protein amount
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
-property_value: http://purl.org/dc/terms/date 2025-08-07T14:45:02Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2025-08-07T14:45:02Z" xsd:dateTime
 
 [Term]
 id: VT:0011194
@@ -32533,7 +32559,7 @@ def: "The proportion, quantity, or volume in milk of the principal immunoglobuli
 synonym: "milk IgA amount" EXACT []
 is_a: VT:0011193 ! milk immunoglobulin amount
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
-property_value: http://purl.org/dc/terms/date 2025-08-07T14:46:18Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2025-08-07T14:46:18Z" xsd:dateTime
 
 [Term]
 id: VT:0011195
@@ -32542,7 +32568,7 @@ def: "The proportion, quantity, or volume in milk of the major antibody for anti
 synonym: "milk IgG amount" EXACT []
 is_a: VT:0011193 ! milk immunoglobulin amount
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
-property_value: http://purl.org/dc/terms/date 2025-08-07T14:46:32Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2025-08-07T14:46:32Z" xsd:dateTime
 
 [Term]
 id: VT:0011196
@@ -32551,7 +32577,7 @@ def: "The proportion, quantity, or volume in milk of immunoglobulin class G1." [
 synonym: "milk IgG1 amount" EXACT []
 is_a: VT:0011195 ! milk immunoglobulin G amount
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
-property_value: http://purl.org/dc/terms/date 2025-08-07T14:46:46Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2025-08-07T14:46:46Z" xsd:dateTime
 
 [Term]
 id: VT:0011197
@@ -32560,7 +32586,7 @@ def: "The proportion, quantity, or volume in milk of immunoglobulin class G2." [
 synonym: "milk IgG2 amount" EXACT []
 is_a: VT:0011195 ! milk immunoglobulin G amount
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
-property_value: http://purl.org/dc/terms/date 2025-08-07T14:46:58Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2025-08-07T14:46:58Z" xsd:dateTime
 
 [Term]
 id: VT:0011198
@@ -32569,7 +32595,7 @@ def: "The proportion, quantity, or volume in milk of this immunoglobulin formed 
 synonym: "milk IgM amount" EXACT []
 is_a: VT:0011193 ! milk immunoglobulin amount
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
-property_value: http://purl.org/dc/terms/date 2025-08-07T14:47:15Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2025-08-07T14:47:15Z" xsd:dateTime
 
 [Term]
 id: VT:0011199
@@ -32577,7 +32603,7 @@ name: muscle anserine amount
 def: "The proportion, quantity, or volume of a dipeptide comprising beta-alanine and 3-methyl-L-histidine units detected in the tissue composed of contractile cells or fibers that effects movement." [CHEBI:18323]
 is_a: VT:0010021 ! muscle molecular composition trait
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
-property_value: http://purl.org/dc/terms/date 2025-08-07T18:16:39Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2025-08-07T18:16:39Z" xsd:dateTime
 
 [Term]
 id: VT:0011200
@@ -32585,7 +32611,7 @@ name: muscle arsenic amount
 def: "The proportion, quantity, or volume of this element which is toxic in most forms detected in the tissue composed of contractile cells or fibers that effects movement." [CHEBI:27563]
 is_a: VT:0010021 ! muscle molecular composition trait
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
-property_value: http://purl.org/dc/terms/date 2025-08-07T18:50:05Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2025-08-07T18:50:05Z" xsd:dateTime
 
 [Term]
 id: VT:0011201
@@ -32593,7 +32619,7 @@ name: muscle beta-alanine content
 def: "The proportion, quantity, or volume of an amino acid formed by the degradation of dihydrouracil and carnosine detected in the tissue composed of contractile cells or fibers that effects movement." [MeSH:D015091]
 is_a: VT:0010021 ! muscle molecular composition trait
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
-property_value: http://purl.org/dc/terms/date 2025-08-07T18:52:46Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2025-08-07T18:52:46Z" xsd:dateTime
 
 [Term]
 id: VT:0011202
@@ -32601,7 +32627,7 @@ name: muscle carnosine amount
 def: "The proportion, quantity, or volume of a dipeptide molecule made up of beta-alanine and histidine detected in the tissue composed of contractile cells or fibers that effects movement." [CHEBI:15727]
 is_a: VT:0010021 ! muscle molecular composition trait
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
-property_value: http://purl.org/dc/terms/date 2025-08-07T18:55:02Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2025-08-07T18:55:02Z" xsd:dateTime
 
 [Term]
 id: VT:0011203
@@ -32609,7 +32635,7 @@ name: muscle chromium amount
 def: "The proportion, quantity, or volume of a trace element that plays a role in glucose metabolism detected in the tissue composed of contractile cells or fibers that effects movement." [MeSH:D002857]
 is_a: VT:0010021 ! muscle molecular composition trait
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
-property_value: http://purl.org/dc/terms/date 2025-08-07T20:05:27Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2025-08-07T20:05:27Z" xsd:dateTime
 
 [Term]
 id: VT:0011204
@@ -32617,7 +32643,7 @@ name: muscle cobalt amount
 def: "The proportion, quantity, or volume of a trace element that is a component of vitamin B12 detected in the tissue composed of contractile cells or fibers that effects movement." [MeSH:D003035]
 is_a: VT:0010021 ! muscle molecular composition trait
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
-property_value: http://purl.org/dc/terms/date 2025-08-07T20:07:52Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2025-08-07T20:07:52Z" xsd:dateTime
 
 [Term]
 id: VT:0011205
@@ -32625,7 +32651,7 @@ name: muscle creatine amount
 def: "The proportion, quantity, or volume of a glycine derivative with methyl and amidino groups attached to the nitrogen detected in the tissue composed of contractile cells or fibers that effects movement." [CHEBI:16919]
 is_a: VT:0010021 ! muscle molecular composition trait
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
-property_value: http://purl.org/dc/terms/date 2025-08-07T20:11:59Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2025-08-07T20:11:59Z" xsd:dateTime
 
 [Term]
 id: VT:0011206
@@ -32633,7 +32659,7 @@ name: muscle creatinine content
 def: "The proportion, quantity, or volume of a metabolite of creatine detected in the tissue composed of contractile cells or fibers that effects movement." [CHEBI:16737]
 is_a: VT:0010021 ! muscle molecular composition trait
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
-property_value: http://purl.org/dc/terms/date 2025-08-07T20:15:16Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2025-08-07T20:15:16Z" xsd:dateTime
 
 [Term]
 id: VT:0011207
@@ -32641,7 +32667,7 @@ name: muscle collagen amount
 def: "The proportion, quantity, or volume of the major protein of the white fibers of connective tissue, cartilage, and bone detected in the contractile tissue that effects movement." [0-683-40008-8]
 is_a: VT:1000433 ! muscle protein amount
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
-property_value: http://purl.org/dc/terms/date 2025-08-07T20:29:44Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2025-08-07T20:29:44Z" xsd:dateTime
 
 [Term]
 id: VT:0011208
@@ -32649,7 +32675,7 @@ name: muscle taurine amount
 def: "The proportion, quantity, or volume of an amino acid derived from methionine and cysteine metabolism detected in the tissue composed of contractile cells or fibers that effects movement." [CHEBI:15891]
 is_a: VT:0010021 ! muscle molecular composition trait
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
-property_value: http://purl.org/dc/terms/date 2025-08-07T20:45:59Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2025-08-07T20:45:59Z" xsd:dateTime
 
 [Term]
 id: VT:0011209
@@ -32657,7 +32683,7 @@ name: colostrum albumin amount
 def: "The proportion, quantity, or volume in colostrum of the major blood protein that is important in maintenance of the colloidal osmotic pressure, fatty acid transport, and transport of large organic molecules." [MP:0000199]
 is_a: VT:0011210 ! colostrum molecular composition trait
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
-property_value: http://purl.org/dc/terms/date 2025-08-12T19:36:42Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2025-08-12T19:36:42Z" xsd:dateTime
 
 [Term]
 id: VT:0011210
@@ -32665,7 +32691,7 @@ name: colostrum molecular composition trait
 def: "Any measurable or observable characteristic related to the proportions of proteins, minerals, nutrients, gases, or other substances in the first secretion of the mammary gland before milk production." [ATOL:0000590]
 is_a: VT:0010256 ! colostrum trait
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
-property_value: http://purl.org/dc/terms/date 2025-08-12T19:38:53Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2025-08-12T19:38:53Z" xsd:dateTime
 
 [Term]
 id: VT:0011211
@@ -32673,15 +32699,15 @@ name: sperm head morphology trait
 def: "Any measurable or observable characteristic related to the shape, structure, color, or pattern of the part of the spermatazoa containing the nucleus and acrosome." [GO:0061827]
 is_a: VT:0010042 ! sperm morphology trait
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
-property_value: http://purl.org/dc/terms/date 2025-08-12T19:50:38Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2025-08-12T19:50:38Z" xsd:dateTime
 
 [Term]
 id: VT:0011212
 name: sperm plasma membrane integrity trait
 def: "Any measurable or observable characteristic related to the structural soundness of the plasma membrane that is part of a sperm cell." [GO:0097524]
-is_a: VT:0010042 ! sperm morphology trait
+is_a: VT:0011384 ! sperm integrity trait
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
-property_value: http://purl.org/dc/terms/date 2025-08-12T20:17:26Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2025-08-12T20:17:26Z" xsd:dateTime
 
 [Term]
 id: VT:0011213
@@ -32689,7 +32715,7 @@ name: blood androstenone amount
 def: "The proportion, quantity, or volume in whole blood, serum, or plasma of the testicular steroid androstenone." [ISBN:0-8036-1207-9]
 is_a: VT:0005418 ! blood hormone amount
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
-property_value: http://purl.org/dc/terms/date 2025-08-13T15:24:40Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2025-08-13T15:24:40Z" xsd:dateTime
 
 [Term]
 id: VT:0011214
@@ -32698,7 +32724,7 @@ def: "The proportion or number of T lymphocytes that are negative for the CD3 T-
 synonym: "CD3- T cell quantity" EXACT []
 is_a: VT:0006387 ! T cell quantity
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
-property_value: http://purl.org/dc/terms/date 2025-08-19T20:09:39Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2025-08-19T20:09:39Z" xsd:dateTime
 
 [Term]
 id: VT:0011215
@@ -32707,7 +32733,7 @@ def: "The proportion, quantity, or volume in whole blood, serum, or plasma of a 
 xref: CMO:0004201
 is_a: VT:0008588 ! blood interleukin amount
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
-property_value: http://purl.org/dc/terms/date 2025-08-19T20:20:56Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2025-08-19T20:20:56Z" xsd:dateTime
 
 [Term]
 id: VT:0011216
@@ -32716,7 +32742,7 @@ def: "The proportion, quantity, or volume in whole blood, serum, or plasma of a 
 synonym: "blood muramidase amount" EXACT []
 is_a: VT:0001570 ! blood enzyme amount
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
-property_value: http://purl.org/dc/terms/date 2025-08-19T21:01:45Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2025-08-19T21:01:45Z" xsd:dateTime
 
 [Term]
 id: VT:0011217
@@ -32725,7 +32751,7 @@ def: "The proportion or number of mature lymphocytes and monocytes transported b
 synonym: "peripheral blood mononuclear cell quantity" EXACT []
 is_a: VT:0000217 ! leukocyte quantity
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
-property_value: http://purl.org/dc/terms/date 2025-08-19T21:24:07Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2025-08-19T21:24:07Z" xsd:dateTime
 
 [Term]
 id: VT:0011218
@@ -32734,7 +32760,7 @@ def: "The proportion, quantity, or volume in whole blood, serum, or plasma of im
 xref: CMO:0004168
 is_a: VT:0001805 ! blood immunoglobulin G amount
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
-property_value: http://purl.org/dc/terms/date 2025-08-19T21:30:48Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2025-08-19T21:30:48Z" xsd:dateTime
 
 [Term]
 id: VT:0011219
@@ -32744,7 +32770,7 @@ xref: CMO:0004166
 is_a: VT:0005418 ! blood hormone amount
 is_a: VT:0010484 ! serotonin amount
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
-property_value: http://purl.org/dc/terms/date 2025-08-19T21:40:26Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2025-08-19T21:40:26Z" xsd:dateTime
 
 [Term]
 id: VT:0011220
@@ -32752,7 +32778,7 @@ name: large unstained cell quantity
 def: "The proportion or number of larger than normal cells which are unstained using routine blood count methodologies; large unstained cells (LUC) are larger than normal lymphocytes, and may be atypical lymphocytes, myeloperoxidase deficient cells or peroxidase negative blasts. Aberrations in the count of large unstained cells may be indicative of viral disease or leukemia." [MP:0012360]
 is_a: VT:0010191 ! immune system cell quantity
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
-property_value: http://purl.org/dc/terms/date 2025-08-20T15:50:25Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2025-08-20T15:50:25Z" xsd:dateTime
 
 [Term]
 id: VT:0011221
@@ -32761,7 +32787,7 @@ def: "The proportion, quantity, or volume in whole blood, serum, or plasma of gl
 synonym: "blood glutamate amount" NARROW []
 is_a: VT:0005311 ! blood amino acid amount
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
-property_value: http://purl.org/dc/terms/date 2025-08-20T15:59:08Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2025-08-20T15:59:08Z" xsd:dateTime
 
 [Term]
 id: VT:0011222
@@ -32769,32 +32795,33 @@ name: blood cholinesterase amount
 def: "The proportion, quantity, or volume in whole blood, serum, or plasma of any of the enzymes that catalyze the hydrolysis of the neurotransmitter acetylcholine into choline and acetic acid." [MP:0012047]
 is_a: VT:0001570 ! blood enzyme amount
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
-property_value: http://purl.org/dc/terms/date 2025-08-20T16:26:27Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2025-08-20T16:26:27Z" xsd:dateTime
 
 [Term]
 id: VT:0011223
 name: hoof morphology trait
 def: "Any measurable or observable characteristic related to the shape, structure, color, or pattern of the tip of a toe of an ungulate mammal, strengthened by a thick horny (keratin) covering. The hoof consists of a hard or rubbery sole, and a hard wall formed by a thick nail rolled around the tip of the toe." [UBERON:0008963]
-is_a: VT:0004271 ! paw/hand/foot/hoof morphology trait
+is_a: VT:0004271 ! autopod morphology trait
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
-property_value: http://purl.org/dc/terms/date 2025-08-20T18:05:32Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2025-08-20T18:05:32Z" xsd:dateTime
 
 [Term]
 id: VT:0011224
-name: paw/hand/foot/hoof integrity trait
-def: "Any measurable or observable characteristic related to the structural soundness of the pedal or prehensile extremity of vertebrates." []
-is_a: VT:0004271 ! paw/hand/foot/hoof morphology trait
+name: autopod integrity trait
+def: "Any measurable or observable characteristic related to the structural soundness of the distal elements of the limb of vertebrates including the pedal or prehensile appendages (e.g., hand, foot, paw, phalanges, and/or digits)." [MP:0000572]
+synonym: "paw/hand/foot/hoof integrity trait" EXACT []
+is_a: VT:0004271 ! autopod morphology trait
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
-property_value: http://purl.org/dc/terms/date 2025-08-20T18:46:22Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2025-08-20T18:46:22Z" xsd:dateTime
 
 [Term]
 id: VT:0011225
 name: hoof integrity trait
 def: "Any measurable or observable characteristic related to the structural soundness of the tip of a toe of an ungulate mammal, strengthened by a thick horny (keratin) covering. The hoof consists of a hard or rubbery sole, and a hard wall formed by a thick nail rolled around the tip of the toe." []
 is_a: VT:0011223 ! hoof morphology trait
-is_a: VT:0011224 ! paw/hand/foot/hoof integrity trait
+is_a: VT:0011224 ! autopod integrity trait
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
-property_value: http://purl.org/dc/terms/date 2025-08-20T18:47:49Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2025-08-20T18:47:49Z" xsd:dateTime
 
 [Term]
 id: VT:0011226
@@ -32802,7 +32829,7 @@ name: adipose skatole amount
 def: "The proportion, quantity, or volume of skatole, a tryptophan degradation product, detected in fat-storing cells/tissue." [ISBN:0-8036-1207-9]
 is_a: VT:0010006 ! adipose molecular composition trait
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
-property_value: http://purl.org/dc/terms/date 2025-08-20T19:26:24Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2025-08-20T19:26:24Z" xsd:dateTime
 
 [Term]
 id: VT:0011227
@@ -32810,7 +32837,7 @@ name: cathepsin B activity
 def: "The degree of function or response of a lysosomal cysteine proteinase present in a variety of tissues and important in many physiological and pathological processes." [MeSH:D002401]
 is_a: VT:0005584 ! enzyme/coenzyme activity trait
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
-property_value: http://purl.org/dc/terms/date 2025-08-20T20:16:37Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2025-08-20T20:16:37Z" xsd:dateTime
 
 [Term]
 id: VT:0011228
@@ -32819,7 +32846,7 @@ def: "Any measurable or observable characteristic related to the ability to reca
 xref: CMO:0004109
 is_a: VT:0002063 ! learning/memory/conditioning trait
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
-property_value: http://purl.org/dc/terms/date 2025-09-09T16:37:57Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2025-09-09T16:37:57Z" xsd:dateTime
 
 [Term]
 id: VT:0011229
@@ -32828,7 +32855,7 @@ def: "Any measurable or observable characteristic related to the proportions of 
 is_a: VT:0000836 ! substantia nigra morphology trait
 is_a: VT:0011289 ! midbrain molecular composition trait
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
-property_value: http://purl.org/dc/terms/date 2025-10-14T18:10:11Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2025-10-14T18:10:11Z" xsd:dateTime
 
 [Term]
 id: VT:0011230
@@ -32839,7 +32866,7 @@ xref: CMO:0003331
 is_a: VT:0011229 ! substantia nigra molecular composition trait
 is_a: VT:0011288 ! midbrain ribonucleic acid amount
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
-property_value: http://purl.org/dc/terms/date 2025-10-14T18:10:22Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2025-10-14T18:10:22Z" xsd:dateTime
 
 [Term]
 id: VT:0011231
@@ -32849,7 +32876,7 @@ synonym: "motor cortex morphology trait" EXACT []
 is_a: VT:0000788 ! cerebral cortex morphology trait
 is_a: VT:0000799 ! precentral gyrus morphology trait
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
-property_value: http://purl.org/dc/terms/date 2025-10-14T19:20:16Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2025-10-14T19:20:16Z" xsd:dateTime
 
 [Term]
 id: VT:0011232
@@ -32862,7 +32889,7 @@ xref: CMO:0004113
 is_a: VT:0011231 ! primary motor cortex morphology trait
 is_a: VT:0011255 ! cerebral cortex ribonucleic acid amount
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
-property_value: http://purl.org/dc/terms/date 2025-10-14T19:27:40Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2025-10-14T19:27:40Z" xsd:dateTime
 
 [Term]
 id: VT:0011233
@@ -32871,7 +32898,7 @@ def: "Any measurable or observable characteristic related to the proportions of 
 is_a: VT:0000163 ! cartilage morphology trait
 is_a: VT:0011282 ! connective tissue molecular composition trait
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
-property_value: http://purl.org/dc/terms/date 2025-10-22T12:41:58Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2025-10-22T12:41:58Z" xsd:dateTime
 
 [Term]
 id: VT:0011234
@@ -32883,7 +32910,7 @@ xref: CMO:0004114
 is_a: VT:0011233 ! cartilage molecular composition trait
 is_a: VT:0011284 ! connective tissue ribonucleic acid amount
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
-property_value: http://purl.org/dc/terms/date 2025-10-22T12:44:06Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2025-10-22T12:44:06Z" xsd:dateTime
 
 [Term]
 id: VT:0011235
@@ -32892,7 +32919,7 @@ def: "Any measurable or observable characteristic related to the proportions of 
 is_a: VT:0011171 ! carotid artery morphology trait
 is_a: VT:0015090 ! artery molecular composition trait
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
-property_value: http://purl.org/dc/terms/date 2025-10-22T13:20:40Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2025-10-22T13:20:40Z" xsd:dateTime
 
 [Term]
 id: VT:0011236
@@ -32902,7 +32929,7 @@ synonym: "left common carotid artery RNA amount" EXACT []
 xref: CMO:0004115
 is_a: VT:0011235 ! carotid artery molecular composition trait
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
-property_value: http://purl.org/dc/terms/date 2025-10-22T13:29:54Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2025-10-22T13:29:54Z" xsd:dateTime
 
 [Term]
 id: VT:0011237
@@ -32912,7 +32939,7 @@ synonym: "right common carotid artery RNA amount" EXACT []
 xref: CMO:0004115
 is_a: VT:0011235 ! carotid artery molecular composition trait
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
-property_value: http://purl.org/dc/terms/date 2025-10-22T13:31:09Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2025-10-22T13:31:09Z" xsd:dateTime
 
 [Term]
 id: VT:0011238
@@ -32922,7 +32949,7 @@ xref: CMO:0004116
 is_a: VT:0003083 ! tibialis anterior morphology trait
 is_a: VT:0011059 ! skeletal muscle ribonucleic acid amount
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
-property_value: http://purl.org/dc/terms/date 2025-10-28T19:15:43Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2025-10-28T19:15:43Z" xsd:dateTime
 
 [Term]
 id: VT:0011239
@@ -32931,7 +32958,7 @@ def: "Any measurable or observable characteristic related to the proportions of 
 is_a: VT:0000759 ! skeletal muscle morphology trait
 is_a: VT:0010021 ! muscle molecular composition trait
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
-property_value: http://purl.org/dc/terms/date 2025-10-28T19:19:38Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2025-10-28T19:19:38Z" xsd:dateTime
 
 [Term]
 id: VT:0011240
@@ -32944,7 +32971,7 @@ xref: CMO:0004122
 is_a: VT:0005215 ! islet of Langerhans morphology trait
 is_a: VT:0011032 ! pancreas ribonucleic acid amount
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
-property_value: http://purl.org/dc/terms/date 2025-11-11T19:28:39Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2025-11-11T19:28:39Z" xsd:dateTime
 
 [Term]
 id: VT:0011241
@@ -32954,7 +32981,7 @@ synonym: "WBC molecular composition trait" EXACT []
 synonym: "white blood cell molecular composition trait" EXACT []
 is_a: VT:0008246 ! leukocyte morphology trait
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
-property_value: http://purl.org/dc/terms/date 2025-11-11T19:45:51Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2025-11-11T19:45:51Z" xsd:dateTime
 
 [Term]
 id: VT:0011242
@@ -32966,7 +32993,7 @@ synonym: "whte blood cell ribonucleic acid amount" EXACT []
 xref: CMO:0003274
 is_a: VT:0011241 ! leukocyte molecular composition trait
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
-property_value: http://purl.org/dc/terms/date 2025-11-11T19:50:38Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2025-11-11T19:50:38Z" xsd:dateTime
 
 [Term]
 id: VT:0011243
@@ -32975,7 +33002,7 @@ def: "The proportion, quantity, or volume of ribonucleic acid in a major artery 
 xref: CMO:0004123
 is_a: VT:0011176 ! artery ribonucleic acid amount
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
-property_value: http://purl.org/dc/terms/date 2025-11-18T18:46:20Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2025-11-18T18:46:20Z" xsd:dateTime
 
 [Term]
 id: VT:0011244
@@ -32985,7 +33012,7 @@ xref: CMO:0004127
 is_a: VT:0002970 ! white adipose morphology trait
 is_a: VT:0011023 ! adipose ribonucleic acid amount
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
-property_value: http://purl.org/dc/terms/date 2025-11-25T20:21:08Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2025-11-25T20:21:08Z" xsd:dateTime
 
 [Term]
 id: VT:0011245
@@ -32994,7 +33021,7 @@ def: "The proportion, quantity, or volume of ribonucleic acid in a nephron tubul
 xref: CMO:0004128
 is_a: VT:0010793 ! kidney ribonucleic acid amount
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
-property_value: http://purl.org/dc/terms/date 2025-11-25T20:29:58Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2025-11-25T20:29:58Z" xsd:dateTime
 
 [Term]
 id: VT:0011246
@@ -33002,16 +33029,17 @@ name: large intestine molecular composition trait
 def: "Any measurable or observable characteristic related to the proportions of proteins, minerals, nutrients, gases, or other substances in the distal portion of the digestive tube that extends from the ileocecal valve to the anus." [ISBN:0-683-40008-8, RGD:cur]
 is_a: VT:0000489 ! large intestine morphology trait
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
-property_value: http://purl.org/dc/terms/date 2025-11-25T20:57:17Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2025-11-25T20:57:17Z" xsd:dateTime
 
 [Term]
 id: VT:0011247
 name: large intestine ribonucleic acid amount
 def: "The proportion, quantity, or volume of ribonucleic acid in the distal portion of the digestive tube that extends from the ileocecal valve to the anus. Ribonucleic acid is a high molecular weight, linear polymer composed of nucleotides containing ribose and linked by phosphodiester bonds." [CHEBI:33697, ISBN:0-683-40008-8, RGD:cur]
 xref: CMO:0003353
+is_a: VT:0011060 ! tissue ribonucleic acid amount
 is_a: VT:0011246 ! large intestine molecular composition trait
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
-property_value: http://purl.org/dc/terms/date 2025-11-25T21:02:10Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2025-11-25T21:02:10Z" xsd:dateTime
 
 [Term]
 id: VT:0011248
@@ -33022,7 +33050,7 @@ xref: CMO:0003252
 is_a: VT:0010895 ! gastrocnemius molecular composition trait
 is_a: VT:0011059 ! skeletal muscle ribonucleic acid amount
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
-property_value: http://purl.org/dc/terms/date 2025-12-02T20:08:25Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2025-12-02T20:08:25Z" xsd:dateTime
 
 [Term]
 id: VT:0011249
@@ -33031,7 +33059,7 @@ def: "Any measurable or observable characteristic related to the proportions of 
 is_a: VT:0011256 ! telencephalon molecular composition trait
 is_a: VT:0015105 ! cerebrum morphology trait
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
-property_value: http://purl.org/dc/terms/date 2025-12-02T20:40:05Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2025-12-02T20:40:05Z" xsd:dateTime
 
 [Term]
 id: VT:0011250
@@ -33043,7 +33071,7 @@ xref: CMO:0003974
 is_a: VT:0011249 ! cerebrum molecular composition trait
 is_a: VT:0011257 ! telencephalon ribonucleic acid amount
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
-property_value: http://purl.org/dc/terms/date 2025-12-02T20:46:23Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2025-12-02T20:46:23Z" xsd:dateTime
 
 [Term]
 id: VT:0011251
@@ -33054,7 +33082,7 @@ xref: CMO:0003315
 is_a: VT:0000818 ! amygdala morphology trait
 is_a: VT:0011259 ! forebrain ribonucleic acid amount
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
-property_value: http://purl.org/dc/terms/date 2025-12-02T20:56:14Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2025-12-02T20:56:14Z" xsd:dateTime
 
 [Term]
 id: VT:0011252
@@ -33062,7 +33090,7 @@ name: medulla oblongata molecular composition trait
 def: "Any measurable or observable characteristic related to the proportions of proteins, minerals, nutrients, gases, or other substances in the most caudal region of the brainstem that lies directly rostral to the spinal cord; includes regions responsible for autonomic functions such as digestion, breathing and control of heart rate." [ISBN:0838580343]
 is_a: VT:0000846 ! medulla oblongata morphology trait
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
-property_value: http://purl.org/dc/terms/date 2025-12-02T21:01:07Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2025-12-02T21:01:07Z" xsd:dateTime
 
 [Term]
 id: VT:0011253
@@ -33073,7 +33101,7 @@ xref: CMO:0003326
 is_a: VT:0010791 ! brain ribonucleic acid amount
 is_a: VT:0011252 ! medulla oblongata molecular composition trait
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
-property_value: http://purl.org/dc/terms/date 2025-12-02T21:04:42Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2025-12-02T21:04:42Z" xsd:dateTime
 
 [Term]
 id: VT:0011254
@@ -33082,7 +33110,7 @@ def: "Any measurable or observable characteristic related to the proportions of 
 is_a: VT:0000788 ! cerebral cortex morphology trait
 is_a: VT:0011249 ! cerebrum molecular composition trait
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
-property_value: http://purl.org/dc/terms/date 2025-12-02T21:27:25Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2025-12-02T21:27:25Z" xsd:dateTime
 
 [Term]
 id: VT:0011255
@@ -33094,7 +33122,7 @@ xref: CMO:0003384
 is_a: VT:0011250 ! cerebrum ribonucleic acid amount
 is_a: VT:0011254 ! cerebral cortex molecular composition trait
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
-property_value: http://purl.org/dc/terms/date 2025-12-02T21:27:39Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2025-12-02T21:27:39Z" xsd:dateTime
 
 [Term]
 id: VT:0011256
@@ -33103,7 +33131,7 @@ def: "Any measurable or observable characteristic related to the proportions of 
 is_a: VT:0000787 ! telencephalon morphology trait
 is_a: VT:0011258 ! forebrain molecular composition trait
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
-property_value: http://purl.org/dc/terms/date 2025-12-02T21:39:05Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2025-12-02T21:39:05Z" xsd:dateTime
 
 [Term]
 id: VT:0011257
@@ -33115,7 +33143,7 @@ is_a: VT:0010791 ! brain ribonucleic acid amount
 is_a: VT:0011256 ! telencephalon molecular composition trait
 is_a: VT:0011259 ! forebrain ribonucleic acid amount
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
-property_value: http://purl.org/dc/terms/date 2025-12-02T21:41:17Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2025-12-02T21:41:17Z" xsd:dateTime
 
 [Term]
 id: VT:0011258
@@ -33124,7 +33152,7 @@ def: "Any measurable or observable characteristic related to the proportions of 
 is_a: VT:0000783 ! forebrain morphology trait
 is_a: VT:0010585 ! brain molecular composition trait
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
-property_value: http://purl.org/dc/terms/date 2025-12-02T22:08:09Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2025-12-02T22:08:09Z" xsd:dateTime
 
 [Term]
 id: VT:0011259
@@ -33134,7 +33162,7 @@ xref: CMO:0003369
 is_a: VT:0010791 ! brain ribonucleic acid amount
 is_a: VT:0011258 ! forebrain molecular composition trait
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
-property_value: http://purl.org/dc/terms/date 2025-12-02T22:08:19Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2025-12-02T22:08:19Z" xsd:dateTime
 
 [Term]
 id: VT:0011260
@@ -33143,7 +33171,7 @@ def: "Any measurable or observable characteristic related to the proportions of 
 is_a: VT:0000849 ! cerebellum morphology trait
 is_a: VT:0010585 ! brain molecular composition trait
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
-property_value: http://purl.org/dc/terms/date 2025-12-02T22:40:42Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2025-12-02T22:40:42Z" xsd:dateTime
 
 [Term]
 id: VT:0011261
@@ -33154,7 +33182,7 @@ xref: CMO:0003928
 is_a: VT:0010791 ! brain ribonucleic acid amount
 is_a: VT:0011260 ! cerebellum molecular composition trait
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
-property_value: http://purl.org/dc/terms/date 2025-12-02T22:40:54Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2025-12-02T22:40:54Z" xsd:dateTime
 
 [Term]
 id: VT:0011262
@@ -33162,7 +33190,7 @@ name: inner ear molecular composition trait
 def: "Any measurable or observable characteristic related to the proportions of proteins, minerals, nutrients, gases, or other substances in the labyrinth, including the semicircular canals, vestibule and cochlea." [ISBN:0-683-40008-8, MP:0000026, RGD:cur]
 is_a: VT:0000026 ! inner ear morphology trait
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
-property_value: http://purl.org/dc/terms/date 2026-01-08T16:08:33Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2026-01-08T16:08:33Z" xsd:dateTime
 
 [Term]
 id: VT:0011263
@@ -33171,7 +33199,7 @@ def: "The proportion, quantity, or volume of ribonucleic acid in an epithelium t
 synonym: "vestibular epithelium RNA amount" EXACT []
 is_a: VT:0011309 ! inner ear ribonucleic acid amount
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
-property_value: http://purl.org/dc/terms/date 2026-01-08T16:15:32Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2026-01-08T16:15:32Z" xsd:dateTime
 
 [Term]
 id: VT:0011264
@@ -33180,7 +33208,7 @@ def: "The proportion, quantity, or volume of ribonucleic acid in blood plasma, t
 synonym: "blood plasma RNA amount" EXACT []
 is_a: VT:0011031 ! blood ribonucleic acid amount
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
-property_value: http://purl.org/dc/terms/date 2026-01-08T16:19:27Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2026-01-08T16:19:27Z" xsd:dateTime
 
 [Term]
 id: VT:0011265
@@ -33188,7 +33216,7 @@ name: uterine cervix molecular composition trait
 def: "Any measurable or observable characteristic related to the proportions of proteins, minerals, nutrients, gases, or other substances in the opening of the uterus to the vagina." [ISBN:0-683-40008-8, RGD:cur, UBERON:0000002]
 is_a: VT:0001135 ! uterine cervix morphology trait
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
-property_value: http://purl.org/dc/terms/date 2026-01-08T16:45:47Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2026-01-08T16:45:47Z" xsd:dateTime
 
 [Term]
 id: VT:0011266
@@ -33200,7 +33228,7 @@ synonym: "uterine cervix RNA amount" EXACT []
 xref: CMO:0003330
 is_a: VT:0011265 ! uterine cervix molecular composition trait
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
-property_value: http://purl.org/dc/terms/date 2026-01-08T16:46:00Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2026-01-08T16:46:00Z" xsd:dateTime
 
 [Term]
 id: VT:0011267
@@ -33208,16 +33236,17 @@ name: diaphragm molecular composition trait
 def: "Any measurable or observable characteristic related to the proportions of proteins, minerals, nutrients, gases, or other substances in the thin musculomebranous barrier that separates the abdominal and thoracic cavities; often used for breathing control." [ISBN:0-683-40008-8, MP:0002279, RGD:cur]
 is_a: VT:0002279 ! diaphragm morphology trait
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
-property_value: http://purl.org/dc/terms/date 2026-01-08T16:51:32Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2026-01-08T16:51:32Z" xsd:dateTime
 
 [Term]
 id: VT:0011268
 name: diaphragm ribonucleic acid amount
 def: "The proportion, quantity, or volume of ribonucleic acid in the thin musculomebranous barrier that separates the abdominal and thoracic cavities; often used for breathing control. Ribonucleic acid is a high molecular weight, linear polymer composed of nucleotides containing ribose and linked by phosphodiester bonds." [CHEBI:33697, ISBN:0-683-40008-8, MP:0002279, RGD:cur]
 xref: CMO:0003308
+is_a: VT:0010797 ! muscle ribonucleic acid amount
 is_a: VT:0011267 ! diaphragm molecular composition trait
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
-property_value: http://purl.org/dc/terms/date 2026-01-08T16:56:59Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2026-01-08T16:56:59Z" xsd:dateTime
 
 [Term]
 id: VT:0011269
@@ -33227,7 +33256,7 @@ synonym: "prefrontal cortex RNA amount" EXACT []
 xref: CMO:0004133
 is_a: VT:0011255 ! cerebral cortex ribonucleic acid amount
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
-property_value: http://purl.org/dc/terms/date 2026-01-13T15:00:33Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2026-01-13T15:00:33Z" xsd:dateTime
 
 [Term]
 id: VT:0011270
@@ -33235,7 +33264,7 @@ name: oocyte molecular composition trait
 def: "Any measurable or observable characteristic related to the proportions of proteins, minerals, nutrients, gases, or other substances in the female germ cell that has entered meiosis." [CL:0000023, RGD:cur]
 is_a: VT:0001125 ! oocyte morphology trait
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
-property_value: http://purl.org/dc/terms/date 2026-01-13T19:54:07Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2026-01-13T19:54:07Z" xsd:dateTime
 
 [Term]
 id: VT:0011271
@@ -33244,7 +33273,7 @@ def: "The proportion, quantity, or volume of ribonucleic acid in the female germ
 xref: CMO:0003992
 is_a: VT:0011270 ! oocyte molecular composition trait
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
-property_value: http://purl.org/dc/terms/date 2026-01-13T19:54:28Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2026-01-13T19:54:28Z" xsd:dateTime
 
 [Term]
 id: VT:0011272
@@ -33252,7 +33281,7 @@ name: epididymis molecular composition trait
 def: "Any measurable or observable characteristic related to the proportions of proteins, minerals, nutrients, gases, or other substances in the elongated structure connected to the posterior surface of the testes that transports, stores, and matures spermatozoa between testes and vas deferens." [ISBN:0-683-40008-8, RGD:cur, UBERON:0001301]
 is_a: VT:0002631 ! epididymis morphology trait
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
-property_value: http://purl.org/dc/terms/date 2026-01-13T20:04:20Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2026-01-13T20:04:20Z" xsd:dateTime
 
 [Term]
 id: VT:0011273
@@ -33261,7 +33290,7 @@ def: "The proportion, quantity, or volume of ribonucleic acid in the elongated s
 xref: CMO:0003332
 is_a: VT:0011272 ! epididymis molecular composition trait
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
-property_value: http://purl.org/dc/terms/date 2026-01-13T20:04:33Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2026-01-13T20:04:33Z" xsd:dateTime
 
 [Term]
 id: VT:0011274
@@ -33269,7 +33298,7 @@ name: meibomian gland molecular composition trait
 def: "Any measurable or observable characteristic related to the proportions of proteins, minerals, nutrients, gases, or other substances in the sebaceous glands embedded in the tarsal plate of each eyelid." [ISBN:0-683-40008-8, MP:0005252, RGD:cur]
 synonym: "tarsal gland molecular composition trait" EXACT []
 is_a: VT:0005252 ! meibomian gland morphology trait
-property_value: http://purl.org/dc/terms/date 2026-05-29T15:30:23Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2026-05-29T15:30:23Z" xsd:dateTime
 property_value: http://www.geneontology.org/formats/oboInOwl#http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
 
 [Term]
@@ -33281,7 +33310,8 @@ synonym: "tarsal gland ribonucleic acid amount" EXACT []
 synonym: "tarsal gland RNA amount" EXACT []
 xref: CMO:0004153
 is_a: VT:0011274 ! meibomian gland molecular composition trait
-property_value: http://purl.org/dc/terms/date 2026-05-29T15:36:16Z xsd:dateTime
+is_a: VT:0011393 ! gland ribonucleic acid amount
+property_value: http://purl.org/dc/terms/date "2026-05-29T15:36:16Z" xsd:dateTime
 property_value: http://www.geneontology.org/formats/oboInOwl#http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
 
 [Term]
@@ -33291,8 +33321,8 @@ def: "The stage in development when the fine, keratinized filamentous growths co
 synonym: "age at hair development" EXACT []
 synonym: "time of hair appearance" EXACT []
 is_a: VT:0015038 ! coat/hair development trait
-property_value: http://purl.org/dc/terms/date 2026-06-11T20:13:59Z xsd:dateTime
-property_value: http://www.geneontology.org/formats/oboInOwl#http://purl.org/dc/terms/contributor http://orcid.org/0000-0001-5858-4393 xsd:string
+property_value: http://purl.org/dc/terms/date "2026-06-11T20:13:59Z" xsd:dateTime
+property_value: http://www.geneontology.org/formats/oboInOwl#http://purl.org/dc/terms/contributor "http://orcid.org/0000-0001-5858-4393" xsd:string
 property_value: http://www.geneontology.org/formats/oboInOwl#http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
 
 [Term]
@@ -33301,7 +33331,7 @@ name: soleus molecular composition trait
 def: "Any measurable or observable characteristic related to the proportions of proteins, minerals, nutrients, gases, or other substances in the superficial flat broad muscle of the calf that is responsible for plantar flexion of the foot." [ISBN:0-683-40008-8, MP:0003081, RGD:cur]
 is_a: VT:0003081 ! soleus morphology trait
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
-property_value: http://purl.org/dc/terms/date 2026-01-30T14:50:53Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2026-01-30T14:50:53Z" xsd:dateTime
 
 [Term]
 id: VT:0011278
@@ -33314,7 +33344,7 @@ xref: CMO:0004134
 is_a: VT:0011059 ! skeletal muscle ribonucleic acid amount
 is_a: VT:0011277 ! soleus molecular composition trait
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
-property_value: http://purl.org/dc/terms/date 2026-01-30T14:51:09Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2026-01-30T14:51:09Z" xsd:dateTime
 
 [Term]
 id: VT:0011279
@@ -33326,7 +33356,7 @@ synonym: "psoas RNA amount" EXACT []
 xref: CMO:0004135
 is_a: VT:0011059 ! skeletal muscle ribonucleic acid amount
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
-property_value: http://purl.org/dc/terms/date 2026-01-30T15:01:11Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2026-01-30T15:01:11Z" xsd:dateTime
 
 [Term]
 id: VT:0011280
@@ -33337,7 +33367,7 @@ xref: CMO:0004136
 is_a: VT:0011023 ! adipose ribonucleic acid amount
 is_a: VT:0011281 ! retroperitoneal fat pad molecular composition trait
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
-property_value: http://purl.org/dc/terms/date 2026-02-23T15:45:36Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2026-02-23T15:45:36Z" xsd:dateTime
 
 [Term]
 id: VT:0011281
@@ -33345,7 +33375,7 @@ name: retroperitoneal fat pad molecular composition trait
 def: "Any measurable or observable characteristic related to the proportions of proteins, minerals, nutrients, gases, or other substances in the encapsulated adipose tissue found on the dorsal/posterior side of the serous membrane lining the abdominal cavity and covering most of the viscera." [ISBN:0-683-40008-8, MP:0005337, RGD:cur]
 is_a: VT:0005337 ! retroperitoneal fat pad morphology trait
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
-property_value: http://purl.org/dc/terms/date 2026-02-23T15:49:31Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2026-02-23T15:49:31Z" xsd:dateTime
 
 [Term]
 id: VT:0011282
@@ -33353,7 +33383,7 @@ name: connective tissue molecular composition trait
 def: "Any measurable or observable characteristic related to the proportions of proteins, minerals, nutrients, gases, or other substances in the physical or functional supporting tissue of the body, a major constituent of which is an extracellular matrix of ground substance, protein fibers, and structural glycoproteins." [ISBN:0-683-40008-8, PMID:10469309, RGD:cur]
 is_a: VT:0001248 ! connective tissue morphology trait
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
-property_value: http://purl.org/dc/terms/date 2026-03-03T17:28:23Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2026-03-03T17:28:23Z" xsd:dateTime
 
 [Term]
 id: VT:0011283
@@ -33361,16 +33391,17 @@ name: joint molecular composition trait
 def: "Any measurable or observable characteristic related to the proportions of proteins, minerals, nutrients, gases, or other substances in the articulation point of two or more rigid skeletal components (bones, cartilage, or parts of a single bone)." [ISBN:0-683-40008-8]
 is_a: VT:0002932 ! joint morphology trait
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
-property_value: http://purl.org/dc/terms/date 2026-03-03T17:33:24Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2026-03-03T17:33:24Z" xsd:dateTime
 
 [Term]
 id: VT:0011284
 name: connective tissue ribonucleic acid amount
 def: "The proportion, quantity, or volume of ribonucleic acid in the physical or functional supporting tissue of the body, a major constituent of which is an extracellular matrix of ground substance, protein fibers, and structural glycoproteins. Ribonucleic acid is a high molecular weight, linear polymer composed of nucleotides containing ribose and linked by phosphodiester bonds." [CHEBI:33697, ISBN:0-683-40008-8, RGD:cur]
 xref: CMO:0003356
+is_a: VT:0011060 ! tissue ribonucleic acid amount
 is_a: VT:0011282 ! connective tissue molecular composition trait
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
-property_value: http://purl.org/dc/terms/date 2026-03-03T17:44:10Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2026-03-03T17:44:10Z" xsd:dateTime
 
 [Term]
 id: VT:0011285
@@ -33382,7 +33413,7 @@ synonym: "pericardium RNA amount" EXACT []
 xref: CMO:0004138
 is_a: VT:0010792 ! heart ribonucleic acid amount
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
-property_value: http://purl.org/dc/terms/date 2026-03-17T13:56:18Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2026-03-17T13:56:18Z" xsd:dateTime
 
 [Term]
 id: VT:0011286
@@ -33396,7 +33427,7 @@ synonym: "myocardium RNA amount" EXACT []
 is_a: VT:0005329 ! heart muscle morphology trait
 is_a: VT:0010792 ! heart ribonucleic acid amount
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
-property_value: http://purl.org/dc/terms/date 2026-03-17T14:02:56Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2026-03-17T14:02:56Z" xsd:dateTime
 
 [Term]
 id: VT:0011287
@@ -33406,7 +33437,7 @@ synonym: "CA3 field of hippocampus RNA amount" EXACT []
 xref: CMO:0004140
 is_a: VT:0011151 ! hippocampal formation ribonucleic acid amount
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
-property_value: http://purl.org/dc/terms/date 2026-03-17T14:37:06Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2026-03-17T14:37:06Z" xsd:dateTime
 
 [Term]
 id: VT:0011288
@@ -33417,7 +33448,7 @@ xref: CMO:0003929
 is_a: VT:0010791 ! brain ribonucleic acid amount
 is_a: VT:0011289 ! midbrain molecular composition trait
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
-property_value: http://purl.org/dc/terms/date 2026-04-14T19:38:16Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2026-04-14T19:38:16Z" xsd:dateTime
 
 [Term]
 id: VT:0011289
@@ -33426,7 +33457,7 @@ def: "Any measurable or observable characteristic related to the proportions of 
 is_a: VT:0000897 ! midbrain morphology trait
 is_a: VT:0010585 ! brain molecular composition trait
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
-property_value: http://purl.org/dc/terms/date 2026-04-14T19:43:32Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2026-04-14T19:43:32Z" xsd:dateTime
 
 [Term]
 id: VT:0011290
@@ -33438,7 +33469,7 @@ synonym: "VTA RNA amount" EXACT []
 xref: CMO:0004142
 is_a: VT:0011288 ! midbrain ribonucleic acid amount
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
-property_value: http://purl.org/dc/terms/date 2026-04-14T19:59:57Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2026-04-14T19:59:57Z" xsd:dateTime
 
 [Term]
 id: VT:0011291
@@ -33449,7 +33480,7 @@ xref: CMO:0004143
 is_a: VT:0011059 ! skeletal muscle ribonucleic acid amount
 is_a: VT:0011292 ! biceps femoris morphology trait
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
-property_value: http://purl.org/dc/terms/date 2026-04-14T20:13:45Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2026-04-14T20:13:45Z" xsd:dateTime
 
 [Term]
 id: VT:0011292
@@ -33457,7 +33488,7 @@ name: biceps femoris morphology trait
 def: "Any measurable or observable characteristic related to the shape, structure, color, or pattern of a muscle of the posterior thigh. It has two parts, one of which (the long head) forms part of the hamstrings muscle group." [UBERON:0001374]
 is_a: VT:0010107 ! hindlimb muscle morphology trait
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
-property_value: http://purl.org/dc/terms/date 2026-04-14T20:16:04Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2026-04-14T20:16:04Z" xsd:dateTime
 
 [Term]
 id: VT:0011293
@@ -33466,7 +33497,7 @@ def: "The proportion, quantity, or volume of ribonucleic acid in the dorsal comp
 synonym: "multifidus muscle RNA amount" EXACT []
 is_a: VT:0011059 ! skeletal muscle ribonucleic acid amount
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
-property_value: http://purl.org/dc/terms/date 2026-04-14T20:27:46Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2026-04-14T20:27:46Z" xsd:dateTime
 
 [Term]
 id: VT:0011294
@@ -33474,7 +33505,7 @@ name: dorsal striatum molecular composition trait
 def: "Any measurable or observable characteristic related to the proportions of proteins, minerals, nutrients, gases, or other substances in the middle of the three cerebral vesicles of the embryo or the corresponding part of the adult brain; this region controls sensory and motor functions, including eye movement and coordination of auditory and visual reflexes." [UBERON:0005382]
 is_a: VT:0004102 ! dorsal striatum morphology trait
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
-property_value: http://purl.org/dc/terms/date 2026-04-14T20:31:59Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2026-04-14T20:31:59Z" xsd:dateTime
 
 [Term]
 id: VT:0011295
@@ -33485,7 +33516,7 @@ xref: CMO:0004144
 is_a: VT:0011159 ! striatum ribonucleic acid amount
 is_a: VT:0011294 ! dorsal striatum molecular composition trait
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
-property_value: http://purl.org/dc/terms/date 2026-04-14T20:32:27Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2026-04-14T20:32:27Z" xsd:dateTime
 
 [Term]
 id: VT:0011296
@@ -33493,7 +33524,7 @@ name: femur molecular composition trait
 def: "Any measurable or observable characteristic related to the proportions of proteins, minerals, nutrients, gases, or other substances in the major bone in the upper portion of the hindlimb of quadrupeds or the lower limb of bipeds." [ISBN:978-0440237013, ISBN:978-1416049982]
 is_a: VT:0000559 ! femur morphology trait
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
-property_value: http://purl.org/dc/terms/date 2026-04-22T12:59:01Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2026-04-22T12:59:01Z" xsd:dateTime
 
 [Term]
 id: VT:0011297
@@ -33504,7 +33535,7 @@ xref: CMO:0004146
 is_a: VT:0011068 ! bone ribonucleic acid amount
 is_a: VT:0011296 ! femur molecular composition trait
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
-property_value: http://purl.org/dc/terms/date 2026-04-22T13:00:29Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2026-04-22T13:00:29Z" xsd:dateTime
 
 [Term]
 id: VT:0011298
@@ -33517,7 +33548,7 @@ xref: CMO:0004147
 is_a: VT:0010793 ! kidney ribonucleic acid amount
 is_a: VT:0011299 ! kidney glomerulus molecular composition trait
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
-property_value: http://purl.org/dc/terms/date 2026-04-22T13:26:12Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2026-04-22T13:26:12Z" xsd:dateTime
 
 [Term]
 id: VT:0011299
@@ -33525,7 +33556,7 @@ name: kidney glomerulus molecular composition trait
 def: "Any measurable or observable characteristic related to the proportions of proteins, minerals, nutrients, gases, or other substances in the capillary loops at the beginning of each nephric tubule in the kidney." [ISBN:0-683-40008-8]
 is_a: VT:0005325 ! kidney glomerulus morphology trait
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
-property_value: http://purl.org/dc/terms/date 2026-04-22T13:32:51Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2026-04-22T13:32:51Z" xsd:dateTime
 
 [Term]
 id: VT:0011300
@@ -33535,7 +33566,7 @@ synonym: "CA1 field of hippocampus RNA amount" EXACT []
 xref: CMO:0004039
 is_a: VT:0011151 ! hippocampal formation ribonucleic acid amount
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
-property_value: http://purl.org/dc/terms/date 2026-04-22T14:03:17Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2026-04-22T14:03:17Z" xsd:dateTime
 
 [Term]
 id: VT:0011301
@@ -33543,7 +33574,7 @@ name: hippocampus molecular composition trait
 def: "Any measurable or observable characteristic related to the proportions of proteins, minerals, nutrients, gases, or other substances in the deep lying structure of the cerebrum involved with memory storage and spatial navigation." [ISBN:0-12-402035-6, MP:0000807]
 is_a: VT:0000807 ! hippocampus morphology trait
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
-property_value: http://purl.org/dc/terms/date 2026-04-22T14:05:04Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2026-04-22T14:05:04Z" xsd:dateTime
 
 [Term]
 id: VT:0011302
@@ -33551,7 +33582,7 @@ name: facial nerve molecular composition trait
 def: "Any measurable or observable characteristic related to the proportions of proteins, minerals, nutrients, gases, or other substances in the cranial nerve that branches into the supraorbital (supplying the skin of the eye region and the lateral line organs here), the palatine (to the roof of the buccal cavity), and the hyomandibular (dividing into the jugular and mental branches)." [UBERON:0001647]
 is_a: VT:0001071 ! facial nerve morphology trait
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
-property_value: http://purl.org/dc/terms/date 2026-04-22T14:51:58Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2026-04-22T14:51:58Z" xsd:dateTime
 
 [Term]
 id: VT:0011303
@@ -33564,8 +33595,9 @@ synonym: "seventh cranial nerve ribonucleic acid amount" EXACT []
 synonym: "seventh cranial nerve RNA amount" EXACT []
 xref: CMO:0004148
 is_a: VT:0011302 ! facial nerve molecular composition trait
+is_a: VT:0011392 ! nerve ribonucleic acid amount
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
-property_value: http://purl.org/dc/terms/date 2026-04-22T14:53:12Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2026-04-22T14:53:12Z" xsd:dateTime
 
 [Term]
 id: VT:0011304
@@ -33574,8 +33606,8 @@ def: "The stage of development when the tube running from the outer ear to the m
 synonym: "age at ear canal opening" EXACT []
 synonym: "time of opening of auditory canal" EXACT []
 is_a: VT:0015029 ! outer ear development trait
-property_value: http://purl.org/dc/terms/date 2026-06-11T21:08:31Z xsd:dateTime
-property_value: http://www.geneontology.org/formats/oboInOwl#http://purl.org/dc/terms/contributor http://orcid.org/0000-0001-5858-4393 xsd:string
+property_value: http://purl.org/dc/terms/date "2026-06-11T21:08:31Z" xsd:dateTime
+property_value: http://www.geneontology.org/formats/oboInOwl#http://purl.org/dc/terms/contributor "http://orcid.org/0000-0001-5858-4393" xsd:string
 property_value: http://www.geneontology.org/formats/oboInOwl#http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
 
 [Term]
@@ -33583,8 +33615,8 @@ id: VT:0011305
 name: time of pinna detachment
 def: "The stage of development when the pinna (the part of the ear that projects from the head, connecting to the external acoustic meatus) detaches from the head." [UBERON:0001757]
 is_a: VT:0000052 ! ear unfolding initiation trait
-property_value: http://purl.org/dc/terms/date 2026-06-11T21:24:29Z xsd:dateTime
-property_value: http://www.geneontology.org/formats/oboInOwl#http://purl.org/dc/terms/contributor http://orcid.org/0000-0001-5858-4393 xsd:string
+property_value: http://purl.org/dc/terms/date "2026-06-11T21:24:29Z" xsd:dateTime
+property_value: http://www.geneontology.org/formats/oboInOwl#http://purl.org/dc/terms/contributor "http://orcid.org/0000-0001-5858-4393" xsd:string
 property_value: http://www.geneontology.org/formats/oboInOwl#http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
 
 [Term]
@@ -33594,8 +33626,8 @@ def: "The stage of development when the prepuce (foreskin) is completely detache
 synonym: "age at preputial separation" EXACT []
 synonym: "time of balanopreputial separation" EXACT []
 is_a: VT:0001938 ! time of sexual maturation trait
-property_value: http://purl.org/dc/terms/date 2026-06-12T18:20:17Z xsd:dateTime
-property_value: http://www.geneontology.org/formats/oboInOwl#http://purl.org/dc/terms/contributor http://orcid.org/0000-0001-5858-4393 xsd:string
+property_value: http://purl.org/dc/terms/date "2026-06-12T18:20:17Z" xsd:dateTime
+property_value: http://www.geneontology.org/formats/oboInOwl#http://purl.org/dc/terms/contributor "http://orcid.org/0000-0001-5858-4393" xsd:string
 property_value: http://www.geneontology.org/formats/oboInOwl#http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
 
 [Term]
@@ -33604,8 +33636,8 @@ name: time of incisor eruption
 def: "The stage of development when a developing incisor first emerges through the gingival/oral epithelium and becomes visible in the oral cavity." [https://en.wikipedia.org/wiki/Tooth_eruption]
 synonym: "age at incisor eruption" EXACT []
 is_a: VT:0005359 ! incisor growth trait
-property_value: http://purl.org/dc/terms/date 2026-06-12T18:59:49Z xsd:dateTime
-property_value: http://www.geneontology.org/formats/oboInOwl#http://purl.org/dc/terms/contributor http://orcid.org/0000-0001-5858-4393 xsd:string
+property_value: http://purl.org/dc/terms/date "2026-06-12T18:59:49Z" xsd:dateTime
+property_value: http://www.geneontology.org/formats/oboInOwl#http://purl.org/dc/terms/contributor "http://orcid.org/0000-0001-5858-4393" xsd:string
 property_value: http://www.geneontology.org/formats/oboInOwl#http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
 
 [Term]
@@ -33615,7 +33647,7 @@ def: "The proportion, quantity, or volume of ribonucleic acid in the network of 
 xref: CMO:0004154
 is_a: VT:0010793 ! kidney ribonucleic acid amount
 is_a: VT:0011310 ! kidney blood vessel molecular composition trait
-property_value: http://purl.org/dc/terms/date 2026-06-23T19:42:21Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2026-06-23T19:42:21Z" xsd:dateTime
 property_value: http://www.geneontology.org/formats/oboInOwl#http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
 
 [Term]
@@ -33624,7 +33656,7 @@ name: inner ear ribonucleic acid amount
 def: "The proportion, quantity, or volume of ribonucleic acid in the labyrinth of the ear, including the semicircular canals, vestibule and cochlea. Ribonucleic acid is a high molecular weight, linear polymer composed of nucleotides containing ribose and linked by phosphodiester bonds." [CHEBI:33697, ISBN:0-683-40008-8, MP:0000026, RGD:cur]
 xref: CMO:0004129
 is_a: VT:0011262 ! inner ear molecular composition trait
-property_value: http://purl.org/dc/terms/date 2026-06-23T21:20:58Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2026-06-23T21:20:58Z" xsd:dateTime
 property_value: http://www.geneontology.org/formats/oboInOwl#http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
 
 [Term]
@@ -33633,7 +33665,7 @@ name: kidney blood vessel molecular composition trait
 def: "Any measurable or observable characteristic related to the proportions of proteins, minerals, nutrients, gases, or other substances in the network of vessels that convey blood in the paired organs responsible for urine excretion and regulation of ion concentrations." [ISBN:0-683-40008-8, RGD:cur]
 is_a: VT:0000530 ! kidney blood vessel morphology trait
 is_a: VT:0010558 ! kidney molecular composition trait
-property_value: http://purl.org/dc/terms/date 2026-06-24T18:32:23Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2026-06-24T18:32:23Z" xsd:dateTime
 property_value: http://www.geneontology.org/formats/oboInOwl#http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
 
 [Term]
@@ -33641,8 +33673,8 @@ id: VT:0011311
 name: conceptus quantity
 def: "The proportion or number of fertilized eggs, embryos, or fetuses." [https://www.merriam-webster.com/dictionary/conceptus]
 is_a: VT:0002161 ! female fecundity trait
-property_value: http://purl.org/dc/terms/date 2026-06-24T19:26:51Z xsd:dateTime
-property_value: http://www.geneontology.org/formats/oboInOwl#http://purl.org/dc/terms/contributor http://orcid.org/0000-0001-5858-4393 xsd:string
+property_value: http://purl.org/dc/terms/date "2026-06-24T19:26:51Z" xsd:dateTime
+property_value: http://www.geneontology.org/formats/oboInOwl#http://purl.org/dc/terms/contributor "http://orcid.org/0000-0001-5858-4393" xsd:string
 property_value: http://www.geneontology.org/formats/oboInOwl#http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
 
 [Term]
@@ -33651,8 +33683,8 @@ name: fetus quantity
 def: "The proportion or number of unborn or unhatched vertebrates especially after attaining the basic structural plan of their kind." [https://www.merriam-webster.com/dictionary/fetus]
 is_a: VT:0010937 ! fetus trait
 is_a: VT:0011311 ! conceptus quantity
-property_value: http://purl.org/dc/terms/date 2026-06-24T19:32:50Z xsd:dateTime
-property_value: http://www.geneontology.org/formats/oboInOwl#http://purl.org/dc/terms/contributor http://orcid.org/0000-0001-5858-4393 xsd:string
+property_value: http://purl.org/dc/terms/date "2026-06-24T19:32:50Z" xsd:dateTime
+property_value: http://www.geneontology.org/formats/oboInOwl#http://purl.org/dc/terms/contributor "http://orcid.org/0000-0001-5858-4393" xsd:string
 property_value: http://www.geneontology.org/formats/oboInOwl#http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
 
 [Term]
@@ -33661,8 +33693,8 @@ name: viable fetus quantity
 def: "The proportion or number of fetuses that have attained such form and development of organs as to be normally capable of survival." [https://www.merriam-webster.com/dictionary/viable]
 synonym: "live fetus quantity" EXACT []
 is_a: VT:0011312 ! fetus quantity
-property_value: http://purl.org/dc/terms/date 2026-06-24T19:42:08Z xsd:dateTime
-property_value: http://www.geneontology.org/formats/oboInOwl#http://purl.org/dc/terms/contributor http://orcid.org/0000-0001-5858-4393 xsd:string
+property_value: http://purl.org/dc/terms/date "2026-06-24T19:42:08Z" xsd:dateTime
+property_value: http://www.geneontology.org/formats/oboInOwl#http://purl.org/dc/terms/contributor "http://orcid.org/0000-0001-5858-4393" xsd:string
 property_value: http://www.geneontology.org/formats/oboInOwl#http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
 
 [Term]
@@ -33672,8 +33704,8 @@ def: "The proportion or number of fetuses that are not capable of living, growin
 synonym: "fetal death quantity" EXACT []
 synonym: "nonviable fetus quantity" EXACT []
 is_a: VT:0011312 ! fetus quantity
-property_value: http://purl.org/dc/terms/date 2026-06-24T19:42:29Z xsd:dateTime
-property_value: http://www.geneontology.org/formats/oboInOwl#http://purl.org/dc/terms/contributor http://orcid.org/0000-0001-5858-4393 xsd:string
+property_value: http://purl.org/dc/terms/date "2026-06-24T19:42:29Z" xsd:dateTime
+property_value: http://www.geneontology.org/formats/oboInOwl#http://purl.org/dc/terms/contributor "http://orcid.org/0000-0001-5858-4393" xsd:string
 property_value: http://www.geneontology.org/formats/oboInOwl#http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
 
 [Term]
@@ -33683,7 +33715,7 @@ def: "The proportion, quantity, or volume of ribonucleic acid in the portion of 
 synonym: "cerebral neural tissue RNA amount" EXACT []
 xref: CMO:0004155
 is_a: VT:0011250 ! cerebrum ribonucleic acid amount
-property_value: http://purl.org/dc/terms/date 2026-07-14T18:42:42Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2026-07-14T18:42:42Z" xsd:dateTime
 property_value: http://www.geneontology.org/formats/oboInOwl#http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
 
 [Term]
@@ -33695,7 +33727,7 @@ synonym: "cerebrum blood vessel ribonucleic acid amount" EXACT []
 synonym: "cerebrum blood vessel RNA amount" EXACT []
 xref: CMO:0004156
 is_a: VT:0011250 ! cerebrum ribonucleic acid amount
-property_value: http://purl.org/dc/terms/date 2026-07-14T18:49:33Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2026-07-14T18:49:33Z" xsd:dateTime
 property_value: http://www.geneontology.org/formats/oboInOwl#http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
 
 [Term]
@@ -33704,7 +33736,7 @@ name: lumbar dorsal root ganglion ribonucleic acid amount
 def: "The proportion, quantity, or volume of ribonucleic acid in the group of nerve cell bodies located on the dorsal spinal roots within the vertebral column at the level of the lumbar vertebrae. Ribonucleic acid is a high molecular weight, linear polymer composed of nucleotides containing ribose and linked by phosphodiester bonds." [CHEBI:33697, MP:0006404, RGD:cur]
 synonym: "lumbar dorsal root ganglion RNA amount" EXACT []
 is_a: VT:0011037 ! dorsal root ganglion ribonucleic acid amount
-property_value: http://purl.org/dc/terms/date 2026-07-14T19:12:15Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2026-07-14T19:12:15Z" xsd:dateTime
 property_value: http://www.geneontology.org/formats/oboInOwl#http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
 
 [Term]
@@ -33713,7 +33745,7 @@ name: kidney cortex molecular composition trait
 def: "Any measurable or observable characteristic related to the proportions of proteins, minerals, nutrients, gases, or other substances in the outer area of the kidney, which conains the glomeruli and the capsules that enclose them, as well as the proximal and distal tubules." [ISBN:0-683-40008-8, RGD:cur]
 is_a: VT:0000521 ! kidney cortex morphology trait
 is_a: VT:0010558 ! kidney molecular composition trait
-property_value: http://purl.org/dc/terms/date 2026-07-14T19:35:23Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2026-07-14T19:35:23Z" xsd:dateTime
 property_value: http://www.geneontology.org/formats/oboInOwl#http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
 
 [Term]
@@ -33728,7 +33760,7 @@ synonym: "renal cortex RNA amount" EXACT []
 xref: CMO:0004157
 is_a: VT:0010793 ! kidney ribonucleic acid amount
 is_a: VT:0011318 ! kidney cortex molecular composition trait
-property_value: http://purl.org/dc/terms/date 2026-07-14T19:46:30Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2026-07-14T19:46:30Z" xsd:dateTime
 property_value: http://www.geneontology.org/formats/oboInOwl#http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
 
 [Term]
@@ -33743,7 +33775,7 @@ synonym: "renal outer medulla RNA amount" EXACT []
 xref: CMO:0004159
 is_a: VT:0010793 ! kidney ribonucleic acid amount
 is_a: VT:0011321 ! kidney medulla molecular composition trait
-property_value: http://purl.org/dc/terms/date 2026-07-14T20:05:44Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2026-07-14T20:05:44Z" xsd:dateTime
 property_value: http://www.geneontology.org/formats/oboInOwl#http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
 
 [Term]
@@ -33752,7 +33784,7 @@ name: kidney medulla molecular composition trait
 def: "Any measurable or observable characteristic related to the proportions of proteins, minerals, nutrients, gases, or other substances in the inner portion of the kidney consisting of the renal pyramids." [ISBN:0-683-40008-8, MP:0003014, RGD:cur]
 is_a: VT:0003014 ! kidney medulla morphology trait
 is_a: VT:0010558 ! kidney molecular composition trait
-property_value: http://purl.org/dc/terms/date 2026-07-14T20:13:43Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2026-07-14T20:13:43Z" xsd:dateTime
 property_value: http://www.geneontology.org/formats/oboInOwl#http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
 
 [Term]
@@ -33761,7 +33793,7 @@ name: mouth mucosa molecular composition trait
 def: "Any measurable or observable characteristic related to the proportions of proteins, minerals, nutrients, gases, or other substances in the mucus-secreting tissue that lines the oral cavity." [NCBI:matt, RGD:cur]
 synonym: "oral mucosa molecular composition trait" EXACT []
 is_a: VT:0003745 ! mouth mucosa morphology trait
-property_value: http://purl.org/dc/terms/date 2026-07-14T20:38:27Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2026-07-14T20:38:27Z" xsd:dateTime
 property_value: http://www.geneontology.org/formats/oboInOwl#http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
 
 [Term]
@@ -33772,7 +33804,7 @@ synonym: "gingiva RNA amount" EXACT []
 synonym: "gum ribonucleic acid amount" EXACT []
 synonym: "gum RNA amount" EXACT []
 is_a: VT:0011322 ! mouth mucosa molecular composition trait
-property_value: http://purl.org/dc/terms/date 2026-07-14T20:43:26Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2026-07-14T20:43:26Z" xsd:dateTime
 property_value: http://www.geneontology.org/formats/oboInOwl#http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
 
 [Term]
@@ -33784,7 +33816,7 @@ synonym: "anterior cochlear nucleus RNA amount" EXACT []
 synonym: "ventral cochlear nucleus RNA amount" EXACT []
 xref: CMO:0004160
 is_a: VT:0011253 ! medulla oblongata ribonucleic acid amount
-property_value: http://purl.org/dc/terms/date 2026-07-23T21:06:11Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2026-07-23T21:06:11Z" xsd:dateTime
 property_value: http://www.geneontology.org/formats/oboInOwl#http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
 
 [Term]
@@ -33795,7 +33827,7 @@ synonym: "cingulate cortex RNA amount" EXACT []
 synonym: "cingulate neocortex ribonucleic acid amount" EXACT []
 synonym: "cingulate neocortex RNA amount" EXACT []
 is_a: VT:0011255 ! cerebral cortex ribonucleic acid amount
-property_value: http://purl.org/dc/terms/date 2026-07-23T21:17:55Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2026-07-23T21:17:55Z" xsd:dateTime
 property_value: http://www.geneontology.org/formats/oboInOwl#http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
 
 [Term]
@@ -33803,7 +33835,7 @@ id: VT:0011326
 name: sex gland secreted fluid morphology trait
 def: "Any measurable or observable characteristic related to the shape, structure, color, or pattern of fluids released by any of the organized aggregations of cells that function as secretory or excretory organs and are associated with reproduction." [MP:0000653]
 is_a: VT:0000653 ! sex gland morphology trait
-property_value: http://purl.org/dc/terms/date 2026-08-13T14:09:10Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2026-08-13T14:09:10Z" xsd:dateTime
 property_value: http://www.geneontology.org/formats/oboInOwl#http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
 
 [Term]
@@ -33811,7 +33843,7 @@ id: VT:0011327
 name: semen trait
 def: "Any measurable or observable characteristic related to the substance that is composed of sperm cells suspended in seminal fluid." [UBERON:0001968]
 is_a: VT:0011326 ! sex gland secreted fluid morphology trait
-property_value: http://purl.org/dc/terms/date 2026-08-13T14:11:56Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2026-08-13T14:11:56Z" xsd:dateTime
 property_value: http://www.geneontology.org/formats/oboInOwl#http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
 
 [Term]
@@ -33819,7 +33851,7 @@ id: VT:0011328
 name: sperm viability trait
 def: "Any measurable or observable characteristic related to the ability of the male gamete to function adequately." [https://www.merriam-webster.com/]
 is_a: VT:0001922 ! male fertility trait
-property_value: http://purl.org/dc/terms/date 2026-08-13T15:22:43Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2026-08-13T15:22:43Z" xsd:dateTime
 property_value: http://www.geneontology.org/formats/oboInOwl#http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
 
 [Term]
@@ -33827,7 +33859,7 @@ id: VT:0011329
 name: semen color
 def: "The visually perceived hue of the substance that is composed of sperm cells suspended in seminal fluid." [UBERON:0001968]
 is_a: VT:0011327 ! semen trait
-property_value: http://purl.org/dc/terms/date 2026-08-13T15:32:23Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2026-08-13T15:32:23Z" xsd:dateTime
 property_value: http://www.geneontology.org/formats/oboInOwl#http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
 
 [Term]
@@ -33835,7 +33867,7 @@ id: VT:0011330
 name: nose pigmentation trait
 def: "Any measurable or observable characteristic related to the deposition or aggregation of coloring matter in the organ that is specialized for smell and is part of the respiratory system." [MP:0002233]
 is_a: VT:0002233 ! nose morphology trait
-property_value: http://purl.org/dc/terms/date 2026-08-13T17:31:40Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2026-08-13T17:31:40Z" xsd:dateTime
 property_value: http://www.geneontology.org/formats/oboInOwl#http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
 
 [Term]
@@ -33844,7 +33876,7 @@ name: CD3-negative, CD8-negative T cell quantity
 def: "The proportion or number of T lymphocytes that are negative for both the CD3 T-cell co-receptor complex and the CD8 glycoprotein." [https://www.bio-rad-antibodies.com/minireview-cd3-antibody.html?thirdPartyCookieEnabled=true]
 synonym: "CD3-CD8- T cell quantity" EXACT []
 is_a: VT:0011214 ! CD3-negative T cell quantity
-property_value: http://purl.org/dc/terms/date 2026-08-13T18:55:54Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2026-08-13T18:55:54Z" xsd:dateTime
 property_value: http://www.geneontology.org/formats/oboInOwl#http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
 
 [Term]
@@ -33853,7 +33885,7 @@ name: CD3-negative, CD8-positive T cell quantity
 def: "The proportion or number of T lymphocytes that are negative for the CD3 T-cell co-receptor complex and positive for the CD8 glycoprotein." [https://www.bio-rad-antibodies.com/minireview-cd3-antibody.html?thirdPartyCookieEnabled=true]
 synonym: "CD3-CD8+ T cell quantity" EXACT []
 is_a: VT:0011214 ! CD3-negative T cell quantity
-property_value: http://purl.org/dc/terms/date 2026-08-13T19:01:44Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2026-08-13T19:01:44Z" xsd:dateTime
 property_value: http://www.geneontology.org/formats/oboInOwl#http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
 
 [Term]
@@ -33862,7 +33894,7 @@ name: adipose color
 def: "The visually perceived hue of the fat-storing cells/tissue." [MP:0000003]
 synonym: "fat color" EXACT []
 is_a: VT:0000003 ! adipose morphology trait
-property_value: http://purl.org/dc/terms/date 2026-08-13T19:48:27Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2026-08-13T19:48:27Z" xsd:dateTime
 property_value: http://www.geneontology.org/formats/oboInOwl#http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
 
 [Term]
@@ -33870,7 +33902,7 @@ id: VT:0011334
 name: mouth size trait
 def: "Any measurable or observable characteristic related to the physical magnitude of the oral cavity." [MP:0000452]
 is_a: VT:0000452 ! mouth morphology trait
-property_value: http://purl.org/dc/terms/date 2026-08-13T19:59:52Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2026-08-13T19:59:52Z" xsd:dateTime
 property_value: http://www.geneontology.org/formats/oboInOwl#http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
 
 [Term]
@@ -33880,7 +33912,7 @@ def: "The proportion, quantity, or volume in whole blood, serum, or plasma of th
 synonym: "blood AMH amount" EXACT []
 xref: CMO:0004162
 is_a: VT:0005418 ! blood hormone amount
-property_value: http://purl.org/dc/terms/date 2026-08-13T20:39:08Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2026-08-13T20:39:08Z" xsd:dateTime
 property_value: http://www.geneontology.org/formats/oboInOwl#http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
 
 [Term]
@@ -33889,7 +33921,7 @@ name: blood beta-carotene amount
 def: "The proportion, quantity, or volume in whole blood, serum, or plasma of a carotenoid that is a precursor of vitamin A." [MESH:D019207]
 xref: CMO:0004163
 is_a: VT:0010626 ! blood vitamin amount
-property_value: http://purl.org/dc/terms/date 2026-08-13T20:48:07Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2026-08-13T20:48:07Z" xsd:dateTime
 property_value: http://www.geneontology.org/formats/oboInOwl#http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
 
 [Term]
@@ -33898,7 +33930,7 @@ name: blood vitamin E amount
 def: "The proportion, quantity, or volume in whole blood, serum, or plasma of a fat-soluble vitamin that acts as a natural antioxidant by scavenging free radicals and molecular oxygen." [CHEBI:33234]
 xref: CMO:0004165
 is_a: VT:0010626 ! blood vitamin amount
-property_value: http://purl.org/dc/terms/date 2026-08-13T20:51:57Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2026-08-13T20:51:57Z" xsd:dateTime
 property_value: http://www.geneontology.org/formats/oboInOwl#http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
 
 [Term]
@@ -33907,7 +33939,7 @@ name: tail circumference
 def: "The distance around the appendage at the caudal end of the vertebral column." [MP:0002111]
 xref: CMO:0004169
 is_a: VT:0003456 ! tail size trait
-property_value: http://purl.org/dc/terms/date 2026-08-14T17:52:08Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2026-08-14T17:52:08Z" xsd:dateTime
 property_value: http://www.geneontology.org/formats/oboInOwl#http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
 
 [Term]
@@ -33915,7 +33947,7 @@ id: VT:0011339
 name: heterophil quantity
 def: "The proportion or number of the white blood cells that are the avian equivalent to mammalian neutrophils but have eosinophilic cytoplasmic granules." [https://www.merckvetmanual.com/circulatory-system/hematopoietic-system-introduction/white-blood-cells-in-animals?query=heterophil]
 is_a: VT:0000334 ! granulocyte quantity
-property_value: http://purl.org/dc/terms/date 2026-08-14T18:17:04Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2026-08-14T18:17:04Z" xsd:dateTime
 property_value: http://www.geneontology.org/formats/oboInOwl#http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
 
 [Term]
@@ -33924,7 +33956,7 @@ name: feather amount
 def: "The proportion or number of the surface covering of birds, made of keratin." [http://www.britannica.com]
 synonym: "feather density" NARROW []
 is_a: VT:1000664 ! feather morphology trait
-property_value: http://purl.org/dc/terms/date 2026-08-14T18:46:48Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2026-08-14T18:46:48Z" xsd:dateTime
 property_value: http://www.geneontology.org/formats/oboInOwl#http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
 
 [Term]
@@ -33932,7 +33964,7 @@ id: VT:0011341
 name: vertebra size trait
 def: "Any measurable or observable characteristic related to the physical magnitude of the bony segments of the spinal column." [ISBN:0-683-40008-8]
 is_a: VT:0000137 ! vertebra morphology trait
-property_value: http://purl.org/dc/terms/date 2026-08-14T21:06:40Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2026-08-14T21:06:40Z" xsd:dateTime
 property_value: http://www.geneontology.org/formats/oboInOwl#http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
 
 [Term]
@@ -33940,7 +33972,7 @@ id: VT:0011342
 name: vertebra mass
 def: "The amount of matter in the bony segments of the spinal column." [ISBN:0-683-40008-8]
 is_a: VT:0011341 ! vertebra size trait
-property_value: http://purl.org/dc/terms/date 2026-08-14T21:10:36Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2026-08-14T21:10:36Z" xsd:dateTime
 property_value: http://www.geneontology.org/formats/oboInOwl#http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
 
 [Term]
@@ -33949,7 +33981,7 @@ name: blood alpha-1 globulin amount
 def: "The proportion, quantity, or volume in whole blood, serum, or plasma of the proteins in the alpha-1 (faster) subgroup of the serum proteins that have the most rapid migration during electrophoresis." [MESH:D000510]
 xref: CMO:0004170
 is_a: VT:0010628 ! blood globulin amount
-property_value: http://purl.org/dc/terms/date 2026-08-19T14:11:42Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2026-08-19T14:11:42Z" xsd:dateTime
 property_value: http://www.geneontology.org/formats/oboInOwl#http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
 
 [Term]
@@ -33958,7 +33990,7 @@ name: blood alpha-2 globulin amount
 def: "The proportion, quantity, or volume in whole blood, serum, or plasma of the proteins in the alpha-1 (faster) subgroup of the serum proteins that have the most rapid migration during electrophoresis." [MESH:D000510]
 xref: CMO:0004171
 is_a: VT:0010628 ! blood globulin amount
-property_value: http://purl.org/dc/terms/date 2026-08-19T14:11:59Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2026-08-19T14:11:59Z" xsd:dateTime
 property_value: http://www.geneontology.org/formats/oboInOwl#http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
 
 [Term]
@@ -33967,7 +33999,7 @@ name: blood beta-globulin amount
 def: "The proportion, quantity, or volume in whole blood, serum, or plasma of the serum proteins with an electrophoretic mobility that falls between alpha-globulins and gamma-globulins." [MESH:D001609]
 xref: CMO:0004172
 is_a: VT:0010628 ! blood globulin amount
-property_value: http://purl.org/dc/terms/date 2026-08-19T14:12:20Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2026-08-19T14:12:20Z" xsd:dateTime
 property_value: http://www.geneontology.org/formats/oboInOwl#http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
 
 [Term]
@@ -33976,7 +34008,7 @@ name: blood gamma-globulin amount
 def: "The proportion, quantity, or volume in whole blood, serum, or plasma of the serum proteins that migrate to the gamma region (most positively charged) upon electrophoresis." [MESH:D005719]
 xref: CMO:0004173
 is_a: VT:0010628 ! blood globulin amount
-property_value: http://purl.org/dc/terms/date 2026-08-19T14:12:37Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2026-08-19T14:12:37Z" xsd:dateTime
 property_value: http://www.geneontology.org/formats/oboInOwl#http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
 
 [Term]
@@ -33985,7 +34017,7 @@ name: skin temperature trait
 def: "Any measurable or observable characteristic related to the level of heat on the external surface of the skin of an organism." [MESH:D001831]
 xref: CMO:0004174
 is_a: VT:0005535 ! body temperature trait
-property_value: http://purl.org/dc/terms/date 2026-08-19T18:33:54Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2026-08-19T18:33:54Z" xsd:dateTime
 property_value: http://www.geneontology.org/formats/oboInOwl#http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
 
 [Term]
@@ -33993,7 +34025,7 @@ id: VT:0011348
 name: horn morphology trait
 def: "Any measurable or observable characteristic related to the shape, structure, color or pattern of a pointed projection of the skin on the head of various animals, consisting of a covering of horn (keratin and other proteins) surrounding a core of living bone." [UBERON:0006967]
 is_a: VT:0015071 ! appendage morphology trait
-property_value: http://purl.org/dc/terms/date 2026-08-19T18:49:29Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2026-08-19T18:49:29Z" xsd:dateTime
 property_value: http://www.geneontology.org/formats/oboInOwl#http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
 
 [Term]
@@ -34001,7 +34033,7 @@ id: VT:0011349
 name: udder integrity trait
 def: "Any measurable or observable characteristic related to the structural soundness of the organ in certain species containing two or more mammary glands, each with its own nipple." [http://www.merriam-webster.com/dictionary/udder]
 is_a: VT:1000067 ! udder morphology trait
-property_value: http://purl.org/dc/terms/date 2026-08-19T20:38:40Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2026-08-19T20:38:40Z" xsd:dateTime
 property_value: http://www.geneontology.org/formats/oboInOwl#http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
 
 [Term]
@@ -34009,7 +34041,7 @@ id: VT:0011350
 name: milk molecular composition trait
 def: "Any measurable or observable characteristic related to the proportions of proteins, minerals, nutrients, gases, or other substances in the fluid secreted by the mammary glands of female mammals for the nourishment of their young." [https://www.merriam-webster.com/dictionary/milk]
 is_a: VT:0004047 ! milk trait
-property_value: http://purl.org/dc/terms/date 2026-08-20T13:16:39Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2026-08-20T13:16:39Z" xsd:dateTime
 property_value: http://www.geneontology.org/formats/oboInOwl#http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
 
 [Term]
@@ -34018,7 +34050,7 @@ name: wattle morphology trait
 def: "Any measurable or observable characteristic related to the shape, structure, color, or pattern of the fleshy dewlap or caruncle hanging from various parts of the head or neck in several groups of birds, goats, and other animals." [UBERON:0007623]
 is_a: VT:0010007 ! skin adnexa morphology trait
 is_a: VT:0015071 ! appendage morphology trait
-property_value: http://purl.org/dc/terms/date 2026-08-20T15:53:38Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2026-08-20T15:53:38Z" xsd:dateTime
 property_value: http://www.geneontology.org/formats/oboInOwl#http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
 
 [Term]
@@ -34026,7 +34058,7 @@ id: VT:0011352
 name: wattle size trait
 def: "Any measurable or observable characteristic related to the physical magnitude of the fleshy dewlap or caruncle hanging from various parts of the head or neck in several groups of birds, goats, and other animals." [UBERON:0007623]
 is_a: VT:0011351 ! wattle morphology trait
-property_value: http://purl.org/dc/terms/date 2026-08-20T15:56:39Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2026-08-20T15:56:39Z" xsd:dateTime
 property_value: http://www.geneontology.org/formats/oboInOwl#http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
 
 [Term]
@@ -34034,7 +34066,7 @@ id: VT:0011353
 name: wattle mass
 def: "The amount of matter in the fleshy dewlap or caruncle hanging from various parts of the head or neck in several groups of birds, goats, and other animals." [UBERON:0007623]
 is_a: VT:0011352 ! wattle size trait
-property_value: http://purl.org/dc/terms/date 2026-08-20T16:01:05Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2026-08-20T16:01:05Z" xsd:dateTime
 property_value: http://www.geneontology.org/formats/oboInOwl#http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
 
 [Term]
@@ -34042,7 +34074,7 @@ id: VT:0011354
 name: wattle length
 def: "The distance from point to point along the longest axis of the fleshy dewlap or caruncle hanging from various parts of the head or neck in several groups of birds, goats, and other animals." [UBERON:0007623]
 is_a: VT:0011352 ! wattle size trait
-property_value: http://purl.org/dc/terms/date 2026-08-20T16:02:17Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2026-08-20T16:02:17Z" xsd:dateTime
 property_value: http://www.geneontology.org/formats/oboInOwl#http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
 
 [Term]
@@ -34051,7 +34083,7 @@ name: blood pepsinogen amount
 def: "The proportion, quantity, or volume in whole blood, serum, or plasma of the granular zymogen of the gastric glands that is converted to pepsin under acidic conditions." [https://www.merriam-webster.com/dictionary/pepsinogen]
 xref: CMO:0004176
 is_a: VT:0005416 ! blood protein amount
-property_value: http://purl.org/dc/terms/date 2026-08-20T16:28:35Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2026-08-20T16:28:35Z" xsd:dateTime
 property_value: http://www.geneontology.org/formats/oboInOwl#http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
 
 [Term]
@@ -34059,7 +34091,7 @@ id: VT:0011356
 name: coat/hair distribution trait
 def: "Any measurable or observable characteristic related to the placement of the hair, wool, or fur of an organism, that is, of either a single cylindrical, keratinized, often pigmented filament characteristically growing from the epidermis of a mammal, or of the aggregate of all such filaments, on the body." [CMO:0001808]
 is_a: VT:0000367 ! coat/hair morphology trait
-property_value: http://purl.org/dc/terms/date 2026-08-20T19:24:32Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2026-08-20T19:24:32Z" xsd:dateTime
 property_value: http://www.geneontology.org/formats/oboInOwl#http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
 
 [Term]
@@ -34067,7 +34099,7 @@ id: VT:0011357
 name: feather distribution trait
 def: "Any measurable or observable characteristic related to the placement of the surface covering of birds, made of keratin, on the body." [http://www.britannica.com]
 is_a: VT:1000664 ! feather morphology trait
-property_value: http://purl.org/dc/terms/date 2026-08-20T19:38:31Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2026-08-20T19:38:31Z" xsd:dateTime
 property_value: http://www.geneontology.org/formats/oboInOwl#http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
 
 [Term]
@@ -34076,7 +34108,7 @@ name: blood immunoglobulin Y amount
 def: "The proportion, quantity, or volume in whole blood, serum, or plasma of the immunoglobulin which is the major antibody in amphibian, bird, reptile, and lungfish blood." [https://en.wikipedia.org/wiki/Immunoglobulin_Y]
 xref: CMO:0004177
 is_a: VT:0002460 ! blood immunoglobulin amount
-property_value: http://purl.org/dc/terms/date 2026-08-20T19:55:11Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2026-08-20T19:55:11Z" xsd:dateTime
 property_value: http://www.geneontology.org/formats/oboInOwl#http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
 
 [Term]
@@ -34086,7 +34118,7 @@ def: "Any measurable or observable characteristic related to the organism subdiv
 synonym: "thoracolumbar region trait" EXACT []
 synonym: "torso trait" EXACT []
 is_a: VT:0100003 ! organism subdivision trait
-property_value: http://purl.org/dc/terms/date 2026-08-20T20:46:48Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2026-08-20T20:46:48Z" xsd:dateTime
 property_value: http://www.geneontology.org/formats/oboInOwl#http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
 
 [Term]
@@ -34096,7 +34128,7 @@ def: "Any measurable or observable characteristic related to the shape, structur
 synonym: "thoracolumbar region morphology trait" EXACT []
 synonym: "torso morphology trait" EXACT []
 is_a: VT:0011359 ! trunk trait
-property_value: http://purl.org/dc/terms/date 2026-08-20T20:47:20Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2026-08-20T20:47:20Z" xsd:dateTime
 property_value: http://www.geneontology.org/formats/oboInOwl#http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
 
 [Term]
@@ -34105,7 +34137,7 @@ name: trunk circumference
 def: "The distance around the organism subdivision which is the part of the body posterior to the cervical region (or head, when cervical region not present) and anterior to the caudal region." [UBERON:0002100]
 synonym: "torso circumference" EXACT []
 is_a: VT:0011360 ! trunk morphology trait
-property_value: http://purl.org/dc/terms/date 2026-08-20T21:14:20Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2026-08-20T21:14:20Z" xsd:dateTime
 property_value: http://www.geneontology.org/formats/oboInOwl#http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
 
 [Term]
@@ -34114,7 +34146,7 @@ name: trunk depth
 def: "The dorsal-ventral dimension of the organism subdivision which is the part of the body posterior to the cervical region (or head, when cervical region not present) and anterior to the caudal region." [UBERON:0002100]
 synonym: "torso depth" EXACT []
 is_a: VT:0011360 ! trunk morphology trait
-property_value: http://purl.org/dc/terms/date 2026-08-20T21:20:35Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2026-08-20T21:20:35Z" xsd:dateTime
 property_value: http://www.geneontology.org/formats/oboInOwl#http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
 
 [Term]
@@ -34124,7 +34156,7 @@ def: "The proportion, quantity, or volume in milk fat of an unsaturated fatty ac
 synonym: "milk trans-12-Octadecenoic acid amount" EXACT []
 xref: CMO:0004198
 is_a: VT:0010373 ! milk monounsaturated fatty acid amount
-property_value: http://purl.org/dc/terms/date 2026-09-09T16:45:05Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2026-09-09T16:45:05Z" xsd:dateTime
 property_value: http://www.geneontology.org/formats/oboInOwl#http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
 
 [Term]
@@ -34132,7 +34164,7 @@ id: VT:0011364
 name: embryo quantity
 def: "The proportion or number of the anatomical entity that comprises the organism in the early stages of growth and differentiation that are characterized by cleavage, the laying down of fundamental tissues, and the formation of primitive organs and organ systems." [UBERON:0000922]
 is_a: VT:0000069 ! embryo trait
-property_value: http://purl.org/dc/terms/date 2026-09-09T18:12:39Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2026-09-09T18:12:39Z" xsd:dateTime
 property_value: http://www.geneontology.org/formats/oboInOwl#http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
 
 [Term]
@@ -34140,7 +34172,7 @@ id: VT:0011365
 name: rumination trait
 def: "Any measurable or observable characteristic related to the digestive process in some species in which food, usually grass or hay, is swallowed into a multi-compartmented stomach, regurgitated, chewed again, and swallowed again." [GO:0036147]
 is_a: VT:0001664 ! digestion trait
-property_value: http://purl.org/dc/terms/date 2026-09-09T18:56:03Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2026-09-09T18:56:03Z" xsd:dateTime
 property_value: http://www.geneontology.org/formats/oboInOwl#http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
 
 [Term]
@@ -34148,7 +34180,7 @@ id: VT:0011366
 name: viable embryo quantity
 def: "The proportion or number of embryos that have attained such form and development of structures as to be normally capable of survival." [https://www.merriam-webster.com/dictionary/viable]
 is_a: VT:0011364 ! embryo quantity
-property_value: http://purl.org/dc/terms/date 2026-09-09T19:01:48Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2026-09-09T19:01:48Z" xsd:dateTime
 property_value: http://www.geneontology.org/formats/oboInOwl#http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
 
 [Term]
@@ -34156,7 +34188,7 @@ id: VT:0011367
 name: non-viable embryo quantity
 def: "The proportion or number of embryos that are not capable of living, growing, or developing successfully." [https://www.merriam-webster.com/dictionary/non-viable]
 is_a: VT:0011364 ! embryo quantity
-property_value: http://purl.org/dc/terms/date 2026-09-09T19:08:28Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2026-09-09T19:08:28Z" xsd:dateTime
 property_value: http://www.geneontology.org/formats/oboInOwl#http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
 
 [Term]
@@ -34165,7 +34197,7 @@ name: sperm flagellum morphology trait
 def: "Any measurable or observable characteristic related to the shape, structure, color, or pattern of a microtubule-based flagellum (or cilium) that is part of a sperm, a mature male germ cell that develops from a spermatid." [GO:0036126]
 synonym: "sperm tail morphology trait" EXACT []
 is_a: VT:0010042 ! sperm morphology trait
-property_value: http://purl.org/dc/terms/date 2026-09-09T19:12:15Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2026-09-09T19:12:15Z" xsd:dateTime
 property_value: http://www.geneontology.org/formats/oboInOwl#http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
 
 [Term]
@@ -34173,7 +34205,7 @@ id: VT:0011369
 name: digestive gas excretion trait
 def: "Any measurable or observable characteristic related to any excreted gas that is produced by the digestive tract." [UBERON:0034946]
 is_a: VT:0001664 ! digestion trait
-property_value: http://purl.org/dc/terms/date 2026-09-09T19:25:40Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2026-09-09T19:25:40Z" xsd:dateTime
 property_value: http://www.geneontology.org/formats/oboInOwl#http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
 
 [Term]
@@ -34181,7 +34213,7 @@ id: VT:0011370
 name: methane excretion trait
 def: "Any measurable or observable characteristic related to the elimination by an organism of methane, a colorless, flammable gas formed in the decomposition of organic matter." [MESH:D008697]
 is_a: VT:0011369 ! digestive gas excretion trait
-property_value: http://purl.org/dc/terms/date 2026-09-09T19:50:56Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2026-09-09T19:50:56Z" xsd:dateTime
 property_value: http://www.geneontology.org/formats/oboInOwl#http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
 
 [Term]
@@ -34189,7 +34221,7 @@ id: VT:0011371
 name: water intake trait
 def: "Any measurable or observable characteristic related to the process whereby water (a colorless, odorless, tasteless liquid, each molecule of which contains one atom of oxygen and two atoms of hydrogen (H2O)) is taken in for utilization by the body." [CMO:0000774, https://www.merriam-webster.com/dictionary/water]
 is_a: VT:0001422 ! drinking behavior trait
-property_value: http://purl.org/dc/terms/date 2026-09-23T14:58:46Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2026-09-23T14:58:46Z" xsd:dateTime
 property_value: http://www.geneontology.org/formats/oboInOwl#http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
 
 [Term]
@@ -34197,7 +34229,7 @@ id: VT:0011372
 name: rumen mass
 def: "The amount of matter in the first compartment of the ruminant stomach. It lies on the left side of the body, occupying the whole of the left side of the abdomen and even stretching across the median plane of the body to the right side. It is capacious, divided into an upper and a lower sac, each of which has a blind sac at its posterior extremity." [UBERON:0007365]
 is_a: VT:0010242 ! reticulo-rumen mass
-property_value: http://purl.org/dc/terms/date 2026-09-23T15:39:34Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2026-09-23T15:39:34Z" xsd:dateTime
 property_value: http://www.geneontology.org/formats/oboInOwl#http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
 
 [Term]
@@ -34205,7 +34237,7 @@ id: VT:0011373
 name: respiratory gas excretion trait
 def: "Any measurable or observable characteristic related to any gas that is excreted by the respiratory system." [VT:CP]
 is_a: VT:0001943 ! respiration trait
-property_value: http://purl.org/dc/terms/date 2026-09-23T15:44:37Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2026-09-23T15:44:37Z" xsd:dateTime
 property_value: http://www.geneontology.org/formats/oboInOwl#http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
 
 [Term]
@@ -34213,7 +34245,7 @@ id: VT:0011374
 name: carbon dioxide excretion trait
 def: "Any measurable or observable characteristic related to the elimination by an organism of carbon dioxide, a colorless, odorless gas produced during respiration by all animals that depend directly or indirectly on living or decaying plants for food." [CHEBI:16526]
 is_a: VT:0011373 ! respiratory gas excretion trait
-property_value: http://purl.org/dc/terms/date 2026-09-23T15:48:42Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2026-09-23T15:48:42Z" xsd:dateTime
 property_value: http://www.geneontology.org/formats/oboInOwl#http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
 
 [Term]
@@ -34221,7 +34253,7 @@ id: VT:0011375
 name: excreta trait
 def: "Any measurable or observable characteristic related to an organism substance that is the product of an excretion process that will be eliminated from the body. An excretion process is elimination by an organism of the waste products that arise as a result of metabolic activity." [UBERON:0000174]
 is_a: VT:0010454 ! organism trait
-property_value: http://purl.org/dc/terms/date 2026-09-25T19:08:56Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2026-09-25T19:08:56Z" xsd:dateTime
 property_value: http://www.geneontology.org/formats/oboInOwl#http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
 
 [Term]
@@ -34229,14 +34261,14 @@ id: VT:0011376
 name: feces trait
 def: "Any measurable or observable characteristic related to the semisolid bodily waste discharged through the anus." [UBERON:0001988]
 is_a: VT:0011375 ! excreta trait
-property_value: http://purl.org/dc/terms/date 2026-09-25T19:18:03Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2026-09-25T19:18:03Z" xsd:dateTime
 property_value: http://www.geneontology.org/formats/oboInOwl#http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
 
 [Term]
 id: VT:0011377
 name: obsolete urine trait
 def: "OBSOLETE. Any measurable or observable characteristic related to the fluid and dissolved substances excreted by the kidneys. See VT:0000056." [ISBN:0-683-40008-8]
-property_value: http://purl.org/dc/terms/date 2026-09-25T19:24:02Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2026-09-25T19:24:02Z" xsd:dateTime
 property_value: http://www.geneontology.org/formats/oboInOwl#http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
 is_obsolete: true
 
@@ -34245,7 +34277,7 @@ id: VT:0011378
 name: excreta molecular composition trait
 def: "Any measurable or observable characteristic related to the proportions of proteins, minerals, nutrients, gases, or other substances in an organism substance that is the product of an excretion process that will be eliminated from the body. An excretion process is elimination by an organism of the waste products that arise as a result of metabolic activity." [UBERON:0000174]
 is_a: VT:0011375 ! excreta trait
-property_value: http://purl.org/dc/terms/date 2026-09-25T19:39:48Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2026-09-25T19:39:48Z" xsd:dateTime
 property_value: http://www.geneontology.org/formats/oboInOwl#http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
 
 [Term]
@@ -34254,7 +34286,7 @@ name: feces molecular composition trait
 def: "Any measurable or observable characteristic related to the proportions of proteins, minerals, nutrients, gases, or other substances in the semisolid bodily waste discharged through the anus." [UBERON:0001988]
 is_a: VT:0011376 ! feces trait
 is_a: VT:0011378 ! excreta molecular composition trait
-property_value: http://purl.org/dc/terms/date 2026-09-25T19:41:15Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2026-09-25T19:41:15Z" xsd:dateTime
 property_value: http://www.geneontology.org/formats/oboInOwl#http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
 
 [Term]
@@ -34262,7 +34294,7 @@ id: VT:0011380
 name: excreta water amount
 def: "The proportion, quantity, or volume of this clear, odorless, tasteless liquid in an organism substance that is the product of an excretion process that will be eliminated from the body. An excretion process is elimination by an organism of the waste products that arise as a result of metabolic activity." [UBERON:0000174]
 is_a: VT:0011378 ! excreta molecular composition trait
-property_value: http://purl.org/dc/terms/date 2026-09-25T19:52:28Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2026-09-25T19:52:28Z" xsd:dateTime
 property_value: http://www.geneontology.org/formats/oboInOwl#http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
 
 [Term]
@@ -34270,7 +34302,7 @@ id: VT:0011381
 name: excreta mass
 def: "The amount of matter in an organism substance that is the product of an excretion process that will be eliminated from the body. An excretion process is elimination by an organism of the waste products that arise as a result of metabolic activity." [UBERON:0000174]
 is_a: VT:0011375 ! excreta trait
-property_value: http://purl.org/dc/terms/date 2026-09-25T19:57:05Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2026-09-25T19:57:05Z" xsd:dateTime
 property_value: http://www.geneontology.org/formats/oboInOwl#http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
 
 [Term]
@@ -34280,7 +34312,7 @@ def: "The proportion, quantity, or volume of immunoglobulin class G1 in colostru
 synonym: "colostrum IgG1 amount" EXACT []
 synonym: "colostrum IgG1 content" EXACT []
 is_a: VT:0010259 ! colostrum immunoglobulin G amount
-property_value: http://purl.org/dc/terms/date 2026-10-01T20:00:03Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2026-10-01T20:00:03Z" xsd:dateTime
 property_value: http://www.geneontology.org/formats/oboInOwl#http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
 
 [Term]
@@ -34290,8 +34322,92 @@ def: "The proportion, quantity, or volume of immunoglobulin class G2 in colostru
 synonym: "colostrum IgG2 amount" EXACT []
 synonym: "colostrum IgG2 content" EXACT []
 is_a: VT:0010259 ! colostrum immunoglobulin G amount
-property_value: http://purl.org/dc/terms/date 2026-10-01T20:00:17Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2026-10-01T20:00:17Z" xsd:dateTime
 property_value: http://www.geneontology.org/formats/oboInOwl#http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
+
+[Term]
+id: VT:0011384
+name: sperm integrity trait
+def: "Any measurable or observable characteristic related to the structural soundness of the male gamete." [VT:CP]
+is_a: VT:0010042 ! sperm morphology trait
+property_value: http://purl.org/dc/terms/date "2026-10-08T14:01:51Z" xsd:dateTime
+property_value: http://www.geneontology.org/formats/oboInOwl#http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
+
+[Term]
+id: VT:0011385
+name: udder physiology trait
+def: "Any measurable or observable characteristic related to the function of or processes in the organ in certain species containing two or more mammary glands, each with its own nipple." [http://www.merriam-webster.com/dictionary/udder]
+is_a: VT:0003699 ! female reproductive system physiology trait
+property_value: http://purl.org/dc/terms/date "2026-10-08T15:01:39Z" xsd:dateTime
+property_value: http://www.geneontology.org/formats/oboInOwl#http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
+
+[Term]
+id: VT:0011386
+name: scapula mass
+def: "The amount of matter in either or both of the large, flat bones of the shoulder girdle." [MP:0000149]
+is_a: VT:0004343 ! scapula size trait
+property_value: http://purl.org/dc/terms/date "2026-10-08T15:39:23Z" xsd:dateTime
+property_value: http://www.geneontology.org/formats/oboInOwl#http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
+
+[Term]
+id: VT:0011387
+name: autopod size trait
+def: "Any measurable or observable characteristic related to the physical dimensions of the distal elements of the limb of vertebrates including the pedal or prehensile appendages (e.g., hand, foot, paw, phalanges, and/or digits)." [MP:0000572]
+is_a: VT:0004271 ! autopod morphology trait
+property_value: http://purl.org/dc/terms/date "2026-10-08T21:03:16Z" xsd:dateTime
+property_value: http://www.geneontology.org/formats/oboInOwl#http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-2346-5201
+
+[Term]
+id: VT:0011388
+name: limb nerve morphology trait
+def: "Any measurable or observable characteristic related to the shape, structure, color, or pattern of any of the nerves (enclosed, cable-like bundles of axons in the peripheral nervous system originating in a nerve root in the central nervous system) that is part of a limb." [UBERON:0001021, UBERON:0003440]
+is_a: VT:0002752 ! somatic nervous system morphology trait
+property_value: http://purl.org/dc/terms/date "2026-11-06T20:35:46Z" xsd:dateTime
+property_value: http://www.geneontology.org/formats/oboInOwl#http://purl.org/dc/terms/contributor https://orcid.org/0000-0002-2346-5201
+
+[Term]
+id: VT:0011389
+name: median nerve morphology trait
+def: "Any measurable or observable characteristic related to the shape, structure, color, or pattern of the median nerve, a nerve of the arm that originates from the brachial plexus and is formed from parts of the medial and lateral cords of the brachial plexus, and continues down the arm to enter the forearm with the brachial artery." [RGD:cur, UBERON:0001148]
+is_a: VT:0011388 ! limb nerve morphology trait
+property_value: http://purl.org/dc/terms/date "2026-11-06T20:38:17Z" xsd:dateTime
+property_value: http://www.geneontology.org/formats/oboInOwl#http://purl.org/dc/terms/contributor https://orcid.org/0000-0002-2346-5201
+
+[Term]
+id: VT:0011390
+name: median nerve molecular composition trait
+def: "Any measurable or observable characteristic related to the proportions of proteins, minerals, nutrients, gases, or other substances in the median nerve, a nerve of the arm that originates from the brachial plexus and is formed from parts of the medial and lateral cords of the brachial plexus, and continues down the arm to enter the forearm with the brachial artery." [RGD:cur, UBERON:0001148]
+is_a: VT:0011389 ! median nerve morphology trait
+property_value: http://purl.org/dc/terms/date "2026-11-06T20:48:08Z" xsd:dateTime
+property_value: http://www.geneontology.org/formats/oboInOwl#http://purl.org/dc/terms/contributor https://orcid.org/0000-0002-2346-5201
+
+[Term]
+id: VT:0011391
+name: median nerve ribonucleic acid amount
+def: "The proportion, quantity, or volume of ribonucleic acid in the median nerve, a nerve of the arm that originates from the brachial plexus and is formed from parts of the medial and lateral cords of the brachial plexus, and continues down the arm to enter the forearm with the brachial artery. Ribonucleic acid is a high molecular wieght, linear polymer composed of nucleotides containing ribose and linked by phosphodiester bonds." [CHEBI:33697, RGD:cur, UBERON:0001148]
+synonym: "median nerve RNA amount" EXACT []
+xref: CMO:0004204
+is_a: VT:0011390 ! median nerve molecular composition trait
+is_a: VT:0011392 ! nerve ribonucleic acid amount
+property_value: http://purl.org/dc/terms/date "2026-11-06T20:50:31Z" xsd:dateTime
+property_value: http://www.geneontology.org/formats/oboInOwl#http://purl.org/dc/terms/contributor https://orcid.org/0000-0002-2346-5201
+
+[Term]
+id: VT:0011392
+name: nerve ribonucleic acid amount
+def: "The proportion, quantity, or volume in a nerve (enclosed, cable-like bundle of axons in the peripheral nervous system originating in a nerve root in the central nervous system) of ribonucleic acid (RNA), a high molecular weight, linear polymer composed of nucleotides containing ribose and linked by phosphodiester bonds." [CHEBI:33697, UBERON:0001021]
+synonym: "nerve RNA amount" EXACT []
+is_a: VT:0011060 ! tissue ribonucleic acid amount
+property_value: http://purl.org/dc/terms/date "2026-11-06T21:06:22Z" xsd:dateTime
+property_value: http://www.geneontology.org/formats/oboInOwl#http://purl.org/dc/terms/contributor https://orcid.org/0000-0002-2346-5201
+
+[Term]
+id: VT:0011393
+name: gland ribonucleic acid amount
+def: "The proportion, quantity, or volume of ribonucleic acid in an organized aggregation of cells functioning as a secretory or excretory organ. Ribonucleic acid is a high molecular weight, linear polymer composed of nucleotides containing ribose and linked by phosphodiester bonds." [CHEBI:33697, ISBN:0-683-40008-8]
+is_a: VT:0011060 ! tissue ribonucleic acid amount
+property_value: http://purl.org/dc/terms/date "2026-11-06T21:19:57Z" xsd:dateTime
+property_value: http://www.geneontology.org/formats/oboInOwl#http://purl.org/dc/terms/contributor https://orcid.org/0000-0002-2346-5201
 
 [Term]
 id: VT:0015000
@@ -35900,7 +36016,7 @@ creation_date: 2008-11-11T02:26:46Z
 id: VT:1000419
 name: total foot mass
 def: "The total amount of matter in all of the pedal extremities of an organism." [VT:CP]
-is_a: VT:1000686 ! paw/hand/foot/hoof mass
+is_a: VT:1000686 ! autopod mass
 created_by: caripark
 creation_date: 2008-11-11T02:01:04Z
 
@@ -36431,9 +36547,10 @@ creation_date: 2009-04-01T03:49:05Z
 
 [Term]
 id: VT:1000686
-name: paw/hand/foot/hoof mass
-def: "The amount of matter in the pedal or prehensile extremity of vertebrates." [VT:CP]
-is_a: VT:0004271 ! paw/hand/foot/hoof morphology trait
+name: autopod mass
+def: "The amount of matter in the distal elements of the limb of vertebrates including the pedal or prehensile appendages (e.g., hand, foot, paw, phalanges, and/or digits)." [MP:0000572, VT:CP]
+synonym: "paw/hand/foot/hoof mass" EXACT []
+is_a: VT:0011387 ! autopod size trait
 created_by: caripark
 creation_date: 2009-04-01T04:28:54Z
 
